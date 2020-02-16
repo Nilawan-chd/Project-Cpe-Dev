@@ -13,9 +13,9 @@
                 <div class="breadcrumb-item active"><a
                             href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
                 <div class="breadcrumb-item"><a href="#">Page: หน้าแรก</a></div>
-                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/page/home/news'); ?>">ประเภทข่าวสาร</a></div>
+                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/page/home/news'); ?>"><?php echo $category_news_title; ?></a></div>
 
-                <div class="breadcrumb-item">ข่าวสาร: (ประเภท - ประชาสัมพันธ์)</div>
+                <div class="breadcrumb-item">ข่าวสาร: (ประเภท - <?php echo $category_news_title; ?>)</div>
             </div>
         </div>
 

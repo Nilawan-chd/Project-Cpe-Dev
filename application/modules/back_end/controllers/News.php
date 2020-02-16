@@ -54,7 +54,7 @@ class News extends MX_Controller
     {
         $this->data['title'] = 'Page: News - Add';
         $this->data['content'] = 'news/add_news';
-        $this->data['category_new'] =$this->Category_news_model->get_category_news_by_id($category_id);
+        $this->data['category_new'] = $this->Category_news_model->get_category_news_by_id($category_id);
 
         $this->data['user'] = $this->User_model->get_user_by_id($this->session->userdata('user_id'));
         $this->load->view('app', $this->data);
@@ -85,17 +85,15 @@ class News extends MX_Controller
             $this->session->set_flashdata('error', 'Something wrong');
         }
 
-        redirect('backoffice/page/home/news/list/show/' .$this->input->post('category_news_id'));
+        redirect('backoffice/page/home/news/list/show/' . $this->input->post('category_news_id'));
     }
 
     public function edit($news_id)
     {
+        $news = $this->News_model->get_news_by_id($news_id);
         $this->data['title'] = 'Page: Home - Galleries - Edit';
         $this->data['content'] = 'news/edit_news';
-        $this->data['news'] = $this->News_model->get_news_by_id($news_id);
-        $category_id= $news->category_news_id;
-        $this->data['category_new'] =$this->Category_news_model->get_category_news_by_id($category_id);
-        $this->data['user'] = $this->User_model->get_user_by_id($this->session->userdata('user_id'));
+        $this->data['news'] = $news;
         $this->load->view('app', $this->data);
     }
 
@@ -104,6 +102,8 @@ class News extends MX_Controller
 
         $update_news = $this->News_model->update_news_by_id($news_id, [
             'title' => $this->input->post('title'),
+            'description' => $this->input->post('description'),
+            'detail' => $this->input->post('detail'),
             'updated_at' => date('Y-m-d H:i:s')
 
         ]);
@@ -130,9 +130,9 @@ class News extends MX_Controller
         $status = 500;
         $response['success'] = 0;
 
-        $product = $this->News_model->delete_news_by_id($news_id);
+        $news = $this->News_model->delete_news_by_id($news_id);
 
-        if ($product != false) {
+        if ($news != false) {
             $status = 200;
             $response['success'] = 1;
 
