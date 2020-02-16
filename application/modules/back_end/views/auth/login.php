@@ -26,7 +26,7 @@
                     <div class="text-center">
                         <img src="<?php echo base_url('storage/images/logo.png'); ?>" alt="logo" width="40%" class="shadow-light mb-5 mt-2" style="background-color: rgba(0, 0, 0, 1); padding: 12px;">
                     </div>
-                    <h4 class="text-dark font-weight-normal text-center">Welcome to <span class="font-weight-bold">Aluinch Backoffice</span></h4>
+                    <h4 class="text-dark font-weight-normal text-center">Welcome to <span class="font-weight-bold">Backoffice</span></h4>
                     <form method="POST" action="<?php echo base_url('backoffice/login_process'); ?>"" class="needs-validation" novalidate="">
                         <div class="form-group">
                             <label for="">Username</label>
@@ -68,9 +68,9 @@
                     <div class="text-light p-5 pb-2">
                         <div class="mb-5 pb-3">
                             <h1 class="mb-2 display-4 font-weight-bold"><?php echo get_time_of_day(); ?></h1>
-                            <h5 class="font-weight-normal text-muted-transparent">Aluinch, Backoffice</h5>
+                            <h5 class="font-weight-normal text-muted-transparent">CPE-dev, Backoffice</h5>
                         </div>
-                        Back to Website <a href="<?php echo base_url('home') ?>" target="_blank" style="color: #f04f0f;">aluinch.com</a>
+                        Back to Website <a href="<?php echo base_url('home') ?>" target="_blank" style="color: #f04f0f;">www.cpe.eng.rmutp.ac.th</a>
                     </div>
                 </div>
             </div>

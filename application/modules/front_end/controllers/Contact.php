@@ -36,19 +36,6 @@ class Contact extends MX_Controller
 		| -------------------------------------------------------------------------
 		*/
 
-		// Title Page
-		$data['title'] = $page_content->meta_tag_title;
-
-		// Meta Tag
-		$data['meta']['title'] = $page_content->meta_tag_title;
-		$data['meta']['description'] = $page_content->meta_tag_description;
-		$data['meta']['keyword'] = $page_content->meta_tag_keywords;
-
-		// OG & Twitter
-		$data['og_twitter']['title'] = $page_content->meta_tag_title;
-		$data['og_twitter']['description'] = $page_content->meta_tag_description;
-		$data['og_twitter']['image'] = base_url('storage/uploads/images/contacts/'. $page_content->img_og_twitter);
-
 		// Content
 		$data['content'] = 'contact';
 

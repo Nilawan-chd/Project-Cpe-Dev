@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aluinch &mdash; Backoffice <?php echo "($title)"; ?></title>
+    <title> &mdash; Backoffice <?php echo "($title)"; ?></title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -78,7 +78,7 @@
         <div class="main-sidebar sidebar-style-2">
             <aside id="sidebar-wrapper">
                 <div class="sidebar-brand">
-                    <a href="<?php echo base_url('backoffice/dashboard'); ?>">Aluinch Backoffice</a>
+                    <a href="<?php echo base_url('backoffice/dashboard'); ?>"></a>
                 </div>
                 <div class="sidebar-brand sidebar-brand-sm">
                     <a href="<?php echo base_url('backoffice/dashboard'); ?>">ALI</a>
@@ -88,46 +88,58 @@
                     <li class="<?php if ($this->uri->segment(2) == "dashboard") { echo 'active'; } ?>">
                         <a class="nav-link" href="<?php echo base_url('backoffice/dashboard'); ?>"><i class="fas fa-fire"></i> <span>Dashboard</span></a>
                     </li>
+                    <li class="menu-header">Page Setup</li>
+
                     <li class="menu-header">Pages</li>
                     <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "home") { echo 'active'; } ?>">
-                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Home</span></a>
+                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>หน้าแรก</span></a>
                         <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "home" && $this->uri->segment(4) == "content") { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/home/content/1'); ?>">&#9679; Content</a>
+                            <li class="<?php if ($this->uri->segment(3) == "home" && $this->uri->segment(4) == "banner") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/home/banner'); ?>">&#9679; แบนเนอร์</a>
                             </li>
                         </ul>
                         <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "home" && $this->uri->segment(4) == "gallery") { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/home/gallery'); ?>">&#9679; Gallery</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "product") { echo 'active'; } ?>">
-                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-gopuram"></i><span>Products</span></a>
-                        <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "product") { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/product/group'); ?>">&#9679; Products</a>
+                            <li class="<?php if ($this->uri->segment(3) == "home" && $this->uri->segment(4) == "news") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/home/news'); ?>">&#9679; ข่าวสาร</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "technology") { echo 'active'; } ?>">
-                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-microchip"></i><span>Technologies</span></a>
+                    <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "about") { echo 'active'; } ?>">
+                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-gopuram"></i><span>เกี่ยวกับ</span></a>
                         <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "technology") { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/technology/category'); ?>">&#9679; Technologies</a>
+                            <li class="<?php if ($this->uri->segment(3) == "about" && $this->uri->segment(4) == "about") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/about/about/edit/1'); ?>">&#9679; เกี่ยวกับ</a>
+                            </li>
+                        </ul>
+                        <ul class="dropdown-menu">
+                            <li class="<?php if ($this->uri->segment(3) == "about" && $this->uri->segment(4) == "history") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/about/history/edit/2'); ?>">&#9679; ประวัติความเป็นมา</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "course") { echo 'active'; } ?>">
+                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-microchip"></i><span>หลักสูตร</span></a>
+                        <ul class="dropdown-menu">
+                            <li class="<?php if ($this->uri->segment(3) == "course" && $this->uri->segment(4) == "course") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/course/course/edit/1'); ?>">&#9679; หลักสูตร</a>
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "labs") { echo 'active'; } ?>">
+                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-project-diagram"></i><span>ห้องปฏิบัติการ</span></a>
+                        <ul class="dropdown-menu">
+                            <li class="<?php if ($this->uri->segment(3) == "labs" && ($this->uri->segment(4) == "labs" || $this->uri->segment(4) == "list-project-pictures")) { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/lab/lab') ?>">&#9679; ห้องปฏิบัติการ</a>
+                            </li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "project") { echo 'active'; } ?>">
-                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-project-diagram"></i><span>Project References</span></a>
+                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-microchip"></i><span>งานวิจัย/โครงงาน</span></a>
                         <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "project" && $this->uri->segment(4) == "content") { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/project/content/1') ?>">&#9679; Content</a>
-                            </li>
-                        </ul>
-                        <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "project" && ($this->uri->segment(4) == "projects" || $this->uri->segment(4) == "list-project-pictures")) { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/project/projects') ?>">&#9679; Projects</a>
+                            <li class="<?php if ($this->uri->segment(3) == "project" && $this->uri->segment(4) == "project") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/project/project/edit/1'); ?>">&#9679; งานวิจัย/โครงงาน</a>
                             </li>
                         </ul>
                     </li>

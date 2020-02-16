@@ -60,7 +60,20 @@ $route['translate_uri_dashes'] = FALSE;
 */
 
 $route['home'] = 'front_end/Home';
-$route['product'] = 'front_end/Product';
+$route['contact'] = 'front_end/Contact';
+$route['about'] = 'front_end/Contact';
+$route['faculty'] = 'front_end/Faculty';
+$route['history'] = 'front_end/History';
+$route['course'] = 'front_end/Course';
+$route['labs'] = 'front_end/Labs';
+$route['project'] = 'front_end/Project';
+$route['download'] = 'front_end/Download';
+
+
+
+
+
+
 $route['product/(:any)/(:any)/(:any)'] = "front_end/Product/show/$1/$2/$3";
 $route['technology'] = 'front_end/Technology';
 $route['technology/(:any)/(:any)/(:any)'] = "front_end/Technology/show/$1/$2/$3";
@@ -110,116 +123,94 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
     | -------------------------------------------------------------------------
     */
 
+
+
         /*
         | -------------------------------------------------------------------------
         | Home
         | -------------------------------------------------------------------------
         */
+        // Banner
 
-        // Content
-        $route['backoffice/page/home/content/(:any)'] = 'back_end/Home/edit_content/$1';
-        $route['backoffice/page/home/content/update/(:any)'] = 'back_end/Home/update_content/$1';
+        $route['backoffice/page/home/banner'] = 'back_end/Banner';
+        $route['backoffice/page/home/banner/create'] = 'back_end/Banner/banner_create';
+        $route['backoffice/page/home/banner/store'] = 'back_end/Banner/banner_store';
+        $route['backoffice/page/home/banner/edit/(:any)'] = 'back_end/Banner/banner_edit/$1';
+        $route['backoffice/page/home/banner/update/(:any)'] = 'back_end/Banner/banner_update/$1';
+        $route['backoffice/page/home/banner/destroy/(:any)'] = "back_end/Banner/banner_destroy/$1";
+        $route['backoffice/page/home/banner/ajax/get/banner/sort/show'] = 'back_end/Banner/ajax_get_banner_and_sort_show';
+        $route['backoffice/page/home/banner/ajax/get/banner/sort/update'] = 'back_end/Banner/ajax_get_banner_and_sort_update';
 
-        // Gallery
-        $route['backoffice/page/home/gallery'] = 'back_end/Home/gallery';
-        $route['backoffice/page/home/gallery/create'] = 'back_end/Home/gallery_create';
-        $route['backoffice/page/home/gallery/store'] = 'back_end/Home/gallery_store';
-        $route["backoffice/page/home/gallery/edit/(:any)"] = "back_end/Home/gallery_edit/$1";
-        $route["backoffice/page/home/gallery/update/(:any)"] = "back_end/Home/gallery_update/$1";
-        $route["backoffice/page/home/gallery/destroy/(:any)"] = "back_end/Home/gallery_destroy/$1";
-		$route['backoffice/page/home/gallery/ajax/get/gallery/sort/show'] = 'back_end/Home/ajax_get_gallery_and_sort_show';
-		$route['backoffice/page/home/gallery/ajax/get/gallery/sort/update'] = 'back_end/Home/ajax_get_gallery_and_sort_update';
+        // News
+        $route['backoffice/page/home/news'] = 'back_end/Category_news';
+        $route['backoffice/page/home/news/create'] = 'back_end/Category_news/create';
+        $route['backoffice/page/home/news/store'] = 'back_end/Category_news/store';
+        $route['backoffice/page/home/news/edit/(:any)'] = 'back_end/Category_news/edit/$1';
+        $route['backoffice/page/home/news/update/(:any)'] = 'back_end/Category_news/update/$1';
+        $route['backoffice/page/home/news/destroy/(:any)'] = "back_end/Category_news/destroy/$1";
 
-        /*
-        | -------------------------------------------------------------------------
-        | Product
-        | -------------------------------------------------------------------------
-        */
+        // News
+        $route['backoffice/page/home/news/list/show/(:any)'] = 'back_end/News/show/$1';
+        $route['backoffice/page/home/news/list/create/(:any)'] = 'back_end/News/create/$1';
+        $route['backoffice/page/home/news/list/store'] = 'back_end/News/store';
+        $route['backoffice/page/home/news/list/edit/(:any)'] = 'back_end/News/edit/$1';
+        $route['backoffice/page/home/news/list/update/(:any)'] = 'back_end/News/update/$1';
+        $route['backoffice/page/home/news/list/destroy/(:any)'] = "back_end/News/destroy/$1";
 
-        // Groups
-        $route['backoffice/page/product/group'] = 'back_end/Group_product';
-        $route['backoffice/page/product/group/create'] = 'back_end/Group_product/create';
-        $route['backoffice/page/product/group/store'] = 'back_end/Group_product/store';
-        $route['backoffice/page/product/group/edit/(:any)'] = "back_end/Group_product/edit/$1";
-        $route['backoffice/page/product/group/update/(:any)'] = "back_end/Group_product/update/$1";
-        $route['backoffice/page/product/group/destroy/(:any)'] = "back_end/Group_product/destroy/$1";
-
-        // Category
-        $route['backoffice/page/product/category/show/(:any)'] = 'back_end/Category_product/show/$1';
-        $route['backoffice/page/product/category/create/(:any)'] = 'back_end/Category_product/create/$1';
-        $route['backoffice/page/product/category/store'] = 'back_end/category_product/store';
-        $route['backoffice/page/product/category/edit/(:any)'] = "back_end/Category_product/edit/$1";
-        $route['backoffice/page/product/category/update/(:any)'] = "back_end/Category_product/update/$1";
-        $route['backoffice/page/product/category/destroy/(:any)'] = "back_end/Category_product/destroy/$1";
-
-        // Products
-        $route['backoffice/page/product/product/show/(:any)/(:any)'] = 'back_end/Product/show/$1/$2';
-        $route['backoffice/page/product/products/create/(:any)/(:any)'] = 'back_end/Product/create/$1/$2';
-        $route['backoffice/page/product/products/store'] = "back_end/Product/store";
-        $route['backoffice/page/product/products/edit/(:any)'] = "back_end/Product/edit/$1";
-        $route['backoffice/page/product/products/update/(:any)'] = "back_end/Product/update/$1";
-        $route['backoffice/page/product/products/destroy/(:any)'] = "back_end/Product/destroy/$1";
-
-        // List Product Pictures
-		$route['backoffice/page/product/list-product-pictures/(:any)/(:any)/(:any)'] = 'back_end/Product/list_product_pictures/$1/$2/$3';
-		$route['backoffice/page/product/list-product-pictures/create/(:any)/(:any)/(:any)'] = 'back_end/Product/product_pictures_create/$1/$2/$3';
-		$route['backoffice/page/product/list-product-pictures/store/(:any)/(:any)/(:any)'] = 'back_end/Product/product_pictures_store/$1/$2/$3';
-		$route['backoffice/page/product/list-product-pictures/edit/(:any)/(:any)/(:any)/(:any)'] = 'back_end/Product/product_pictures_edit/$1/$2/$3/$4';
-		$route['backoffice/page/product/list-product-pictures/update/(:any)/(:any)/(:any)/(:any)'] = 'back_end/Product/product_pictures_update/$1/$2/$3/$4';
-		$route['backoffice/page/product/list-product-pictures/destroy/(:any)'] = 'back_end/Product/product_pictures_destroy/$1';
-		$route['backoffice/page/product/list-product-pictures/ajax/get/product/sort/show/(:any)'] = 'back_end/Product/ajax_get_product_and_sort_show/$1';
-		$route['backoffice/page/product/list-product-pictures/ajax/get/product/sort/update/(:any)'] = 'back_end/Product/ajax_get_product_and_sort_update/$1';
 
         /*
         | -------------------------------------------------------------------------
-        | Technology
+        | About
         | -------------------------------------------------------------------------
         */
 
-        // Category
-        $route['backoffice/page/technology/category'] = 'back_end/Category_technology';
-        $route['backoffice/page/technology/category/store'] = 'back_end/Category_technology/store';
-        $route['backoffice/page/technology/category/edit/(:any)'] = "back_end/Category_technology/edit/$1";
-        $route['backoffice/page/technology/category/update/(:any)'] = "back_end/Category_technology/update/$1";
-        $route['backoffice/page/technology/category/destroy/(:any)'] = "back_end/Category_technology/destroy/$1";
-        $route['backoffice/page/technology/category/content'] = 'back_end/Category_technology/content';
+        // about
+        $route['backoffice/page/about/about/edit/(:any)'] = "back_end/About/about_edit/$1";
+        $route['backoffice/page/about/about/update/(:any)'] = "back_end/About/about_update/$1";
 
-        // Technologies
-        $route['backoffice/page/technology/technology_videos/show/(:any)'] = 'back_end/Technology_video/show/$1';
-        $route['backoffice/page/technology/technology_videos/create/(:any)'] = 'back_end/Technology_video/create/$1';
-        $route['backoffice/page/technology/technology_videos/store'] = 'back_end/Technology_video/store';
-        $route['backoffice/page/technology/technology_videos/edit/(:any)/(:any)'] = "back_end/Technology_video/edit/$1/$2";
-        $route['backoffice/page/technology/technology_videos/update/(:any)'] = "back_end/Technology_video/update/$1";
-        $route['backoffice/page/technology/technology_videos/destroy/(:any)'] = "back_end/Technology_video/destroy/$1";
-        $route['backoffice/page/technology/technology_videos/destroy_question/(:any)'] = "back_end/Technology_video/destroy_question/$1";
+        // history
+        $route['backoffice/page/about/history/edit/(:any)'] = "back_end/About/about_edit/$1";
+        $route['backoffice/page/about/history/update/(:any)'] = "back_end/About/about_update/$1";
+
+
+        /*
+        | -------------------------------------------------------------------------
+        | Course
+        | -------------------------------------------------------------------------
+        */
+
+        // Course
+        $route['backoffice/page/course/course/edit/(:any)'] = "back_end/Course/course_edit/$1";
+        $route['backoffice/page/course/course/update/(:any)'] = "back_end/Course/course_update/$1";
+
 
 		/*
 		| -------------------------------------------------------------------------
-		| Project
+		| Labs
 		| -------------------------------------------------------------------------
 		*/
 
-		// Content
-        $route['backoffice/page/project/content/(:any)'] = 'back_end/Project/edit_content/$1';
-        $route['backoffice/page/project/content/update/(:any)'] = 'back_end/Project/update_content/$1';
 
-        // Projects
-        $route['backoffice/page/project/projects'] = 'back_end/Project';
-        $route['backoffice/page/project/projects/create'] = 'back_end/Project/create';
-		$route['backoffice/page/project/projects/store'] = 'back_end/Project/store';
-        $route['backoffice/page/project/projects/edit/(:any)'] = "back_end/Project/edit/$1";
-        $route['backoffice/page/project/projects/update/(:any)'] = "back_end/Project/update/$1";
-        $route['backoffice/page/project/projects/destroy/(:any)'] = "back_end/Project/destroy/$1";
+        // labs
+        $route['backoffice/page/lab/lab'] = 'back_end/Lab';
+        $route['backoffice/page/lab/lab/create'] = 'back_end/Lab/create';
+		$route['backoffice/page/lab/lab/store'] = 'back_end/Lab/store';
+        $route['backoffice/page/lab/lab/edit/(:any)'] = "back_end/Lab/edit/$1";
+        $route['backoffice/page/lab/lab/update/(:any)'] = "back_end/Lab/update/$1";
+        $route['backoffice/page/lab/lab/destroy/(:any)'] = "back_end/Lab/destroy/$1";
 
-		// List Project Pictures
-		$route['backoffice/page/project/list-project-pictures/(:any)'] = 'back_end/Project/list_project_pictures/$1';
-		$route['backoffice/page/project/list-project-pictures/create/(:any)'] = 'back_end/Project/project_pictures_create/$1';
-		$route['backoffice/page/project/list-project-pictures/store/(:any)'] = 'back_end/Project/project_pictures_store/$1';
-		$route['backoffice/page/project/list-project-pictures/edit/(:any)/(:any)'] = 'back_end/Project/project_pictures_edit/$1/$2';
-		$route['backoffice/page/project/list-project-pictures/update/(:any)/(:any)'] = 'back_end/Project/project_pictures_update/$1/$2';
-		$route['backoffice/page/project/list-project-pictures/destroy/(:any)'] = 'back_end/Project/project_pictures_destroy/$1';
-		$route['backoffice/page/project/list-project-pictures/ajax/get/project/sort/show/(:any)'] = 'back_end/Project/ajax_get_project_and_sort_show/$1';
-		$route['backoffice/page/project/list-project-pictures/ajax/get/project/sort/update/(:any)'] = 'back_end/Project/ajax_get_project_and_sort_update/$1';
+        /*
+        | -------------------------------------------------------------------------
+        | Project
+        | -------------------------------------------------------------------------
+        */
+
+        // Project
+        $route['backoffice/page/project/project/edit/(:any)'] = "back_end/Project/project_edit/$1";
+        $route['backoffice/page/project/project/update/(:any)'] = "back_end/Project/project_update/$1";
+
+
+
 
 		/*
 		| -------------------------------------------------------------------------
