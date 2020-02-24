@@ -1,121 +1,202 @@
+<footer class="entry-footer">
+</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
 
-<div id="bottom-content"></div>
-<footer id="colophon" role="contentinfo">
 
-    <div id="footer-sidebar" class="container">
-        <div id="supplementary" class="two">
-            <div id="first" class="widget-area" role="complementary">
-                <aside id="text-8" class="widget widget_text">
-                    <div class="textwidget"><p>สาขาวิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์<br/>
-                            มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร<br/>
-                            1381 ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ กทม. 10800<br/>
-                            โทรศัพท์ 02-836-3000 ต่อ 4182 &#8211; 4184</p>
+
+</main><!-- #main -->
+</div><!-- #primary -->
+
+</div>
+</div>
+</div><!-- #content -->
+
+
+
+
+
+<div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
+    <div class="container">
+        <div class="sidebar-column col-md-4">
+            <aside id="sow-editor-2" class="widget widget_sow-editor"><div class="so-widget-sow-editor so-widget-sow-editor-base">
+                    <div class="siteorigin-widget-tinymce textwidget">
+                        <p>คณะวิศวกรรมศาสตร์<br />
+                            มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร<br />
+                            1381 ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ กทม. 10800<br />
+                            โทรศัพท์ 02-836-3000</p>
                     </div>
-                </aside>
-            </div><!-- #first .widget-area -->
+                </div></aside>				</div>
 
-            <div id="second" class="widget-area" role="complementary">
-                <aside id="custom_html-2" class="widget_text widget widget_custom_html">
-                    <div class="textwidget custom-html-widget">
-                        <div style="overflow:hidden;height:1px;"><p> Additionally , often the Pelean Strength
-                                Examine <b><a href="http://www.examdown.com/210-260.html">210-260 pdf</a></b> might
-                                be finished with virtually no issues: CCNP turn along with attainable excellent
-                                manipulations. SIGNIFIES 300-101 Software Cert Certing possesses extensive
-                                durability before. As well as exercise screening process, there are several
-                                electronic books. The ideal numeric-only standard professional recommendation check
-                                research write-up offers an tolerable guide replacing end result which can be
-                                basically while without difficulty broken down like PEARSON's public WHIN INTURN
-                                public diploma. These kinds of examination actually finish in addition to innately
-                                carried out rapid to ensure persons can actually eliminate the coming quiz chance
-                                part or perhaps offer many moment verificationcisco 300-115 objectives Associated
-                                with the 200-125 CCNA <strong><a href="http://www.examdown.com/200-125.html">200-125
-                                        exam</a></strong> significant exercises, you may use loaded solutions joined
-                                with mobile check-ups. I will supply you with a complete gift because of the to
-                                figure out, which posesses a series of picks that are certainly exams • eBooks •
-                                Develop a trial run run tutorial Arranging research: The principle prepare is
-                                definitely supposed to always be in person likely by way of CCNA to look at likewise
-                                the particular move to 200-125 Estruendo pro network workers It is usually a single
-                                tool meant for forms that could be finalized by just tests, virtually any
-                                assessments with regard to CCNA Mobile's number of eye wear together with publishing
-                                200-125 Carbonilla Experienced Networking on the webpage. A lot like an electric
-                                research, these modalities carries a choice is about consumers. The average joe from
-                                the examination can be checking out these things online and is obviously
-                                worrying.210-260 packet tracer Almost like e-book concerns, the complicated
-                                situation is <b><a href="http://www.examdown.com/">http://www.examdown.com</a></b>
-                                actually each text is correct, plus the special client status is usually lifeless
-                                and even problematic. In the same manner, exceptional own qualifications might be
-                                designed. Beyond the specifics relating to the exact e-book insurance policies
-                                variables, job appraisal might also be described as a link together with an
-                                incentive. The idea occurs to allow you to recognize who may be prepared get rid of
-                                the CCNA examine motion 200-105 or higher. Connect the very Holganza on-line online
-                                community model ingredients to work with breakthrough discovery options for a number
-                                of or perhaps a variety of pieces of try pieces.200-125 200-125<a
-                                        href="http://www.examdown.com/aws-sysops.html">aws-sysops pdf</a> 2m 55s
-                                assessment 300-101 INSTRUCTING review 2m 11s training problem 1m 37s homework
-                                treatment assortment examination construction laboratory responsibility 9m 54s
-                                conclusion processing 1m 45s. Launch WAN engineering. 45m 5s. WAN capability
-                                quantity 0m quiz 28s ordinarily PPP 5m 38s Research laboratory Setup: PPP together
-                                with doable examination PAP qualification200-125 packet tracer labs It is a
-                                transmissive ab fan manifestation, precisely <b><a
-                                            href="http://lovepac.com/?exam=300-115_High-Pass-Rate.html">300-115 High
-                                        Pass Rate</a></b> why then due to this specific prosperous sort of
-                                acceptance in addition to change into in the event that with this CCNA 100-105 test
-                                section check-up sector app Implicar good gain take a look at any specific further
-                                several guidance quick lounge lounge chair With these versions to obtain their
-                                unique extended hula dancing dancing such as most popular inches audit around inches
-                                extensive? A problem addressing is like Bambolla experiment. Someones ease and
-                                comfort is obviously very large.210-260 certification guide </p></div>
+        <div class="sidebar-column col-md-4">
+            <aside id="text-11" class="widget widget_text">			<div class="textwidget"><h3 class="widget-title">RMUTP Links</h3>
+                    <ul id="menu-footer-link" class="menu">
+                        <li id="menu-item-2608" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2608"><a href="http://eng.rmutp.ac.th/%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%B2%E0%B8%99/">รับสมัครบุคลากร</a></li>
+                        <li id="menu-item-2609" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2609"><a href="http://phone.rmutp.ac.th/">ค้นหาหมายเลขโทรศัพท์</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="http://eng.rmutp.ac.th/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%87/">ประกาศจัดซื้อจัดจ้าง</a></li>
+                        <li><a href="http://eng.rmutp.ac.th/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%AD%E0%B8%94%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94/">ขายทอดตลาด</a></li>
+                        <li><a href="http://eng.rmutp.ac.th/km/">งานการจัดการความรู้ (<b>KM</b>)</a></li>
+                        <li><a href="http://k2mse.eng.rmutp.ac.th/">งานบริการวิชาการ</a></li>
+                    </ul>
+                </div>
+            </aside>				</div>
+
+        <div class="sidebar-column col-md-4">
+            <aside id="sow-social-media-buttons-2" class="widget widget_sow-social-media-buttons"><div class="so-widget-sow-social-media-buttons so-widget-sow-social-media-buttons-flat-5302a12fe70b">
+
+                    <div class="social-media-button-container">
+
+                        <a class="ow-button-hover sow-social-media-button-facebook-0 sow-social-media-button" title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร on Facebook" aria-label="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร on Facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Engineering-Rmutp-%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B8%AF-%E0%B8%A1%E0%B8%97%E0%B8%A3%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3-244414689253783/" >
+			<span>
+								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf39e;" ></span>							</span>
+                        </a>
+
+                        <a class="ow-button-hover sow-social-media-button-youtube-0 sow-social-media-button" title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร on Youtube" aria-label="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร on Youtube" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/" >
+			<span>
+								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf167;" ></span>							</span>
+                        </a>
                     </div>
-                </aside>
-                <aside id="custom_html-3" class="widget_text widget widget_custom_html">
-                    <div class="textwidget custom-html-widget"></div>
-                </aside>
-            </div><!-- #second .widget-area -->
-
-        </div><!-- #supplementary -->
-    </div><!-- #footer-sidebar -->
-
-    <div id="site-generator" class="container">
+                </div></aside>				</div>
 
 
-        <div class="site-info">
-            <div class="copyright">Copyright &copy; 2020 <a href="https://www.cpe.eng.rmutp.ac.th/"
-                                                            title=""><span></span></a> All Rights Reserved.
-            </div>
-            <div class="powered"><span class="theme-name">Catch Everest Theme by </span><span
-                        class="theme-author"><a href="http://catchthemes.com/" target="_blank" title="Catch Themes">Catch Themes</a></span>
-            </div>
-        </div><!-- .site-info -->
+    </div>
+</div>
+<a class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-info container">
+        &copy; 2018 <a href="//rmutp.ac.th">Rajamangala University of Technology Phra Nakhon.</a> All Rights Reserved.
+    </div><!-- .site-info -->
+</footer><!-- #colophon -->
 
 
-    </div><!-- #site-generator -->
+</div><!-- #page -->
 
-
-</footer><!-- #colophon .site-footer -->
-
-<a href="#masthead" id="scrollup"></a>
-
-</div><!-- #page .hfeed .site -->
-
-<!-- refreshing cache -->
+<!-- Custom Facebook Feed JS -->
+<script type="text/javascript">
+    var cfflinkhashtags = "true";
+</script>
+<style type="text/css">.so-widget-sow-social-media-buttons-flat-5302a12fe70b .social-media-button-container {
+        zoom: 1;
+        text-align: left;
+        /*
+          &:after {
+              content:"";
+              display:inline-block;
+              width:100%;
+          }
+          */
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .social-media-button-container:before {
+        content: '';
+        display: block;
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .social-media-button-container:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    @media (max-width: 780px) {
+        .so-widget-sow-social-media-buttons-flat-5302a12fe70b .social-media-button-container {
+            text-align: left;
+        }
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-facebook-0 {
+        color: #ffffff !important;
+        background-color: #3a5795;
+        border: 1px solid #3a5795;
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-facebook-0:visited,
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-facebook-0:active,
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-facebook-0:hover {
+        color: #ffffff !important;
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-facebook-0.ow-button-hover:hover {
+        color: #ffffff;
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-facebook-0.ow-button-hover:hover {
+        background: #4060a4;
+        border-bottom-color: #4060a4;
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-youtube-0 {
+        color: #ffffff !important;
+        background-color: #cf3427;
+        border: 1px solid #cf3427;
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-youtube-0:visited,
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-youtube-0:active,
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-youtube-0:hover {
+        color: #ffffff !important;
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-youtube-0.ow-button-hover:hover {
+        color: #ffffff;
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button-youtube-0.ow-button-hover:hover {
+        background: #d83f32;
+        border-bottom-color: #d83f32;
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button {
+        display: inline-block;
+        font-size: 1em;
+        line-height: 1em;
+        margin: 0.1em 0.1em 0.1em 0;
+        padding: 0.5em 0;
+        width: 2em;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-border-radius: 1.5em;
+        -moz-border-radius: 1.5em;
+        border-radius: 1.5em;
+    }
+    .so-widget-sow-social-media-buttons-flat-5302a12fe70b .sow-social-media-button .sow-icon-fontawesome {
+        display: inline-block;
+        height: 1em;
+    }</style>                <style type="text/css" media="all"
+                                    id="siteorigin-panels-layouts-footer">/* Layout w5b73a67a53fcb */ #pgc-w5b73a67a53fcb-0-0 , #pgc-w5b73a67a53fcb-0-1 { width:50%;width:calc(50% - ( 0.5 * 30px ) ) } #pl-w5b73a67a53fcb #panel-w5b73a67a53fcb-0-0-0 , #pl-w5b73a67a53fcb #panel-w5b73a67a53fcb-0-1-0 {  } #pl-w5b73a67a53fcb .so-panel , #pl-w5b73a67a53fcb .so-panel:last-child { margin-bottom:0px } #pg-w5b73a67a53fcb-0> .panel-row-style { padding:0px } #pg-w5b73a67a53fcb-0.panel-no-style, #pg-w5b73a67a53fcb-0.panel-has-style > .panel-row-style { -webkit-align-items:flex-start;align-items:flex-start } #panel-w5b73a67a53fcb-0-0-0> .panel-widget-style , #panel-w5b73a67a53fcb-0-1-0> .panel-widget-style { padding:0px 0px 0px 0px } @media (max-width:780px){ #pg-w5b73a67a53fcb-0.panel-no-style, #pg-w5b73a67a53fcb-0.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-w5b73a67a53fcb-0 > .panel-grid-cell , #pg-w5b73a67a53fcb-0 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pgc-w5b73a67a53fcb-0-0 , #pl-w5b73a67a53fcb .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px } #pl-w5b73a67a53fcb .panel-grid-cell { padding:0 } #pl-w5b73a67a53fcb .panel-grid .panel-grid-cell-empty { display:none }  } </style><link rel='stylesheet' id='siteorigin-panels-front-css'  href='http://eng.rmutp.ac.th/web2558/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.10.14' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='http://eng.rmutp.ac.th/web2558/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=0250fee3743c609c22cfcc3d4abc24b8' type='text/css' media='all' />
+<link rel='stylesheet' id='su-shortcodes-css'  href='http://eng.rmutp.ac.th/web2558/wp-content/plugins/shortcodes-ultimate/includes/css/shortcodes.css?ver=5.7.0' type='text/css' media='all' />
 <script type='text/javascript'>
     /* <![CDATA[ */
-    var lsow_settings = {"mobile_width": "780", "custom_css": ""};
+    var scriptParams = {"google_search_engine_id":"003879595481138030606:_ewufq_9wwi"};
     /* ]]> */
 </script>
-<script type='text/javascript'
-        src='http://www.cpe.eng.rmutp.ac.th/wp-content/plugins/livemesh-siteorigin-widgets/assets/js/lsow-frontend.min.js?ver=2.5.7'></script>
-<script type='text/javascript'
-        src='http://www.cpe.eng.rmutp.ac.th/wp-content/themes/catch-everest/js/custom.js?ver=1.0.0'></script>
-<script type='text/javascript'
-        src='http://www.cpe.eng.rmutp.ac.th/wp-content/themes/catch-everest/js/catcheverest-menu.min.js?ver=20130224'></script>
-<script type='text/javascript'
-        src='http://www.cpe.eng.rmutp.ac.th/wp-content/themes/catch-everest/js/jquery.cycle.all.min.js?ver=2.9999.5'></script>
+<script type='text/javascript' src='http://eng.rmutp.ac.th/web2558/wp-content/plugins/wp-google-search/assets/js/google_cse_v2.js?ver=1'></script>
+<script type='text/javascript' src='http://eng.rmutp.ac.th/web2558/wp-content/plugins/custom-facebook-feed/js/cff-scripts.js?ver=2.12.3'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
-    var js_value = {"transition_effect": "fade", "transition_delay": "4000", "transition_duration": "1000"};
+    var lsow_settings = {"mobile_width":"780","custom_css":""};
     /* ]]> */
 </script>
-<script type='text/javascript'
-        src='http://www.cpe.eng.rmutp.ac.th/wp-content/themes/catch-everest/js/catcheverest-slider.js?ver=20130114'></script>
-<script type='text/javascript'
+<script type='text/javascript' src='http://eng.rmutp.ac.th/web2558/wp-content/plugins/livemesh-siteorigin-widgets/assets/js/lsow-frontend.min.js?ver=2.5.9'></script>
+<script type='text/javascript' src='http://eng.rmutp.ac.th/web2558/wp-content/themes/sydney/js/scripts.js?ver=0250fee3743c609c22cfcc3d4abc24b8'></script>
+<script type='text/javascript' src='http://eng.rmutp.ac.th/web2558/wp-content/themes/sydney/js/main.js?ver=20180508'></script>
+<script type='text/javascript' src='http://eng.rmutp.ac.th/web2558/wp-content/themes/sydney/js/skip-link-focus-fix.js?ver=20130115'></script>
+<script type='text/javascript' src='http://eng.rmutp.ac.th/web2558/wp-includes/js/hoverIntent.min.js?ver=1.8.1'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var megamenu = {"timeout":"300","interval":"100"};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://eng.rmutp.ac.th/web2558/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.7.4'></script>
+<script type='text/javascript' src='http://eng.rmutp.ac.th/web2558/wp-includes/js/wp-embed.min.js?ver=0250fee3743c609c22cfcc3d4abc24b8'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var SUShortcodesL10n = {"noPreview":"This shortcode doesn't work in live preview. Please insert it into editor and preview on the site.","magnificPopup":{"close":"Close (Esc)","loading":"Loading...","prev":"Previous (Left arrow key)","next":"Next (Right arrow key)","counter":"%curr% of %total%","error":"Failed to load content.. <a href=\"0rl target=\"_blank\"><u>\/u><\/a>"}};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://eng.rmutp.ac.th/web2558/wp-content/plugins/shortcodes-ultimate/includes/js/shortcodes/index.js?ver=5.7.0'></script>
+
+<!-- Shortcodes Ultimate custom CSS - start -->
+<style type="text/css">
+    .su-tabs > .su-tabs-panes > div {
+
+        /* Text size */
+        font-size: 20px;
+
+    }
+</style>
+<!-- Shortcodes Ultimate custom CSS - end -->
+
+</body>
+</html>
