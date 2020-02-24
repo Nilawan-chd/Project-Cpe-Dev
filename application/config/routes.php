@@ -60,10 +60,10 @@ $route['translate_uri_dashes'] = FALSE;
 */
 
 $route['home'] = 'front_end/Home';
-$route['contact'] = 'front_end/Contact';
-$route['about'] = 'front_end/Contact';
+$route['about'] = 'front_end/About';
+$route['course'] = 'front_end/Course';
+$route['room'] = 'front_end/Room';
 $route['faculty'] = 'front_end/Faculty';
-$route['history'] = 'front_end/History';
 $route['course'] = 'front_end/Course';
 $route['labs'] = 'front_end/Labs';
 $route['project'] = 'front_end/Project';
