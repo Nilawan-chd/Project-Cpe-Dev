@@ -61,15 +61,15 @@
             </form>
             <ul class="navbar-nav navbar-right">
                 <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                        <div class="d-sm-none d-lg-inline-block">Hi, <?php echo $user->username; ?></div>
+                        <div class="d-sm-none d-lg-inline-block">สวัสดี, <?php echo $user->username; ?></div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
 						<a href="<?php echo base_url('backoffice/setting/profile/edit/' . $user->id); ?>" class="dropdown-item has-icon">
-							<i class="fas fa-cog"></i> Profile
+							<i class="fas fa-cog"></i> โปรไฟล์
 						</a>
 						<div class="dropdown-divider"></div>
                         <a href="<?php echo base_url('backoffice/logout'); ?>" class="dropdown-item has-icon text-danger">
-                            <i class="fas fa-sign-out-alt"></i> Logout
+                            <i class="fas fa-sign-out-alt"></i> ออกจากระบบ
                         </a>
                     </div>
                 </li>
@@ -84,13 +84,13 @@
                     <a href="<?php echo base_url('backoffice/dashboard'); ?>">ALI</a>
                 </div>
                 <ul class="sidebar-menu">
-                    <li class="menu-header">General</li>
+                    <li class="menu-header">ทั่วไป</li>
                     <li class="<?php if ($this->uri->segment(2) == "dashboard") { echo 'active'; } ?>">
-                        <a class="nav-link" href="<?php echo base_url('backoffice/dashboard'); ?>"><i class="fas fa-fire"></i> <span>Dashboard</span></a>
+                        <a class="nav-link" href="<?php echo base_url('backoffice/dashboard'); ?>"><i class="fas fa-fire"></i> <span>แดชบอร์ด</span></a>
                     </li>
-                    <li class="menu-header">Page Setup</li>
+                    <li class="menu-header">ตั้งค่า ทั่วไป</li>
 
-                    <li class="menu-header">Pages</li>
+                    <li class="menu-header">เมนู</li>
                     <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "home") { echo 'active'; } ?>">
                         <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>หน้าแรก</span></a>
                         <ul class="dropdown-menu">

@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>* Description</label>
-                                    <input type="text" class="form-control" name="description" value="<?php echo $news->description; ?>">
+                                    <textarea  class="form-control" name="description" ><?php echo $news->description; ?></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>Category</label>

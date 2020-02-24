@@ -34,31 +34,33 @@
 
                             <form action="<?php echo base_url('backoffice/page/home/news/list/store'); ?>" method="post"
                                   enctype="multipart/form-data">
-
-                                <div class="form-group">
-                                    <label>* Title</label>
-                                    <input type="text" class="form-control" name="title" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>* Description</label>
-                                    <input type="text" class="form-control" name="description" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Category</label>
-                                    <input type="hidden" value="<?php echo $category_new->id; ?>"
-                                           name="category_news_id">
-                                    <input type="text" class="form-control"
-                                           value="<?php echo $category_new->title; ?>" disabled="disabled">
-                                </div>
-                                <div style="padding-top: 20px;"><h6><i class="fa fa-tag"></i> Information</h6></div>
+                                <div style="padding-top: 20px;"><h6><i class="fa fa-tag"></i> ข้อมูล</h6></div>
                                 <hr>
-
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">* Detail</label>
+                                    <label class="col-sm-3 col-form-label">* หัวข้อข่าว</label>
                                     <div class="col-sm-9">
-                                        <div class="col-sm-9">
-                                            <textarea class="summernote" name="detail" required></textarea>
-                                        </div>
+                                        <input type="text" class="form-control" name="title" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">รายละเอียดย่อ</label>
+                                    <div class="col-sm-9">
+                                        <textarea  class="form-control" name="description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">ประเภทข่าว</label>
+                                    <div class="col-sm-9">
+                                        <input type="hidden" value="<?php echo $category_new->id; ?>"
+                                               name="category_news_id">
+                                        <input type="text" class="form-control"
+                                               value="<?php echo $category_new->title; ?>" disabled="disabled">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">รายละเอียด</label>
+                                    <div class="col-sm-9">
+                                        <textarea class="summernote" name="detail"></textarea>
                                     </div>
                                 </div>
 

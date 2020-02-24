@@ -170,8 +170,12 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
 
         // Faculty
         $route['backoffice/page/about/faculty'] = "back_end/Faculty";
+        $route['backoffice/page/about/faculty/create'] = "back_end/Faculty/create";
+        $route['backoffice/page/about/faculty/store'] = "back_end/Faculty/store";
+        $route['backoffice/page/about/faculty/created'] = "back_end/Faculty/created";
         $route['backoffice/page/about/faculty/edit/(:any)'] = "back_end/Faculty/edit/$1";
         $route['backoffice/page/about/faculty/update/(:any)'] = "back_end/Faculty/update/$1";
+        $route['backoffice/page/about/faculty/destroy/(:any)'] = "back_end/Faculty/destroy/$1";
 
 
         /*
