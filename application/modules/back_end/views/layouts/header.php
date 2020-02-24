@@ -107,13 +107,13 @@
                     <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "about") { echo 'active'; } ?>">
                         <a href="#" class="nav-link has-dropdown"><i class="fas fa-gopuram"></i><span>เกี่ยวกับ</span></a>
                         <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "about" && $this->uri->segment(4) == "about") { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/about/about/edit/1'); ?>">&#9679; เกี่ยวกับ</a>
+                            <li class="<?php if ($this->uri->segment(3) == "about" && $this->uri->segment(4) == "history") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/about/history/edit/1'); ?>">&#9679; ประวัติความเป็นมา</a>
                             </li>
                         </ul>
                         <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "about" && $this->uri->segment(4) == "history") { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/about/history/edit/2'); ?>">&#9679; ประวัติความเป็นมา</a>
+                            <li class="<?php if ($this->uri->segment(3) == "about" && $this->uri->segment(4) == "faculty") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/about/faculty'); ?>">&#9679; คณาจารย์</a>
                             </li>
                         </ul>
 

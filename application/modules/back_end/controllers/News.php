@@ -47,6 +47,8 @@ class News extends MX_Controller
         $this->data['category_news'] = $this->Category_news_model->get_category_news_all();
         $this->data['category_news_id'] = $category_news->id;
         $this->data['category_news_title'] = $category_news->title;
+
+        $this->data['user'] = $this->User_model->get_user_by_id($this->session->userdata('user_id'));
         $this->load->view('app', $this->data);
     }
 
@@ -90,10 +92,16 @@ class News extends MX_Controller
 
     public function edit($news_id)
     {
-        $news = $this->News_model->get_news_by_id($news_id);
+        $new = $this->News_model->get_news_by_id($news_id);
+
+        $category_new_id = $new->category_news_id;
+
+        $this->data['title'] = 'Page: Home - Galleries - Edit';
         $this->data['title'] = 'Page: Home - Galleries - Edit';
         $this->data['content'] = 'news/edit_news';
-        $this->data['news'] = $news;
+        $this->data['news'] = $new;
+        $this->data['category_new'] = $this->Category_news_model->get_category_news_by_id($category_new_id);
+
         $this->load->view('app', $this->data);
     }
 
@@ -122,7 +130,7 @@ class News extends MX_Controller
             $this->session->set_flashdata('error', 'Something wrong');
         }
 
-        redirect('backoffice/page/home/news/list');
+        redirect('backoffice/page/home/news/list/show/' . $this->input->post('category_news_id'));
     }
 
     public function destroy($news_id)

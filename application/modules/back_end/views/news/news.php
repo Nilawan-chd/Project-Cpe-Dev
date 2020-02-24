@@ -45,6 +45,7 @@
                                     <tr>
                                         <th class="text-center">#</th>
                                         <th>title</th>
+                                        <th>post by</th>
                                         <th>Created at</th>
                                         <th>Action</th>
                                     </tr>
@@ -56,6 +57,7 @@
                                         <tr>
                                             <td class="text-center"><?php echo $counter++; ?></td>
                                             <td><?php echo $new->title; ?></td>
+                                            <td><?php echo $user->name; ?></td>
                                             <td><?php echo $new->created_at; ?></td>
                                             <td>
                                                 <div class="dropdown d-inline">

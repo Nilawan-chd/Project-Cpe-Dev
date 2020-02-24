@@ -14,7 +14,7 @@ class News_model extends CI_Model
     {
         $query = $this->db->where('id', $id)->get('news');
 
-        return $query->num_rows() > 0 ? $query->row() : [];
+        return $query->num_rows() > 0 ? $query->row() : false;
     }
 
     public function get_news_by_category_news_id($category_id)

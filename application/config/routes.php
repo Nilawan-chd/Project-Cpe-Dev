@@ -164,13 +164,14 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
         | -------------------------------------------------------------------------
         */
 
-        // about
-        $route['backoffice/page/about/about/edit/(:any)'] = "back_end/About/about_edit/$1";
-        $route['backoffice/page/about/about/update/(:any)'] = "back_end/About/about_update/$1";
-
         // history
         $route['backoffice/page/about/history/edit/(:any)'] = "back_end/About/about_edit/$1";
         $route['backoffice/page/about/history/update/(:any)'] = "back_end/About/about_update/$1";
+
+        // Faculty
+        $route['backoffice/page/about/faculty'] = "back_end/Faculty";
+        $route['backoffice/page/about/faculty/edit/(:any)'] = "back_end/Faculty/edit/$1";
+        $route['backoffice/page/about/faculty/update/(:any)'] = "back_end/Faculty/update/$1";
 
 
         /*
