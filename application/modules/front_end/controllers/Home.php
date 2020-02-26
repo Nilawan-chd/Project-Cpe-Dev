@@ -8,11 +8,10 @@ class Home extends MX_Controller
 	{
 		parent::__construct();
 
-		/*
-		| -------------------------------------------------------------------------
-		| SET UTILITIES
-		| -------------------------------------------------------------------------
-		*/
+        // Model
+        $this->load->model('Banner_model');
+        $this->load->model('Category_news_model');
+        $this->load->model('News_model');
 
 
 	}
@@ -23,6 +22,8 @@ class Home extends MX_Controller
 
 		// Content
 		$data['content'] = 'home';
+        $data['banner'] = $this->Banner_model->get_banner_all();
+
 
 
 

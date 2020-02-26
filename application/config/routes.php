@@ -64,8 +64,8 @@ $route['about'] = 'front_end/About';
 $route['course'] = 'front_end/Course';
 $route['room'] = 'front_end/Room';
 $route['faculty'] = 'front_end/Faculty';
-$route['course'] = 'front_end/Course';
-$route['labs'] = 'front_end/Labs';
+$route['download'] = 'front_end/Download';
+$route['contact'] = 'front_end/Contact';
 $route['project'] = 'front_end/Project';
 $route['download'] = 'front_end/Download';
 

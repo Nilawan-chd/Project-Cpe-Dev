@@ -23,7 +23,8 @@
     <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>ฝ่ายวิชาการ &#8211; คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร</title>
+    <title>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร &#8211;
+        มหาวิทยาลัยเทคโนโลยีชั้นนำด้านการผลิตบัณฑิตมืออาชีพ</title>
     <link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com'/>
     <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
     <link rel='dns-prefetch' href='//s.w.org'/>
@@ -129,6 +130,21 @@
     <link rel='stylesheet' id='siteorigin-panels-front-css'
           href='http://eng.rmutp.ac.th/web2558/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.10.14'
           type='text/css' media='all'/>
+    <link rel='stylesheet' id='lsow-icomoon-css'
+          href='http://eng.rmutp.ac.th/web2558/wp-content/plugins/livemesh-siteorigin-widgets/assets/css/icomoon.css?ver=2.5.9'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='lsow-slick-css'
+          href='http://eng.rmutp.ac.th/web2558/wp-content/plugins/livemesh-siteorigin-widgets/assets/css/slick.css?ver=2.5.9'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='lsow-frontend-css'
+          href='http://eng.rmutp.ac.th/web2558/wp-content/plugins/livemesh-siteorigin-widgets/assets/css/lsow-frontend.css?ver=2.5.9'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='lsow-posts-carousel-css'
+          href='http://eng.rmutp.ac.th/web2558/wp-content/plugins/livemesh-siteorigin-widgets/includes/widgets/lsow-posts-carousel-widget/css/style.css?ver=1.16.0'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='sow-button-base-css'
+          href='http://eng.rmutp.ac.th/web2558/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.16.0'
+          type='text/css' media='all'/>
     <link rel='stylesheet' id='iw-defaults-css'
           href='http://eng.rmutp.ac.th/web2558/wp-content/plugins/widgets-for-siteorigin/inc/../css/defaults.css?ver=1.4.7'
           type='text/css' media='all'/>
@@ -187,14 +203,6 @@
 
         .single .hentry .title-post {
             font-size: 36px;
-        }
-
-        .header-image {
-            background-size: cover;
-        }
-
-        .header-image {
-            height: 150px;
         }
 
         .widget-area .widget_fp_social a, #mainnav ul li a:hover, .sydney_contact_info_widget span, .roll-team .team-content .name, .roll-team .team-item .team-pop .team-social li:hover a, .roll-infomation li.address:before, .roll-infomation li.phone:before, .roll-infomation li.email:before, .roll-testimonials .name, .roll-button.border, .roll-button:hover, .roll-icon-list .icon i, .roll-icon-list .content h3 a:hover, .roll-icon-box.white .content h3 a, .roll-icon-box .icon i, .roll-icon-box .content h3 a:hover, .switcher-container .switcher-icon a:focus, .go-top:hover, .hentry .meta-post a:hover, #mainnav > ul > li > a.active, #mainnav > ul > li > a:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .text-color, .social-menu-widget a, .social-menu-widget a:hover, .archive .team-social li a, a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .classic-alt .meta-post a, .single .hentry .meta-post a {
@@ -414,24 +422,25 @@
             "loopAtEnd": "0",
             "woocommerce_gallery": "0",
             "ajaxurl": "http:\/\/eng.rmutp.ac.th\/web2558\/wp-admin\/admin-ajax.php",
-            "nonce": "fa4f886f57"
+            "nonce": "bca00cfdfb"
         };
         /* ]]> */
     </script>
     <script type='text/javascript'
             src='http://eng.rmutp.ac.th/web2558/wp-content/plugins/responsive-lightbox/js/front.js?ver=2.2.2'></script>
+    <script type='text/javascript'
+            src='http://eng.rmutp.ac.th/web2558/wp-content/plugins/livemesh-siteorigin-widgets/assets/js/slick.min.js?ver=2.5.9'></script>
     <link rel='https://api.w.org/' href='http://eng.rmutp.ac.th/wp-json/'/>
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://eng.rmutp.ac.th/web2558/xmlrpc.php?rsd"/>
     <link rel="wlwmanifest" type="application/wlwmanifest+xml"
           href="http://eng.rmutp.ac.th/web2558/wp-includes/wlwmanifest.xml"/>
 
-    <link rel="canonical"
-          href="http://eng.rmutp.ac.th/%e0%b8%9d%e0%b9%88%e0%b8%b2%e0%b8%a2%e0%b8%a7%e0%b8%b4%e0%b8%8a%e0%b8%b2%e0%b8%81%e0%b8%b2%e0%b8%a3/"/>
-    <link rel='shortlink' href='http://eng.rmutp.ac.th/?p=8130'/>
+    <link rel="canonical" href="http://eng.rmutp.ac.th/"/>
+    <link rel='shortlink' href='http://eng.rmutp.ac.th/'/>
     <link rel="alternate" type="application/json+oembed"
-          href="http://eng.rmutp.ac.th/wp-json/oembed/1.0/embed?url=http%3A%2F%2Feng.rmutp.ac.th%2F%25e0%25b8%259d%25e0%25b9%2588%25e0%25b8%25b2%25e0%25b8%25a2%25e0%25b8%25a7%25e0%25b8%25b4%25e0%25b8%258a%25e0%25b8%25b2%25e0%25b8%2581%25e0%25b8%25b2%25e0%25b8%25a3%2F"/>
+          href="http://eng.rmutp.ac.th/wp-json/oembed/1.0/embed?url=http%3A%2F%2Feng.rmutp.ac.th%2F"/>
     <link rel="alternate" type="text/xml+oembed"
-          href="http://eng.rmutp.ac.th/wp-json/oembed/1.0/embed?url=http%3A%2F%2Feng.rmutp.ac.th%2F%25e0%25b8%259d%25e0%25b9%2588%25e0%25b8%25b2%25e0%25b8%25a2%25e0%25b8%25a7%25e0%25b8%25b4%25e0%25b8%258a%25e0%25b8%25b2%25e0%25b8%2581%25e0%25b8%25b2%25e0%25b8%25a3%2F&#038;format=xml"/>
+          href="http://eng.rmutp.ac.th/wp-json/oembed/1.0/embed?url=http%3A%2F%2Feng.rmutp.ac.th%2F&#038;format=xml"/>
 
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -543,63 +552,183 @@
             display: inline-block;
             height: 1em;
         }</style>
+    <style type="text/css">.so-widget-sow-headline-default-5570f562d836 .sow-headline-container h4.sow-headline {
+            text-align: center;
+
+            line-height: 1.4em;
+
+
+        }
+
+        .so-widget-sow-headline-default-5570f562d836 .sow-headline-container h3.sow-sub-headline {
+            text-align: center;
+
+            line-height: 1.4em;
+
+
+        }
+
+        .so-widget-sow-headline-default-5570f562d836 .sow-headline-container .decoration {
+            line-height: 0em;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .so-widget-sow-headline-default-5570f562d836 .sow-headline-container .decoration .decoration-inside {
+            height: 1px;
+            display: inline-block;
+            border-top: 0px solid #eeeeee;
+            width: 100%;
+            max-width: 80%;
+        }
+
+        .so-widget-sow-headline-default-5570f562d836 .sow-headline-container *:first-child {
+            margin-top: 0 !important;
+        }
+
+        .so-widget-sow-headline-default-5570f562d836 .sow-headline-container *:last-child {
+            margin-bottom: 0 !important;
+        }</style>
+    <style type="text/css">.so-widget-lsow-posts-carousel-default-3dd089290af6 .lsow-posts-carousel .lsow-posts-carousel-item {
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .so-widget-lsow-posts-carousel-default-3dd089290af6 .lsow-posts-carousel .lsow-posts-carousel-item {
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .so-widget-lsow-posts-carousel-default-3dd089290af6 .lsow-posts-carousel .lsow-posts-carousel-item {
+                padding: 10px;
+            }
+        }</style>
+    <style type="text/css">.so-widget-sow-button-flat-6f7ec98be90d .ow-button-base {
+            zoom: 1;
+        }
+
+        .so-widget-sow-button-flat-6f7ec98be90d .ow-button-base:before {
+            content: '';
+            display: block;
+        }
+
+        .so-widget-sow-button-flat-6f7ec98be90d .ow-button-base:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .so-widget-sow-button-flat-6f7ec98be90d .ow-button-base a {
+            -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size: 1em;
+            padding: 1em 2em;
+            background: #9e2622;
+            color: #ffffff !important;
+            border: 1px solid #9e2622;
+            border-width: 1px 0;
+            -webkit-border-radius: 0.25em;
+            -moz-border-radius: 0.25em;
+            border-radius: 0.25em;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .so-widget-sow-button-flat-6f7ec98be90d .ow-button-base a:visited,
+        .so-widget-sow-button-flat-6f7ec98be90d .ow-button-base a:active,
+        .so-widget-sow-button-flat-6f7ec98be90d .ow-button-base a:hover {
+            color: #ffffff !important;
+        }
+
+        .so-widget-sow-button-flat-6f7ec98be90d .ow-button-base a.ow-button-hover:hover {
+            background: #af2a26;
+            border-bottom-color: #9a2521;
+            color: #ffffff;
+        }</style>
     <style type="text/css" media="all"
-           id="siteorigin-panels-layouts-head">/* Layout 8130 */
-        #pgc-8130-0-0, #pgc-8130-1-0, #pgc-8130-2-0 {
+           id="siteorigin-panels-layouts-head">/* Layout 7474 */
+        #pgc-7474-0-0 {
+            width: 38.1966%;
+            width: calc(38.1966% - (0.61803399209206 * 30px))
+        }
+
+        #pl-7474 #panel-7474-0-0-0, #pl-7474 #panel-7474-0-1-0, #pl-7474 #panel-7474-1-0-0, #pl-7474 #panel-7474-2-0-0, #pl-7474 #panel-7474-2-0-1, #pl-7474 #panel-7474-3-0-0, #pl-7474 #panel-7474-3-0-1, #pl-7474 #panel-7474-4-0-0, #pl-7474 #panel-7474-4-0-1 {
+        }
+
+        #pgc-7474-0-1 {
+            width: 61.8034%;
+            width: calc(61.8034% - (0.38196600790794 * 30px))
+        }
+
+        #pg-7474-0, #pg-7474-1, #pg-7474-2, #pg-7474-3, #pl-7474 .so-panel, #pl-7474 .so-panel:last-child {
+            margin-bottom: 0px
+        }
+
+        #pgc-7474-1-0, #pgc-7474-2-0, #pgc-7474-3-0, #pgc-7474-4-0 {
             width: 100%;
             width: calc(100% - (0 * 30px))
         }
 
-        #pl-8130 #panel-8130-0-0-0, #pl-8130 #panel-8130-0-0-1, #pl-8130 #panel-8130-1-0-0, #pl-8130 #panel-8130-1-0-1, #pl-8130 #panel-8130-2-0-0, #pl-8130 #panel-8130-2-0-1, #pl-8130 #panel-8130-3-0-0, #pl-8130 #panel-8130-3-0-1, #pl-8130 #panel-8130-3-0-2, #pl-8130 #panel-8130-3-0-3, #pl-8130 #panel-8130-3-0-4, #pl-8130 #panel-8130-3-0-5, #pl-8130 #panel-8130-3-0-6, #pl-8130 #panel-8130-3-0-7, #pl-8130 #panel-8130-3-0-8, #pl-8130 #panel-8130-3-0-9, #pl-8130 #panel-8130-3-0-10, #pl-8130 #panel-8130-3-0-11, #pl-8130 #panel-8130-3-0-12, #pl-8130 #panel-8130-3-0-13, #pl-8130 #panel-8130-3-0-14, #pl-8130 #panel-8130-3-0-15, #pl-8130 #panel-8130-3-1-0, #pl-8130 #panel-8130-3-1-1, #pl-8130 #panel-8130-3-1-2, #pl-8130 #panel-8130-3-1-3, #pl-8130 #panel-8130-3-1-4, #pl-8130 #panel-8130-3-1-5, #pl-8130 #panel-8130-3-1-6, #pl-8130 #panel-8130-3-1-7, #pl-8130 #panel-8130-3-1-8, #pl-8130 #panel-8130-3-1-9, #pl-8130 #panel-8130-3-1-10, #pl-8130 #panel-8130-3-1-11, #pl-8130 #panel-8130-3-1-12, #pl-8130 #panel-8130-3-1-13, #pl-8130 #panel-8130-3-2-0, #pl-8130 #panel-8130-3-2-1, #pl-8130 #panel-8130-3-2-2, #pl-8130 #panel-8130-3-2-3, #pl-8130 #panel-8130-3-2-4, #pl-8130 #panel-8130-3-2-5, #pl-8130 #panel-8130-3-2-6, #pl-8130 #panel-8130-3-2-7, #pl-8130 #panel-8130-3-2-8, #pl-8130 #panel-8130-3-2-9, #pl-8130 #panel-8130-3-2-10, #pl-8130 #panel-8130-3-2-11, #pl-8130 #panel-8130-3-2-12, #pl-8130 #panel-8130-3-2-13 {
+        #pl-7474 #panel-7474-2-0-2, #pl-7474 #panel-7474-3-0-2 {
+            margin: 40px 0px 0px 0px
         }
 
-        #pg-8130-0, #pg-8130-1, #pg-8130-2, #pl-8130 .so-panel, #pl-8130 .so-panel:last-child {
-            margin-bottom: 0px
+        #pg-7474-0 > .panel-row-style, #pg-7474-1 > .panel-row-style, #pg-7474-2 > .panel-row-style, #pg-7474-4 > .panel-row-style {
+            padding: 30px
         }
 
-        #pgc-8130-3-0, #pgc-8130-3-1, #pgc-8130-3-2 {
-            width: 33.3333%;
-            width: calc(33.3333% - (0.66666666666667 * 30px))
-        }
-
-        #pg-8130-0.panel-no-style, #pg-8130-0.panel-has-style > .panel-row-style, #pg-8130-1.panel-no-style, #pg-8130-1.panel-has-style > .panel-row-style, #pg-8130-2.panel-no-style, #pg-8130-2.panel-has-style > .panel-row-style, #pg-8130-3.panel-no-style, #pg-8130-3.panel-has-style > .panel-row-style {
+        #pg-7474-0.panel-no-style, #pg-7474-0.panel-has-style > .panel-row-style, #pg-7474-1.panel-no-style, #pg-7474-1.panel-has-style > .panel-row-style, #pg-7474-2.panel-no-style, #pg-7474-2.panel-has-style > .panel-row-style, #pg-7474-3.panel-no-style, #pg-7474-3.panel-has-style > .panel-row-style, #pg-7474-4.panel-no-style, #pg-7474-4.panel-has-style > .panel-row-style {
             -webkit-align-items: flex-start;
             align-items: flex-start
         }
 
-        #pg-8130-1 > .panel-row-style {
-            padding: 0px
+        #pg-7474-3 > .panel-row-style {
+            background-color: #f5f5f5;
+            padding: 30px
         }
 
-        #pg-8130-2 > .panel-row-style {
-            padding: 20px
+        #panel-7474-3-0-0 > .panel-widget-style {
+            background-color: #f5f5f5;
+            border: 1px solid #f5f5f5
         }
 
-        #pg-8130-3 > .panel-row-style {
-            padding: 10px
+        #panel-7474-3-0-1 > .panel-widget-style {
+            background-color: #f5f5f5;
+            color: #000000
+        }
+
+        #panel-7474-3-0-1 a {
+            color: #0c0c0c
+        }
+
+        #panel-7474-3-0-2 > .panel-widget-style {
+            background-color: #f5f5f5
         }
 
         @media (max-width: 780px) {
-            #pg-8130-0.panel-no-style, #pg-8130-0.panel-has-style > .panel-row-style, #pg-8130-1.panel-no-style, #pg-8130-1.panel-has-style > .panel-row-style, #pg-8130-2.panel-no-style, #pg-8130-2.panel-has-style > .panel-row-style, #pg-8130-3.panel-no-style, #pg-8130-3.panel-has-style > .panel-row-style {
+            #pg-7474-0.panel-no-style, #pg-7474-0.panel-has-style > .panel-row-style, #pg-7474-1.panel-no-style, #pg-7474-1.panel-has-style > .panel-row-style, #pg-7474-2.panel-no-style, #pg-7474-2.panel-has-style > .panel-row-style, #pg-7474-3.panel-no-style, #pg-7474-3.panel-has-style > .panel-row-style, #pg-7474-4.panel-no-style, #pg-7474-4.panel-has-style > .panel-row-style {
                 -webkit-flex-direction: column;
                 -ms-flex-direction: column;
                 flex-direction: column
             }
 
-            #pg-8130-0 > .panel-grid-cell, #pg-8130-0 > .panel-row-style > .panel-grid-cell, #pg-8130-1 > .panel-grid-cell, #pg-8130-1 > .panel-row-style > .panel-grid-cell, #pg-8130-2 > .panel-grid-cell, #pg-8130-2 > .panel-row-style > .panel-grid-cell, #pg-8130-3 > .panel-grid-cell, #pg-8130-3 > .panel-row-style > .panel-grid-cell {
+            #pg-7474-0 > .panel-grid-cell, #pg-7474-0 > .panel-row-style > .panel-grid-cell, #pg-7474-1 > .panel-grid-cell, #pg-7474-1 > .panel-row-style > .panel-grid-cell, #pg-7474-2 > .panel-grid-cell, #pg-7474-2 > .panel-row-style > .panel-grid-cell, #pg-7474-3 > .panel-grid-cell, #pg-7474-3 > .panel-row-style > .panel-grid-cell, #pg-7474-4 > .panel-grid-cell, #pg-7474-4 > .panel-row-style > .panel-grid-cell {
                 width: 100%;
                 margin-right: 0
             }
 
-            #pgc-8130-3-0, #pgc-8130-3-1, #pl-8130 .panel-grid .panel-grid-cell-mobile-last {
+            #pgc-7474-0-0, #pl-7474 .panel-grid .panel-grid-cell-mobile-last {
                 margin-bottom: 0px
             }
 
-            #pl-8130 .panel-grid-cell {
+            #pl-7474 .panel-grid-cell {
                 padding: 0
             }
 
-            #pl-8130 .panel-grid .panel-grid-cell-empty {
+            #pl-7474 .panel-grid .panel-grid-cell-empty {
                 display: none
             }
         } </style>
@@ -3783,6 +3912,10 @@
                                         id='mega-menu-item-7447'><a class="mega-menu-link" href="#" aria-haspopup="true"
                                                                     aria-expanded="false" tabindex="0">ดาวน์โหลด<span
                                                     class="mega-indicator"></span></a>
+                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-7447'
+                                        id='mega-menu-item-7447'><a class="mega-menu-link" href="#" aria-haspopup="true"
+                                                                    aria-expanded="false" tabindex="0">งานวิจัยและโครงงาน<span
+                                                    class="mega-indicator"></span></a>
                                     <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9534'
                                         id='mega-menu-item-9534'><a class="mega-menu-link"
                                                                     href="http://eng.rmutp.ac.th/%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b9%88%e0%b8%ad%e0%b9%80%e0%b8%a3%e0%b8%b2/"
@@ -3843,3 +3976,4 @@
             </div>
         </div>
     </header><!-- #masthead -->
+
