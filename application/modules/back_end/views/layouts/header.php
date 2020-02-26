@@ -121,8 +121,8 @@
                     <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "course") { echo 'active'; } ?>">
                         <a href="#" class="nav-link has-dropdown"><i class="fas fa-microchip"></i><span>หลักสูตร</span></a>
                         <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "course" && $this->uri->segment(4) == "course") { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/course/course/edit/1'); ?>">&#9679; หลักสูตร</a>
+                            <li class="<?php if ($this->uri->segment(3) == "course" && $this->uri->segment(4) == "category") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/course/category'); ?>">&#9679; หลักสูตร</a>
                             </li>
                         </ul>
                     </li>

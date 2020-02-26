@@ -53,6 +53,7 @@ class About extends MX_Controller
     public function about_update($about_id)
     {
         $update_about_page = $this->About_model->update_about_by_id($about_id, [
+            'title' => $this->input->post('title'),
             'detail' => $this->input->post('detail'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
@@ -71,7 +72,7 @@ class About extends MX_Controller
             $this->session->set_flashdata('error', 'Something wrong');
         }
 
-        redirect('backoffice/page/about/about/edit/'.$about_id);
+        redirect('backoffice/page/about/history/edit/'.$about_id);
     }
 
 }

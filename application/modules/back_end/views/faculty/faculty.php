@@ -42,9 +42,10 @@
                                     <thead>
                                     <tr>
                                         <th class="text-center">#</th>
-                                        <th>title</th>
-                                        <th>Created at</th>
-                                        <th>Action</th>
+                                        <th>รูป</th>
+                                        <th>ชื่อ</th>
+                                        <th>สร้างเมื่อ</th>
+                                        <th>การกระทำ</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -53,6 +54,9 @@
                                     foreach ($faculty as $faculties) { ?>
                                         <tr>
                                             <td class="text-center"><?php echo $counter++; ?></td>
+                                            <td>
+                                                <img id="previewImgCover"  src="<?php echo base_url('storage/uploads/images/faculty/'. $faculties->img );?>" style="background-color: #fff;" width="50%">
+                                            </td>
                                             <td><?php echo $faculties->name_th; ?></td>
                                             <td><?php echo $faculties->created_at; ?></td>
                                             <td>
