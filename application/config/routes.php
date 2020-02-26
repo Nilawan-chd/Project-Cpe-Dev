@@ -170,8 +170,12 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
 
         // Faculty
         $route['backoffice/page/about/faculty'] = "back_end/Faculty";
+        $route['backoffice/page/about/faculty/create'] = "back_end/Faculty/create";
+        $route['backoffice/page/about/faculty/store'] = "back_end/Faculty/store";
+        $route['backoffice/page/about/faculty/created'] = "back_end/Faculty/created";
         $route['backoffice/page/about/faculty/edit/(:any)'] = "back_end/Faculty/edit/$1";
         $route['backoffice/page/about/faculty/update/(:any)'] = "back_end/Faculty/update/$1";
+        $route['backoffice/page/about/faculty/destroy/(:any)'] = "back_end/Faculty/destroy/$1";
 
 
         /*
@@ -180,9 +184,23 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
         | -------------------------------------------------------------------------
         */
 
+
+        // Category
+        $route['backoffice/page/course/category'] = "back_end/Category_course";
+        $route['backoffice/page/course/category/create'] = "back_end/Category_course/create/$1";
+        $route['backoffice/page/course/category/store'] = "back_end/Category_course/store";
+        $route['backoffice/page/course/category/edit/(:any)'] = "back_end/Category_course/edit/$1";
+        $route['backoffice/page/course/category/update/(:any)'] = "back_end/Category_course/update/$1";
+        $route['backoffice/page/course/category/destroy/(:any)'] = "back_end/Category_course/destroy/$1";
+
+
         // Course
-        $route['backoffice/page/course/course/edit/(:any)'] = "back_end/Course/course_edit/$1";
-        $route['backoffice/page/course/course/update/(:any)'] = "back_end/Course/course_update/$1";
+        $route['backoffice/page/course/course'] = "back_end/Category_course";
+        $route['backoffice/page/course/course/create'] = "back_end/Category_course/create/$1";
+        $route['backoffice/page/course/course/store'] = "back_end/Category_course/store";
+        $route['backoffice/page/course/course/edit/(:any)'] = "back_end/Category_course/edit/$1";
+        $route['backoffice/page/course/course/update/(:any)'] = "back_end/Category_course/update/$1";
+        $route['backoffice/page/course/course/destroy/(:any)'] = "back_end/Category_course/destroy/$1";
 
 
 		/*

@@ -3,9 +3,9 @@
     <section class="section">
         <div class="section-header">
             <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="#">Page: Contact</a></div>
-                <div class="breadcrumb-item active">Edit Info</div>
+                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
+                <div class="breadcrumb-item"><a href="#">หน้าเกี่ยวกับ: ประวัติความเป็นมา</a></div>
+                <div class="breadcrumb-item active">แก้ไข ประวัติความเป็นมา</div>
             </div>
         </div>
 
@@ -14,7 +14,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Edit Info</h4>
+                            <h4>แก้ไข ประวัติความเป็นมา</h4>
                         </div>
                         <div class="card-body">
 
@@ -26,11 +26,17 @@
                                 <div class="alert alert-danger"><?php echo $this->session->flashdata('error'); ?></div>
                             <?php } ?>
 
-                            <form action="<?php echo base_url('backoffice/page/about/about/update/'.$abouts->id); ?>" method="post" enctype="multipart/form-data">
-                                <div style="padding-top: 20px;"><h6><i class="fa fa-tag"></i> Information</h6></div>
+                            <form action="<?php echo base_url('backoffice/page/about/history/update/'.$abouts->id); ?>" method="post" enctype="multipart/form-data">
+                                <div style="padding-top: 20px;"><h6><i class="fa fa-tag"></i> ข้อมูล</h6></div>
                                 <hr>
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Address</label>
+                                    <label class="col-sm-3 col-form-label">หัวข้อ</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control"  name="title" value="<?php echo $abouts->title; ?>">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">คำบรรยาย</label>
                                     <div class="col-sm-9">
                                         <textarea class="summernote" name="detail"><?php echo $abouts->detail; ?></textarea>
                                     </div>
