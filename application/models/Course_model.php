@@ -5,7 +5,7 @@ class Course_model extends CI_Model
 
     public function get_course_all()
     {
-        $query = $this->db->order_by('sort', 'asc')->get('course');
+        $query = $this->db->get('course');
 
         return $query->num_rows() > 0 ? $query->result() : [];
     }
@@ -14,8 +14,25 @@ class Course_model extends CI_Model
     {
         $query = $this->db->where('id', $id)->get('course');
 
-        return $query->num_rows() > 0 ? $query->row() : [];
+        return $query->num_rows() > 0 ? $query->row() : false;
     }
+
+    public function get_course_by_category_course_id($category_id)
+    {
+        $this->db->select('
+            course.*,
+            category_course.title as category_course_name
+            
+        ');
+        $this->db->from('course');
+        $this->db->join('category_course', 'category_course.id = course.category_course_id');
+        $this->db->where('course.category_course_id', $category_id);
+
+        $query = $this->db->get();
+
+        return $query->num_rows() > 0 ? $query->result() : [];
+    }
+
 
     public function insert_course($data)
     {

@@ -102,7 +102,8 @@ class Faculty extends MX_Controller
 
     public function update($facultyid)
     {
-        $img = '';
+        $faculty = $this->Faculty_model->get_faculty_by_id($facultyid);
+        $img = $faculty->img;
 
         if (isset($_FILES['img']) && $_FILES['img']['name'] != '') {
             $img = $this->do_upload_img_faculty('img');

@@ -27,8 +27,12 @@
                                 <div class="alert alert-danger"><?php echo $this->session->flashdata('error'); ?></div>
                             <?php } ?>
 
-                            <form action="<?php echo base_url('backoffice/page/home/news/store'); ?>" method="post"
+                            <form action="<?php echo base_url('backoffice/page/course/category/store'); ?>" method="post"
                                   enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label>* Title</label>
+                                    <input type="text" class="form-control" name="title" required>
+                                </div>
                                 <div style="padding-top: 20px;"><h6><i class="fa fa-tag"></i> ชื่อหลักสูตร</h6></div>
                                 <hr>
 
@@ -93,7 +97,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">วัตถุประสงค์</label>
                                     <div class="col-sm-9">
-                                        <textarea class="summernote" name="course"></textarea>
+                                        <textarea class="summernote" name="objective"></textarea>
                                     </div>
 
                                 </div>
@@ -101,7 +105,7 @@
                                     <button onclick="return confirm('Are you sure?');" type="submit"
                                             class="btn btn-primary">Save changes
                                     </button>
-                                    <a href="<?php echo base_url('backoffice/page/home/news'); ?> "
+                                    <a href="<?php echo base_url('backoffice/page/course/category'); ?> "
                                        class="btn btn-secondary">Close</a>
                                 </div>
                             </form>
@@ -112,3 +116,18 @@
         </div>
     </section>
 </div>
+
+<script>
+    function PreviewImage(input, previewImage) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader()
+
+            reader.onload = function (e) {
+                $('#' + previewImage).attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+

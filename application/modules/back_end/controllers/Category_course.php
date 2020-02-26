@@ -56,16 +56,29 @@ class Category_course extends MX_Controller
 
     public function store()
     {
+        $img = '';
 
+        if (isset($_FILES['img']) && $_FILES['img']['name'] != '') {
+            $img = $this->do_upload_img_category_course('img');
+        }
         $add_category_course = $this->Category_course_model->insert_category_course([
-            'title' => $this->input->post('title')
+            'title' => $this->input->post('title'),
+            'name_th' => $this->input->post('name_th'),
+            'name_en' => $this->input->post('name_en'),
+            'name_th_full' => $this->input->post('name_th_full'),
+            'name_th_short' => $this->input->post('name_th_short'),
+            'name_en_full' => $this->input->post('name_en_full'),
+            'name_en_short' => $this->input->post('name_en_short'),
+            'img' => $img,
+            'objective' => $this->input->post('objective')
+
         ]);
 
         if ($add_category_course) {
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม Image Category_course',
+                'detail' => 'เพิ่ม  Category_course',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -75,23 +88,37 @@ class Category_course extends MX_Controller
             $this->session->set_flashdata('error', 'Something wrong');
         }
 
-        redirect('backoffice/page/home/course');
+        redirect('backoffice/page/course/category');
     }
 
-    public function edit($category_courseid)
+    public function edit($category_course_id)
     {
         $this->data['title'] = 'Page: Home - Galleries - Edit';
         $this->data['content'] = 'category_course/edit_category_course';
-        $this->data['category_course'] = $this->Category_course_model->get_category_course_by_id($category_courseid);
+        $this->data['category_course'] = $this->Category_course_model->get_category_course_by_id($category_course_id);
 
         $this->load->view('app', $this->data);
     }
 
-    public function update($category_courseid)
+    public function update($category_course_id)
     {
+        $category_course = $this->Category_course_model->get_category_course_by_id($category_course_id);
 
-        $update_category_course = $this->Category_course_model->update_category_course_by_id($category_courseid, [
+        $img = $category_course->img;
+
+        if (isset($_FILES['img']) && $_FILES['img']['name'] != '') {
+            $img = $this->do_upload_img_category_course('img');
+        }
+        $update_category_course = $this->Category_course_model->update_category_course_by_id($category_course_id,[
             'title' => $this->input->post('title'),
+            'name_th' => $this->input->post('name_th'),
+            'name_en' => $this->input->post('name_en'),
+            'name_th_full' => $this->input->post('name_th_full'),
+            'name_th_short' => $this->input->post('name_th_short'),
+            'name_en_full' => $this->input->post('name_en_full'),
+            'name_en_short' => $this->input->post('name_en_short'),
+            'img' => $img,
+            'objective' => $this->input->post('objective'),
             'updated_at' => date('Y-m-d H:i:s')
 
         ]);
@@ -100,7 +127,7 @@ class Category_course extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข Image Category_course',
+                'detail' => 'แก้ไข  Category_course',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -110,15 +137,15 @@ class Category_course extends MX_Controller
             $this->session->set_flashdata('error', 'Something wrong');
         }
 
-        redirect('backoffice/page/home/course');
+        redirect('backoffice/page/course/category');
     }
 
-    public function destroy($category_courseid)
+    public function destroy($category_course_id)
     {
         $status = 500;
         $response['success'] = 0;
 
-        $product = $this->Category_course_model->delete_category_course_by_id($category_courseid);
+        $product = $this->Category_course_model->delete_category_course_by_id($category_course_id);
 
         if ($product != false) {
             $status = 200;
@@ -126,7 +153,7 @@ class Category_course extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ Image Category_course',
+                'detail' => 'ลบ  Category_course',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -138,5 +165,22 @@ class Category_course extends MX_Controller
             ->set_output(json_encode($response));
     }
 
+    private function do_upload_img_category_course($filename)
+    {
+        $config['upload_path'] = './storage/uploads/images/category_course';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['encrypt_name'] = TRUE;
 
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload($filename)) {
+            $error = array('error' => $this->upload->display_errors());
+
+            return false;
+        } else {
+            $data = array('upload_data' => $this->upload->data());
+
+            return $data['upload_data']['file_name'];
+        }
+    }
 }

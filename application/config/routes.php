@@ -195,8 +195,8 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
 
 
         // Course
-        $route['backoffice/page/course/course'] = "back_end/Category_course";
-        $route['backoffice/page/course/course/create'] = "back_end/Category_course/create/$1";
+        $route['backoffice/page/course/course/show/(:any)'] = "back_end/Course/show/$1";
+        $route['backoffice/page/course/course/create/(:any)'] = "back_end/Course/create/$1";
         $route['backoffice/page/course/course/store'] = "back_end/Category_course/store";
         $route['backoffice/page/course/course/edit/(:any)'] = "back_end/Category_course/edit/$1";
         $route['backoffice/page/course/course/update/(:any)'] = "back_end/Category_course/update/$1";
