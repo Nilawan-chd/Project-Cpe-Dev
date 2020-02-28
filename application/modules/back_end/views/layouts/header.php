@@ -121,25 +121,32 @@
                     <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "course") { echo 'active'; } ?>">
                         <a href="#" class="nav-link has-dropdown"><i class="fas fa-microchip"></i><span>หลักสูตร</span></a>
                         <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "course" && $this->uri->segment(4) == "category") { echo 'active'; } ?>">
+                            <li class="<?php if ($this->uri->segment(3) == "course") { echo 'active'; } ?>">
                                 <a class="nav-link" href="<?php echo base_url('backoffice/page/course/category'); ?>">&#9679; หลักสูตร</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "labs") { echo 'active'; } ?>">
+                    <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "lab") { echo 'active'; } ?>">
                         <a href="#" class="nav-link has-dropdown"><i class="fas fa-project-diagram"></i><span>ห้องปฏิบัติการ</span></a>
                         <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "labs" && ($this->uri->segment(4) == "labs" || $this->uri->segment(4) == "list-project-pictures")) { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/lab/lab') ?>">&#9679; ห้องปฏิบัติการ</a>
+                            <li class="<?php if ($this->uri->segment(3) == "lab" && $this->uri->segment(4) == "lab") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/lab/lab'); ?>">&#9679; ห้องปฏิบัติการ</a>
                             </li>
                         </ul>
                     </li>
-
                     <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "project") { echo 'active'; } ?>">
                         <a href="#" class="nav-link has-dropdown"><i class="fas fa-microchip"></i><span>งานวิจัย/โครงงาน</span></a>
                         <ul class="dropdown-menu">
                             <li class="<?php if ($this->uri->segment(3) == "project" && $this->uri->segment(4) == "project") { echo 'active'; } ?>">
                                 <a class="nav-link" href="<?php echo base_url('backoffice/page/project/project/edit/1'); ?>">&#9679; งานวิจัย/โครงงาน</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "download") { echo 'active'; } ?>">
+                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-microchip"></i><span>ดาวน์โหลด</span></a>
+                        <ul class="dropdown-menu">
+                            <li class="<?php if ($this->uri->segment(3) == "download") { echo 'active'; } ?>">
+                                <a class="nav-link" href="<?php echo base_url('backoffice/page/download/category'); ?>">&#9679; ดาวน์โหลด</a>
                             </li>
                         </ul>
                     </li>

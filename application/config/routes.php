@@ -197,10 +197,10 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
         // Course
         $route['backoffice/page/course/course/show/(:any)'] = "back_end/Course/show/$1";
         $route['backoffice/page/course/course/create/(:any)'] = "back_end/Course/create/$1";
-        $route['backoffice/page/course/course/store'] = "back_end/Category_course/store";
-        $route['backoffice/page/course/course/edit/(:any)'] = "back_end/Category_course/edit/$1";
-        $route['backoffice/page/course/course/update/(:any)'] = "back_end/Category_course/update/$1";
-        $route['backoffice/page/course/course/destroy/(:any)'] = "back_end/Category_course/destroy/$1";
+        $route['backoffice/page/course/course/store'] = "back_end/Course/store";
+        $route['backoffice/page/course/course/edit/(:any)'] = "back_end/Course/edit/$1";
+        $route['backoffice/page/course/course/update/(:any)'] = "back_end/Course/update/$1";
+        $route['backoffice/page/course/course/destroy/(:any)'] = "back_end/Course/destroy/$1";
 
 
 		/*
@@ -227,8 +227,27 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
         // Project
         $route['backoffice/page/project/project/edit/(:any)'] = "back_end/Project/project_edit/$1";
         $route['backoffice/page/project/project/update/(:any)'] = "back_end/Project/project_update/$1";
+/*
+       | -------------------------------------------------------------------------
+       | Download
+       | -------------------------------------------------------------------------
+       */
+        // Category
+        $route['backoffice/page/download/category'] = "back_end/Category_download";
+        $route['backoffice/page/download/category/create'] = "back_end/Category_download/create/$1";
+        $route['backoffice/page/download/category/store'] = "back_end/Category_download/store";
+        $route['backoffice/page/download/category/edit/(:any)'] = "back_end/Category_download/edit/$1";
+        $route['backoffice/page/download/category/update/(:any)'] = "back_end/Category_download/update/$1";
+        $route['backoffice/page/download/category/destroy/(:any)'] = "back_end/Category_download/destroy/$1";
 
 
+        // Course
+        $route['backoffice/page/download/download/show/(:any)'] = "back_end/Download/show/$1";
+        $route['backoffice/page/download/download/create/(:any)'] = "back_end/Download/create/$1";
+        $route['backoffice/page/download/download/store'] = "back_end/Download/store";
+        $route['backoffice/page/download/download/edit/(:any)'] = "back_end/Download/edit/$1";
+        $route['backoffice/page/download/download/update/(:any)'] = "back_end/Download/update/$1";
+        $route['backoffice/page/download/download/destroy/(:any)'] = "back_end/Download/destroy/$1";
 
 
 		/*

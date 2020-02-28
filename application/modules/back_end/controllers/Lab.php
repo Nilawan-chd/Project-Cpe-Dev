@@ -40,7 +40,7 @@ class Lab extends MX_Controller
     public function index()
     {
         $this->data['title'] = 'Page: Labs';
-        $this->data['content'] = 'labs_page/labs';
+        $this->data['content'] = 'labs/labs';
         $this->data['labs'] = $this->Lab_model->get_labs_all();
         $this->load->view('app', $this->data);
     }
@@ -48,7 +48,7 @@ class Lab extends MX_Controller
     public function create()
     {
         $this->data['title'] = 'Page: Labs - Add';
-        $this->data['content'] = 'labs_page/add_labs';
+        $this->data['content'] = 'labs/add_labs';
 
         $this->load->view('app', $this->data);
     }
@@ -82,7 +82,7 @@ class Lab extends MX_Controller
     public function edit($id)
     {
         $this->data['title'] = 'Page: Labs - Edit';
-        $this->data['content'] = 'labs_page/edit_labs';
+        $this->data['content'] = 'labs/edit_labs';
         $this->data['labs'] = $this->Lab_model->get_labs_by_id($id);
 
         $this->load->view('app', $this->data);

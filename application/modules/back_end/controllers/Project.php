@@ -44,7 +44,7 @@ class Project extends MX_Controller
     public function project_edit($project_id)
     {
         $this->data['title'] = 'Manage Item: contact page';
-        $this->data['content'] = 'project_page/edit_project';
+        $this->data['content'] = 'project/edit_project';
         $this->data['project'] = $this->Project_model->get_project_by_id($project_id);
 
         $this->load->view('app', $this->data);
@@ -53,6 +53,7 @@ class Project extends MX_Controller
     public function project_update($project_id)
     {
         $update_project_page = $this->Project_model->update_project_by_id($project_id, [
+            'title' => $this->input->post('title'),
             'detail' => $this->input->post('detail'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);

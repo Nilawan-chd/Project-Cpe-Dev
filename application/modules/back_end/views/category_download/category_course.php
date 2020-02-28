@@ -8,10 +8,9 @@
     <section class="section">
         <div class="section-header">
             <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="#">Page: Products</a></div>
-                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/page/product/group'); ?>">Product Groups</a></div>
-                <div class="breadcrumb-item">Product Categories: (Group - )</div>
+                <div class="breadcrumb-item active"><a href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
+                <div class="breadcrumb-item"><a href="#">หน้า: หลักสูตร</a></div>
+                <div class="breadcrumb-item">หลักสูตร</div>
             </div>
         </div>
 
@@ -20,11 +19,11 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>List of Category Product: (Group - )</h4>
+                            <h4>หลักสูตร</h4>
                             <div class="card-header-action">
-                                <a href="<?php echo base_url('backoffice/page/lab/lab/create'); ?>"
+                                <a href="<?php echo base_url('backoffice/page/course/category/create'); ?>"
                                    class="btn btn-primary">
-                                    <i class="fas fa-plus"></i> Add
+                                    <i class="fas fa-plus"></i> เพิ่ม
                                 </a>
                             </div>
                         </div>
@@ -42,28 +41,35 @@
                                     <thead>
                                     <tr>
                                         <th class="text-center">#</th>
-                                        <th>Title</th>
-                                        <th>Created at</th>
-                                        <th>Action</th>
+                                        <th>หัวข้อ</th>
+                                        <th>สร้างเมื่อ</th>
+                                        <th>รายการย่อย</th>
+                                        <th>การกระทำ</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <?php
-										if (count($labs) > 0) {
+										if (count($category_course) > 0) {
                                             $counter = 1;
-                                            foreach ($labs as $lab) { ?>
+                                            foreach ($category_course as $category_courses) { ?>
                                                 <tr>
                                                     <td class="text-center"><?php echo $counter++; ?></td>
-                                                    <td><?php echo $lab->title; ?></td>
-                                                    <td><?php echo $lab->created_at; ?></td>
+                                                    <td><?php echo $category_courses->title; ?></td>
+                                                    <td><?php echo $category_courses->created_at; ?></td>
+                                                    <td>
+                                                        <a class="btn btn-warning"
+                                                           href="<?php echo base_url('backoffice/page/course/course/show/' . $category_courses->id); ?>">
+                                                            <i class="far fa-view"></i> Items
+                                                            (<?php echo $category_courses->counter; ?>)</a>
+                                                    </td>
                                                     <td>
                                                         <div class="dropdown d-inline">
                                                             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                 <i class="fas fa-cog"></i> Manage
                                                             </button>
                                                             <div class="dropdown-menu">
-                                                                <a class="dropdown-item has-icon" href="<?php echo base_url('backoffice/page/lab/lab/edit/' . $lab->id); ?>"><i class="far fa-edit"></i> Edit</a>
-                                                                <a class="dropdown-item has-icon" onclick="deleteCategoryProduct('<?php echo base_url('backoffice/page/lab/lab/destroy/' . $lab->id); ?>')"><i class="far fa-trash-alt"></i> Delete</a>
+                                                                <a class="dropdown-item has-icon" href="<?php echo base_url('backoffice/page/course/category/edit/' . $category_courses->id); ?>"><i class="far fa-edit"></i> Edit</a>
+                                                                <a class="dropdown-item has-icon" onclick="deleteCategoryProduct('<?php echo base_url('backoffice/page/course/category/destroy/' . $category_courses->id); ?>')"><i class="far fa-trash-alt"></i> Delete</a>
                                                             </div>
                                                         </div>
                                                     </td>

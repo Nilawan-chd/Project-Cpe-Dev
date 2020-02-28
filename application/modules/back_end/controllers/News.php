@@ -97,7 +97,6 @@ class News extends MX_Controller
         $category_new_id = $new->category_news_id;
 
         $this->data['title'] = 'Page: Home - Galleries - Edit';
-        $this->data['title'] = 'Page: Home - Galleries - Edit';
         $this->data['content'] = 'news/edit_news';
         $this->data['news'] = $new;
         $this->data['category_new'] = $this->Category_news_model->get_category_news_by_id($category_new_id);
