@@ -44,7 +44,7 @@ class About extends MX_Controller
     public function about_edit($about_id)
     {
         $this->data['title'] = 'Manage Item: contact page';
-        $this->data['content'] = 'about_page/edit_about';
+        $this->data['content'] = 'about/edit_about';
         $this->data['abouts'] = $this->About_model->get_about_by_id($about_id);
 
         $this->load->view('app', $this->data);

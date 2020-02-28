@@ -15,7 +15,7 @@
                 <div class="breadcrumb-item"><a href="#">หน้า: หลักสูตร</a></div>
                 <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/page/home/course'); ?>"><?php echo $category_course_title; ?></a></div>
 
-                <div class="breadcrumb-item">ข่าวสาร: (ประเภท - <?php echo $category_course_title; ?>)</div>
+                <div class="breadcrumb-item">หลักสูตร: (ประเภท - <?php echo $category_course_title; ?>)</div>
             </div>
         </div>
 
@@ -24,7 +24,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>รายการ ข่าวสาร</h4>
+                            <h4>รายการ หลักสูตร(ประเภท - <?php echo $category_course_title; ?>)</h4>
                             <div class="card-header-action">
                                 <a href="<?php echo base_url('backoffice/page/course/course/create/'.$category_course_id); ?>"
                                    class="btn btn-primary">

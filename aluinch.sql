@@ -1045,7 +1045,7 @@ INSERT INTO `projects` (`id`, `title`, `description`, `img_cover`, `img_title_al
 -- --------------------------------------------------------
 
 --
--- Table structure for table `project_page`
+-- Table structure for table `project`
 --
 
 CREATE TABLE `project_page` (
@@ -1060,7 +1060,7 @@ CREATE TABLE `project_page` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `project_page`
+-- Dumping data for table `project`
 --
 
 INSERT INTO `project_page` (`id`, `meta_tag_title`, `meta_tag_description`, `meta_tag_keywords`, `img_og_twitter`, `created_at`, `updated_at`, `deleted_at`) VALUES
@@ -1251,7 +1251,7 @@ ALTER TABLE `projects`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `project_page`
+-- Indexes for table `project`
 --
 ALTER TABLE `project_page`
   ADD PRIMARY KEY (`id`);
@@ -1375,7 +1375,7 @@ ALTER TABLE `projects`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `project_page`
+-- AUTO_INCREMENT for table `project`
 --
 ALTER TABLE `project_page`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;

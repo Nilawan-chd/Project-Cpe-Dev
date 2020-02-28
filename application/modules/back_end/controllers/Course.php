@@ -56,21 +56,21 @@ class Course extends MX_Controller
     {
         $this->data['title'] = 'Page: Course - Add';
         $this->data['content'] = 'course/add_course';
-        $this->data['category_new'] = $this->Category_course_model->get_category_course_by_id($category_id);
+        $this->data['category_course'] = $this->Category_course_model->get_category_course_by_id($category_id);
 
-        $this->data['user'] = $this->User_model->get_user_by_id($this->session->userdata('user_id'));
-        $this->load->view('app', $this->data);
+         $this->load->view('app', $this->data);
     }
 
     public function store()
     {
-
+        $file_pdf = '';
+        if (isset($_FILES['file_pdf']) && $_FILES['file_pdf']['name'] != '') {
+            $file_pdf = $this->do_upload_pdf_course('file_pdf');
+        }
         $add_course = $this->Course_model->insert_course([
             'title' => $this->input->post('title'),
-            'description' => $this->input->post('description'),
-            'detail' => $this->input->post('detail'),
             'category_course_id' => $this->input->post('category_course_id'),
-            'user_id' => $this->data['user']->id
+            'file_pdf' => $file_pdf
         ]);
 
         if ($add_course) {
@@ -87,31 +87,37 @@ class Course extends MX_Controller
             $this->session->set_flashdata('error', 'Something wrong');
         }
 
-        redirect('backoffice/page/home/course/list/show/' . $this->input->post('category_course_id'));
+        redirect('backoffice/page/course/course/show/' . $this->input->post('category_course_id'));
     }
 
     public function edit($course_id)
     {
-        $new = $this->Course_model->get_course_by_id($course_id);
+        $course = $this->Course_model->get_course_by_id($course_id);
 
-        $category_new_id = $new->category_course_id;
+        $category_course_id = $course->category_course_id;
 
         $this->data['title'] = 'Page: Home - Galleries - Edit';
         $this->data['title'] = 'Page: Home - Galleries - Edit';
         $this->data['content'] = 'course/edit_course';
-        $this->data['course'] = $new;
-        $this->data['category_new'] = $this->Category_course_model->get_category_course_by_id($category_new_id);
+        $this->data['course'] = $course;
+        $this->data['category_course'] = $this->Category_course_model->get_category_course_by_id($category_course_id);
 
         $this->load->view('app', $this->data);
     }
 
     public function update($course_id)
     {
+        $course = $this->Course_model->get_course_by_id($course_id);
 
+
+        $file_pdf = $course->file_pdf;
+        if (isset($_FILES['file_pdf']) && $_FILES['file_pdf']['name'] != '') {
+            $file_pdf = $this->do_upload_pdf_course('file_pdf');
+        }
         $update_course = $this->Course_model->update_course_by_id($course_id, [
             'title' => $this->input->post('title'),
-            'description' => $this->input->post('description'),
-            'detail' => $this->input->post('detail'),
+            'category_course_id' => $this->input->post('category_course_id'),
+            'file_pdf' => $file_pdf,
             'updated_at' => date('Y-m-d H:i:s')
 
         ]);
@@ -120,7 +126,7 @@ class Course extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข Image Course',
+                'detail' => 'แก้ไข  Course',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -130,7 +136,7 @@ class Course extends MX_Controller
             $this->session->set_flashdata('error', 'Something wrong');
         }
 
-        redirect('backoffice/page/home/course/list/show/' . $this->input->post('category_course_id'));
+        redirect('backoffice/page/course/course/show/' . $this->input->post('category_course_id'));
     }
 
     public function destroy($course_id)
@@ -146,7 +152,7 @@ class Course extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ Image Course',
+                'detail' => 'ลบ  Course',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -157,6 +163,23 @@ class Course extends MX_Controller
             ->set_content_type('application/json')
             ->set_output(json_encode($response));
     }
+    public function do_upload_pdf_course($filename)
+    {
+        $config['upload_path'] = './storage/uploads/files/course';
+        $config['allowed_types'] = 'pdf';
+        $config['encrypt_name'] = TRUE;
 
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload($filename)) {
+            $error = array('error' => $this->upload->display_errors());
+
+            return false;
+        } else {
+            $data = array('upload_data' => $this->upload->data());
+
+            return $data['upload_data']['file_name'];
+        }
+    }
 
 }

@@ -5,13 +5,12 @@
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a
                             href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="#">Page: หน้าแรก</a></div>
-                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/page/home/news'); ?>">ประเภทข่าวสาร</a>
-                </div>
+                <div class="breadcrumb-item"><a href="#">หน้า: หลักสูตร</a></div>
+
                 <div class="breadcrumb-item"><a
-                            href="<?php echo base_url('backoffice/page/home/news/list/show/' . $category_new->id); ?>">ข่าวสาร:
-                        (ประเภท - <?php echo $category_new->title; ?>)</a></div>
-                <div class="breadcrumb-item">แก้ไข ข่าวสาร</div>
+                            href="<?php echo base_url('backoffice/page/course/category'); ?>">หลักสูตร:
+                        (ประเภท - <?php echo $category_course->title; ?>)</a></div>
+                <div class="breadcrumb-item">แก้ไข หลักสูตร</div>
             </div>
         </div>
 
@@ -20,7 +19,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>แก้ไข ข่าวสาร</h4>
+                            <h4>แก้ไข หลักสูตร</h4>
                         </div>
                         <div class="card-body">
 
@@ -32,41 +31,41 @@
                                 <div class="alert alert-danger"><?php echo $this->session->flashdata('error'); ?></div>
                             <?php } ?>
 
-                            <form action="<?php echo base_url('backoffice/page/home/news/list/update/'. $news->id); ?>" method="post"
+                            <form action="<?php echo base_url('backoffice/page/course/course/update/'.$course->id); ?>" method="post"
                                   enctype="multipart/form-data">
-
-                                <div class="form-group">
-                                    <label>* Title</label>
-                                    <input type="text" class="form-control" name="title" value="<?php echo $news->title; ?>">
-                                </div>
-                                <div class="form-group">
-                                    <label>* Description</label>
-                                    <textarea  class="form-control" name="description" ><?php echo $news->description; ?></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label>Category</label>
-                                    <input type="hidden" value="<?php echo $category_new->id; ?>"
-                                           name="category_news_id">
-                                    <input type="text" class="form-control"
-                                           value="<?php echo $category_new->title; ?>" disabled="disabled">
-                                </div>
-                                <div style="padding-top: 20px;"><h6><i class="fa fa-tag"></i> Information</h6></div>
+                                <div style="padding-top: 20px;"><h6><i class="fa fa-tag"></i> ข้อมูล</h6></div>
                                 <hr>
-
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">* Detail</label>
+                                    <label class="col-sm-3 col-form-label">* หัวข้อหลักสูตร</label>
                                     <div class="col-sm-9">
-                                        <div class="col-sm-9">
-                                            <textarea class="summernote" name="detail" ><?php echo $news->detail; ?></textarea>
+                                        <input type="text" class="form-control" name="title" value="<?php echo  $course->title; ?>">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">ประเภทหลักสูตร</label>
+                                    <div class="col-sm-9">
+                                        <input type="hidden" value="<?php echo $category_course->id; ?>"
+                                               name="category_course_id">
+                                        <input type="text" class="form-control"
+                                               value="<?php echo $category_course->title; ?>" disabled="disabled">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">* File PDF</label>
+                                    <div class="col-sm-9">
+                                        <div class="custom-file input-file-w-30">
+                                            <input type="file" class="custom-file-input" name="file_pdf" onchange="PreviewFile(this, 'previewFileCatalog');" value="<?php echo  $course->file_pdf; ?>">
+                                            <label class="custom-file-label" id="previewFileCatalog">Choose file (.pdf)</label>
+                                            <div style="margin-top: 12px; display: block;"><span>old file: </span><a style="display: inline-block;" href="<?php echo base_url('storage/uploads/files/course/' . $course->file_pdf); ?>"><?php echo $course->title; ?>.pdf</a></div>
+
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="text-right">
                                     <button onclick="return confirm('Are you sure?');" type="submit"
                                             class="btn btn-primary">Save changes
                                     </button>
-                                    <a href="<?php echo base_url('backoffice/page/home/news/list/show/' . $category_new->id); ?> "
+                                    <a href="<?php echo base_url('backoffice/page/course/course/show/'.$category_course->id); ?> "
                                        class="btn btn-secondary">Close</a>
                                 </div>
                             </form>
@@ -77,3 +76,9 @@
         </div>
     </section>
 </div>
+<script>
+    function PreviewFile(input, previewFile) {
+        $("#" + previewFile).html(input.files[0].name)
+    }
+</script>
+
