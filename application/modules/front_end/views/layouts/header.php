@@ -160,6 +160,7 @@
     <link rel='stylesheet' id='sydney-style-css'
           href='http://eng.rmutp.ac.th/web2558/wp-content/themes/sydney/style.css?ver=20180213' type='text/css'
           media='all'/>
+
     <style id='sydney-style-inline-css' type='text/css'>
         .site-title {
             font-size: 32px;

@@ -279,6 +279,12 @@
         src='http://eng.rmutp.ac.th/web2558/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.7.4'></script>
 <script type='text/javascript'
         src='http://eng.rmutp.ac.th/web2558/wp-includes/js/wp-embed.min.js?ver=0250fee3743c609c22cfcc3d4abc24b8'></script>
+<script type='text/javascript'
+        src='http://eng.rmutp.ac.th/web2558/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript'
+        src='http://eng.rmutp.ac.th/web2558/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript'
+        src='http://eng.rmutp.ac.th/web2558/wp-content/themes/sydney/js/masonry-init.js?ver=0250fee3743c609c22cfcc3d4abc24b8'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var SUShortcodesL10n = {
@@ -310,3 +316,4 @@
 
 </body>
 </html>
+
