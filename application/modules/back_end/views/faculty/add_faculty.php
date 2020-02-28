@@ -85,23 +85,24 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">การศึกษา</label>
                                     <div class="col-sm-9">
-                                        <textarea class="summernote" name="education"></textarea>
+                                        <textarea type="text" class="form-control"   name="education"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">วิชาที่สอน</label>
                                     <div class="col-sm-9">
-                                        <textarea class="summernote" name="course"></textarea>
+                                        <textarea type="text" class="form-control" name="course"></textarea>
                                     </div>
 
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">ความเชี่ยวชาญ</label>
                                     <div class="col-sm-9">
-                                        <textarea class="summernote" name="expert"></textarea>
+                                        <textarea type="text" class="form-control" name="expert"></textarea>
 
                                     </div>
                                 </div>
+
 
                                 <div class="text-right">
                                     <button onclick="return confirm('Are you sure?');" type="submit"
