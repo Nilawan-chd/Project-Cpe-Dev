@@ -9,7 +9,7 @@
 <div class="main-content">
 	<section class="section">
 		<div class="section-header">
-			<h1>Dashboard</h1>
+			<h1>แดชบอร์ด</h1>
 		</div>
 
 		<?php if ($this->session->flashdata('success')) { ?>
@@ -27,7 +27,7 @@
 					</div>
 					<div class="card-wrap">
 						<div class="card-header">
-							<h4>Total Admin</h4>
+							<h4>จำนวน แอดมิน</h4>
 						</div>
 						<div class="card-body">
 							<?php echo $user_total; ?>
@@ -41,7 +41,7 @@
 			<div class="col-12">
 				<div class="card">
 					<div class="card-header">
-						<h4>Recent Activity Logs (<?php echo $log_total; ?>)</h4>
+						<h4>บันทึกกิจกรรมล่าสุด (<?php echo $log_total; ?>)</h4>
 					</div>
 					<div class="card-body">
 						<div class="table-responsive">
@@ -49,11 +49,11 @@
 								<thead>
 								<tr>
 									<th>#</th>
-									<th>Username</th>
-									<th>Event</th>
-									<th>Detail</th>
+									<th>ชื่อผู้ใช้</th>
+									<th>การกระทำ</th>
+									<th>รายละเอียด</th>
 									<th>IP</th>
-									<th>Created at</th>
+									<th>สร้างเมื่อ</th>
 								</tr>
 								</thead>
 								<tbody>
@@ -63,7 +63,7 @@
 										foreach ($logs as $log) { ?>
 											<tr>
 												<td><?php echo $counter; ?></td>
-												<td><?php echo $log['username']; ?></td>
+												<td><?php echo $log['name']; ?></td>
 												<td><?php echo $log['event']; ?></td>
 												<td><?php echo $log['detail']; ?></td>
 												<td><?php echo $log['ip']; ?></td>

@@ -80,7 +80,7 @@
 
 
                                 <div class="text-right">
-                                    <button onclick="return confirm('Are you sure?');" type="submit" class="btn btn-primary">Save changes</button>
+                                    <button onclick="return confirm('Are you sure?');" type="submit" class="btn btn-primary">บันทึก</button>
                                 </div>
                             </form>
                         </div>

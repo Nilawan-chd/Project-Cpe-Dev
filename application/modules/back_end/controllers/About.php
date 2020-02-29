@@ -43,7 +43,7 @@ class About extends MX_Controller
 
     public function about_edit($about_id)
     {
-        $this->data['title'] = 'Manage Item: contact page';
+        $this->data['title'] = 'เกี่ยวกับ: แก้ไข ประวัติความเป็นมา';
         $this->data['content'] = 'about/edit_about';
         $this->data['abouts'] = $this->About_model->get_about_by_id($about_id);
 
@@ -62,7 +62,7 @@ class About extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข Info Contact Page',
+                'detail' => 'แก้ไข ประวัติความเป็นมา',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);

@@ -5,7 +5,7 @@ class User_model extends CI_Model
 	public function get_user_all()
 	{
 		$query = $this->db
-			->select('users.id, users.username, users.created_at, roles.title as role_title')
+			->select('users.id, users.name, users.username, users.created_at, roles.title as role_title')
 			->join('roles', 'users.role_id = roles.id')
 			->get('users');
 

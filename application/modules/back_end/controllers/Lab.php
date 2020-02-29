@@ -39,7 +39,7 @@ class Lab extends MX_Controller
 
     public function index()
     {
-        $this->data['title'] = 'Page: Labs';
+        $this->data['title'] = 'หน้า: ห้องปฏิบัติการ';
         $this->data['content'] = 'labs/labs';
         $this->data['labs'] = $this->Lab_model->get_labs_all();
         $this->load->view('app', $this->data);
@@ -47,7 +47,7 @@ class Lab extends MX_Controller
 
     public function create()
     {
-        $this->data['title'] = 'Page: Labs - Add';
+        $this->data['title'] = 'หน้า: ห้องปฏิบัติการ - เพิ่ม';
         $this->data['content'] = 'labs/add_labs';
 
         $this->load->view('app', $this->data);
@@ -64,7 +64,7 @@ class Lab extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม Group Product',
+                'detail' => 'เพิ่ม ห้องปฏิบัติการ',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -81,7 +81,7 @@ class Lab extends MX_Controller
 
     public function edit($id)
     {
-        $this->data['title'] = 'Page: Labs - Edit';
+        $this->data['title'] = 'หน้า: ห้องปฏิบัติการ - แก้ไข';
         $this->data['content'] = 'labs/edit_labs';
         $this->data['labs'] = $this->Lab_model->get_labs_by_id($id);
 
@@ -100,7 +100,7 @@ class Lab extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข Group Product',
+                'detail' => 'แก้ไข ห้องปฏิบัติการ',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -127,7 +127,7 @@ class Lab extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ Group Product',
+                'detail' => 'ลบ ห้องปฏิบัติการ',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);

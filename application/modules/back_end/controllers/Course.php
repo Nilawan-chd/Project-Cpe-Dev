@@ -41,7 +41,7 @@ class Course extends MX_Controller
     public function show($category_id)
     {
         $category_course = $this->Category_course_model->get_category_course_by_id($category_id);
-        $this->data['title'] = 'Page: Course - list';
+        $this->data['title'] = 'หลักสูตร: หลักสูตร';
         $this->data['content'] = 'course/course';
         $this->data['course'] = $this->Course_model->get_course_by_category_course_id($category_id);
         $this->data['category_course'] = $this->Category_course_model->get_category_course_all();
@@ -54,7 +54,7 @@ class Course extends MX_Controller
 
     public function create($category_id)
     {
-        $this->data['title'] = 'Page: Course - Add';
+        $this->data['title'] = 'หลักสูตร: หลักสูตร - เพิ่ม';
         $this->data['content'] = 'course/add_course';
         $this->data['category_course'] = $this->Category_course_model->get_category_course_by_id($category_id);
 
@@ -77,7 +77,7 @@ class Course extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม ข่าว',
+                'detail' => 'เพิ่ม หลักสูตร',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -96,8 +96,7 @@ class Course extends MX_Controller
 
         $category_course_id = $course->category_course_id;
 
-        $this->data['title'] = 'Page: Home - Galleries - Edit';
-        $this->data['title'] = 'Page: Home - Galleries - Edit';
+        $this->data['title'] = 'หลักสูตร: หลักสูตร - แก้ไข';
         $this->data['content'] = 'course/edit_course';
         $this->data['course'] = $course;
         $this->data['category_course'] = $this->Category_course_model->get_category_course_by_id($category_course_id);
@@ -126,7 +125,7 @@ class Course extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข  Course',
+                'detail' => 'แก้ไข  หลักสูตร',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -152,7 +151,7 @@ class Course extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ  Course',
+                'detail' => 'ลบ  หลักสูตร',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);

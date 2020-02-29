@@ -39,7 +39,7 @@ class Category_course extends MX_Controller
 
     public function index()
     {
-        $this->data['title'] = 'Page: Category_course - list';
+        $this->data['title'] = 'หลักสูตร: ประเภทหลักสูตร';
         $this->data['content'] = 'category_course/category_course';
         $this->data['category_course'] = $this->Category_course_model->get_category_course_and_count_all();
 
@@ -48,7 +48,7 @@ class Category_course extends MX_Controller
 
     public function create()
     {
-        $this->data['title'] = 'Page: Category_course - Add';
+        $this->data['title'] = 'หลักสูตร: ประเภทหลักสูตร - เพิ่ม';
         $this->data['content'] = 'category_course/add_category_course';
 
         $this->load->view('app', $this->data);
@@ -78,7 +78,7 @@ class Category_course extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม  Category_course',
+                'detail' => 'เพิ่ม  ประเภทหลักสูตร',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -93,7 +93,7 @@ class Category_course extends MX_Controller
 
     public function edit($category_course_id)
     {
-        $this->data['title'] = 'Page: Home - Galleries - Edit';
+        $this->data['title'] = 'หลักสูตร: ประเภทหลักสูตร - แก้ไข';
         $this->data['content'] = 'category_course/edit_category_course';
         $this->data['category_course'] = $this->Category_course_model->get_category_course_by_id($category_course_id);
 
@@ -127,7 +127,7 @@ class Category_course extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข  Category_course',
+                'detail' => 'แก้ไข  ประเภทหลักสูตร',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -153,7 +153,7 @@ class Category_course extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ  Category_course',
+                'detail' => 'ลบ  ประเภทหลักสูตร',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);

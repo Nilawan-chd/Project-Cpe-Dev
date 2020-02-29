@@ -39,7 +39,7 @@ class User extends MX_Controller
 
 	public function index()
 	{
-		$this->data['title'] = 'Users';
+		$this->data['title'] = 'ผู้ใช้';
 		$this->data['content'] = 'user/user';
 		$this->data['users'] = $this->User_model->get_user_all();
 
@@ -48,7 +48,7 @@ class User extends MX_Controller
 
 	public function create()
 	{
-		$this->data['title'] = 'Users - Add';
+		$this->data['title'] = 'ผู้ใช้ - เพิ่ม';
 		$this->data['content'] = 'user/add_user';
 
 		$this->load->view('app', $this->data);
@@ -57,6 +57,7 @@ class User extends MX_Controller
 	public function store()
 	{
 		$add_user = $this->User_model->insert_user([
+            'name' => $this->input->post('name'),
 			'username' => $this->input->post('username'),
 			'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
 			'role_id' => $this->input->post('role')
@@ -66,7 +67,7 @@ class User extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม User',
+                'detail' => 'เพิ่ม ผู้ใช้',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -83,7 +84,7 @@ class User extends MX_Controller
 
 	public function edit($id)
 	{
-		$this->data['title'] = 'User - Edit';
+		$this->data['title'] = 'ผู้ใช้ - แก้ไข';
 		$this->data['content'] = 'user/edit_user';
 		$this->data['user'] = $this->User_model->get_user_by_id($id);
 
@@ -93,6 +94,7 @@ class User extends MX_Controller
 	public function update($id)
 	{
 		$update_user = $this->User_model->update_user_by_id($id, [
+            'name' => $this->input->post('name'),
 			'username' => $this->input->post('username'),
 			'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
 			'role_id' => $this->input->post('role'),
@@ -103,7 +105,7 @@ class User extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข User',
+                'detail' => 'แก้ไข ผู้ใช้',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -130,7 +132,7 @@ class User extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ User',
+                'detail' => 'ลบ ผู้ใช้',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);

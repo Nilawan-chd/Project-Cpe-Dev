@@ -4,7 +4,7 @@
         <div class="section-header">
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a
-                            href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
+                            href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
                 <div class="breadcrumb-item"><a href="#">Page: หน้าแรก</a></div>
                 <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/page/home/news'); ?>">ประเภทข่าวสาร</a>
                 </div>
@@ -66,10 +66,10 @@
 
                                 <div class="text-right">
                                     <button onclick="return confirm('Are you sure?');" type="submit"
-                                            class="btn btn-primary">Save changes
+                                            class="btn btn-primary">บันทึก
                                     </button>
                                     <a href="<?php echo base_url('backoffice/page/home/news/list/show/' . $category_new->id); ?> "
-                                       class="btn btn-secondary">Close</a>
+                                       class="btn btn-secondary">ปิด</a>
                                 </div>
                             </form>
                         </div>

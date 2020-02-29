@@ -11,9 +11,9 @@
         <div class="section-header">
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a
-                            href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
+                            href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
                 <div class="breadcrumb-item"><a href="#">หน้า: หลักสูตร</a></div>
-                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/page/home/download'); ?>"><?php echo $category_download_title; ?></a></div>
+                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/page/download/category'); ?>">ประเภทดาวน์โหลด</a></div>
 
                 <div class="breadcrumb-item">หลักสูตร: (ประเภท - <?php echo $category_download_title; ?>)</div>
             </div>
@@ -24,7 +24,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>รายการ หลักสูตร(ประเภท - <?php echo $category_download_title; ?>)</h4>
+                            <h4>รายการ ดาวน์โหลด(ประเภท - <?php echo $category_download_title; ?>)</h4>
                             <div class="card-header-action">
                                 <a href="<?php echo base_url('backoffice/page/download/download/create/'.$category_download_id); ?>"
                                    class="btn btn-primary">
@@ -62,15 +62,15 @@
                                                     <button class="btn btn-info dropdown-toggle" type="button"
                                                             id="dropdownMenuButton2" data-toggle="dropdown"
                                                             aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fas fa-cog"></i> Manage
+                                                        <i class="fas fa-cog"></i> จัดการ
                                                     </button>
                                                     <div class="dropdown-menu">
                                                         <a class="dropdown-item has-icon"
                                                            href="<?php echo base_url('backoffice/page/download/download/edit/' . $downloads->id); ?>"><i
-                                                                    class="far fa-edit"></i> Edit</a>
+                                                                    class="far fa-edit"></i> แก้ไข</a>
                                                         <a class="dropdown-item has-icon"
                                                            onclick="deleteProduct('<?php echo base_url('backoffice/page/download/download/destroy/' . $downloads->id); ?>')"><i
-                                                                    class="far fa-trash-alt"></i> Delete</a>
+                                                                    class="far fa-trash-alt"></i> ลบ</a>
                                                     </div>
                                                 </div>
                                             </td>

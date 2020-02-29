@@ -43,7 +43,7 @@ class Project extends MX_Controller
 
     public function project_edit($project_id)
     {
-        $this->data['title'] = 'Manage Item: contact page';
+        $this->data['title'] = 'หน้า: วิจัย/โครงงาน - แก้ไข';
         $this->data['content'] = 'project/edit_project';
         $this->data['project'] = $this->Project_model->get_project_by_id($project_id);
 
@@ -61,8 +61,7 @@ class Project extends MX_Controller
         if ($update_project_page) {
 
             logger_store([
-                'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข Info Contact Page',
+                'detail' => 'แก้ไข วิจัย/โครงงาน',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);

@@ -32,9 +32,9 @@
     <section class="section">
         <div class="section-header">
             <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="#">Page: Home</a></div>
-                <div class="breadcrumb-item active">Image Gallery</div>
+                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
+                <div class="breadcrumb-item"><a href="#">หน้า: หน้าแรก</a></div>
+                <div class="breadcrumb-item active">แบนเนอร์</div>
             </div>
         </div>
 
@@ -43,11 +43,11 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>List of Image Gallery</h4>
+                            <h4>รายการ แบนเนอร์</h4>
                             <div class="card-header-action">
-                                <button class="btn btn-primary" id="btnSort"><i class="fas fa-sort"></i> Sort Images</button>
+                                <button class="btn btn-primary" id="btnSort"><i class="fas fa-sort"></i>จัดเรียง</button>
                                 <a href="<?php echo base_url('backoffice/page/home/banner/create'); ?>" class="btn btn-primary" >
-                                    <i class="fas fa-plus"></i> Add
+                                    <i class="fas fa-plus"></i> เพิ่ม
                                 </a>
                             </div>
                         </div>
@@ -83,11 +83,11 @@
                                             <td>
                                                 <div class="dropdown d-inline">
                                                     <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fas fa-cog"></i> Manage
+                                                        <i class="fas fa-cog"></i> จัดการ
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item has-icon" href="<?php echo base_url('backoffice/page/home/banner/edit/' .$banner->id); ?>" ><i class="far fa-edit"></i> Edit</a>
-                                                        <a class="dropdown-item has-icon" onclick="deleteBanner('<?php echo base_url('backoffice/page/home/banner/destroy/' . $banner->id); ?>')"><i class="far fa-trash-alt"></i> Delete</a>
+                                                        <a class="dropdown-item has-icon" href="<?php echo base_url('backoffice/page/home/banner/edit/' .$banner->id); ?>" ><i class="far fa-edit"></i> แก้ไข</a>
+                                                        <a class="dropdown-item has-icon" onclick="deleteBanner('<?php echo base_url('backoffice/page/home/banner/destroy/' . $banner->id); ?>')"><i class="far fa-trash-alt"></i> ลบ</a>
                                                     </div>
                                                 </div>
                                             </td>
@@ -109,15 +109,15 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="custom-width-modalLabel">Sorting</h4>
+                <h4 class="modal-title" id="custom-width-modalLabel">จัดเรียง</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body">
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="btnSaveSorting">Save changes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">ปิด</button>
+                <button type="button" class="btn btn-primary" id="btnSaveSorting">บันทึก</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

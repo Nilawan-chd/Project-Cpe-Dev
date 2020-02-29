@@ -3,7 +3,7 @@
     <section class="section">
         <div class="section-header">
             <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
+                <div class="breadcrumb-item active"><a href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
 				<div class="breadcrumb-item"><a href="#">Setting</a></div>
 				<div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/setting/users'); ?>">Users</a></div>
                 <div class="breadcrumb-item">Edit User: <?php echo $user->username; ?></div>
@@ -19,28 +19,34 @@
                         </div>
                         <div class="card-body">
 							<form action="<?php echo base_url('backoffice/setting/users/update/' . $user->id); ?>" method="post">
-								<div style="padding-top: 20px;"><h6><i class="fa fa-tag"></i> Information</h6></div>
+								<div style="padding-top: 20px;"><h6><i class="fa fa-tag"></i> ข้อมูล</h6></div>
 								<hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">* ชื่อ - สกุล </label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" name="name" value="<?php echo $user->name; ?>" required>
+                                    </div>
+                                </div>
 								<div class="form-group row">
-									<label class="col-sm-3 col-form-label">* Username</label>
+									<label class="col-sm-3 col-form-label">* ชื่อผู้ใช้</label>
 									<div class="col-sm-4">
 										<input type="text" class="form-control" name="username" value="<?php echo $user->username; ?>" required>
 									</div>
 								</div>
 								<div class="form-group row">
-									<label class="col-sm-3 col-form-label">* Password</label>
+									<label class="col-sm-3 col-form-label">* รหัสผ่าน</label>
 									<div class="col-sm-4">
 										<input id="txtNewPassword" type="password" class="form-control" name="password" required>
 									</div>
 								</div>
 								<div class="form-group row">
-									<label class="col-sm-3 col-form-label">* Confirm Password</label>
+									<label class="col-sm-3 col-form-label">* ยืนยัน รหัสผ่าน</label>
 									<div class="col-sm-4">
 										<input id="txtConfirmPassword" type="password" class="form-control" name="confirm_password" required><span id="divCheckPasswordMatch"></span>
 									</div>
 								</div>
 								<div class="form-group row">
-									<label class="col-sm-3 col-form-label">* Role</label>
+									<label class="col-sm-3 col-form-label">* ประเภทผู้ใช้</label>
 									<div class="col-sm-4">
 										<select class="form-control" name="role" required>
 											<option value="2" <?php if ($user->role_id == 2) { echo 'selected'; } else { echo ''; } ?>>Admin</option>
@@ -49,8 +55,8 @@
 									</div>
 								</div>
 								<div class="text-right">
-									<button type="submit" class="btn btn-primary" id="btnSave" disabled>Save changes</button>
-									<a href="<?php echo base_url('backoffice/setting/users'); ?>" class="btn btn-secondary">Close</a>
+									<button type="submit" class="btn btn-primary" id="btnSave" disabled>บันทึก</button>
+									<a href="<?php echo base_url('backoffice/setting/users'); ?>" class="btn btn-secondary">ปิด</a>
 								</div>
 							</form>
                         </div>

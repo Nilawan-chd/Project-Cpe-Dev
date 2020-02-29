@@ -39,7 +39,7 @@ class Category_news extends MX_Controller
 
     public function index()
     {
-        $this->data['title'] = 'Page: Category_news - list';
+        $this->data['title'] = 'หน้า: ประเภทข่าวสาร';
         $this->data['content'] = 'category_news/category_news';
         $this->data['category_news'] = $this->Category_news_model->get_category_news_and_count_all();
 
@@ -48,7 +48,7 @@ class Category_news extends MX_Controller
 
     public function create()
     {
-        $this->data['title'] = 'Page: Category_news - Add';
+        $this->data['title'] = 'หน้า: ประเภทข่าวสาร - เพิ่ม';
         $this->data['content'] = 'category_news/add_category_news';
 
         $this->load->view('app', $this->data);
@@ -65,7 +65,7 @@ class Category_news extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม Image Category_news',
+                'detail' => 'เพิ่ม ประเภทข่าวสาร',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -80,7 +80,7 @@ class Category_news extends MX_Controller
 
     public function edit($category_newsid)
     {
-        $this->data['title'] = 'Page: Home - Galleries - Edit';
+        $this->data['title'] = 'หน้า: ประเภทข่าวสาร - แก้ไข';
         $this->data['content'] = 'category_news/edit_category_news';
         $this->data['category_news'] = $this->Category_news_model->get_category_news_by_id($category_newsid);
 
@@ -100,7 +100,7 @@ class Category_news extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข Image Category_news',
+                'detail' => 'แก้ไข ประเภทข่าวสาร',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -126,7 +126,7 @@ class Category_news extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ Image Category_news',
+                'detail' => 'ลบ ประเภทข่าวสาร',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);

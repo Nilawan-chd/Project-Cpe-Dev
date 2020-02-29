@@ -41,7 +41,7 @@ class News extends MX_Controller
     public function show($category_id)
     {
         $category_news = $this->Category_news_model->get_category_news_by_id($category_id);
-        $this->data['title'] = 'Page: News - list';
+        $this->data['title'] = 'หน้า: รายการข่าว';
         $this->data['content'] = 'news/news';
         $this->data['news'] = $this->News_model->get_news_by_category_news_id($category_id);
         $this->data['category_news'] = $this->Category_news_model->get_category_news_all();
@@ -54,7 +54,7 @@ class News extends MX_Controller
 
     public function create($category_id)
     {
-        $this->data['title'] = 'Page: News - Add';
+        $this->data['title'] = 'หน้า: รายการข่าว - เพิ่ม';
         $this->data['content'] = 'news/add_news';
         $this->data['category_new'] = $this->Category_news_model->get_category_news_by_id($category_id);
 
@@ -77,7 +77,7 @@ class News extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม ข่าว',
+                'detail' => 'เพิ่ม รายการข่าว',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -96,7 +96,7 @@ class News extends MX_Controller
 
         $category_new_id = $new->category_news_id;
 
-        $this->data['title'] = 'Page: Home - Galleries - Edit';
+        $this->data['title'] = 'หน้า: รายการข่าว - แก้ไข';
         $this->data['content'] = 'news/edit_news';
         $this->data['news'] = $new;
         $this->data['category_new'] = $this->Category_news_model->get_category_news_by_id($category_new_id);
@@ -119,7 +119,7 @@ class News extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข Image News',
+                'detail' => 'แก้ไข รายการข่าว',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -145,7 +145,7 @@ class News extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ Image News',
+                'detail' => 'ลบ รายการข่าว',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);

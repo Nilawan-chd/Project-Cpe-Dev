@@ -21,7 +21,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>รายการ ข่าวสาร</h4>
+                            <h4>รายการ คณาจารย์</h4>
                             <div class="card-header-action">
                                 <a href="<?php echo base_url('backoffice/page/about/faculty/create'); ?>"
                                    class="btn btn-primary">

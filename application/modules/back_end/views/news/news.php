@@ -11,7 +11,7 @@
         <div class="section-header">
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a
-                            href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
+                            href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
                 <div class="breadcrumb-item"><a href="#">Page: หน้าแรก</a></div>
                 <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/page/home/news'); ?>"><?php echo $category_news_title; ?></a></div>
 
@@ -28,7 +28,7 @@
                             <div class="card-header-action">
                                 <a href="<?php echo base_url('backoffice/page/home/news/list/create/'.$category_news_id); ?>"
                                    class="btn btn-primary">
-                                    <i class="fas fa-plus"></i> Add
+                                    <i class="fas fa-plus"></i> เพิ่ม
                                 </a>
                             </div>
                         </div>
@@ -64,15 +64,15 @@
                                                     <button class="btn btn-info dropdown-toggle" type="button"
                                                             id="dropdownMenuButton2" data-toggle="dropdown"
                                                             aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fas fa-cog"></i> Manage
+                                                        <i class="fas fa-cog"></i> จัดการ
                                                     </button>
                                                     <div class="dropdown-menu">
                                                         <a class="dropdown-item has-icon"
                                                            href="<?php echo base_url('backoffice/page/home/news/list/edit/' . $new->id); ?>"><i
-                                                                    class="far fa-edit"></i> Edit</a>
+                                                                    class="far fa-edit"></i> แก้ไข</a>
                                                         <a class="dropdown-item has-icon"
                                                            onclick="deleteProduct('<?php echo base_url('backoffice/page/home/news/list/destroy/' . $new->id); ?>')"><i
-                                                                    class="far fa-trash-alt"></i> Delete</a>
+                                                                    class="far fa-trash-alt"></i> ลบ</a>
                                                     </div>
                                                 </div>
                                             </td>

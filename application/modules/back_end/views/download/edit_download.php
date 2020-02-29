@@ -4,7 +4,7 @@
         <div class="section-header">
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a
-                            href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
+                            href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
                 <div class="breadcrumb-item"><a href="#">หน้า: ไฟล์ดาวน์โหลด</a></div>
 
                 <div class="breadcrumb-item"><a
@@ -60,7 +60,7 @@
                                                    onchange="PreviewFile(this, 'previewFileCatalog'); return validateFileExtension(this)"
                                                    value="<?php echo $download->file; ?>">
                                             <label class="custom-file-label" id="previewFileCatalog">เลือกไฟล์(.pdf|.doc|.docx)</label>
-                                            <div style="margin-top: 12px; display: block;"><span>old file: </span><a
+                                            <div style="margin-top: 12px; display: block;"><span>ไฟล์เดิม: </span><a
                                                         style="display: inline-block;"
                                                         href="<?php echo base_url('storage/uploads/files/download/' . $download->file); ?>"><?php echo $download->file; ?></a>
                                             </div>
@@ -70,10 +70,10 @@
                                 </div>
                                 <div class="text-right">
                                     <button onclick="return confirm('Are you sure?');" type="submit"
-                                            class="btn btn-primary">Save changes
+                                            class="btn btn-primary">บันทึก
                                     </button>
                                     <a href="<?php echo base_url('backoffice/page/download/download/show/' . $category_download->id); ?> "
-                                       class="btn btn-secondary">Close</a>
+                                       class="btn btn-secondary">ปิด</a>
                                 </div>
                             </form>
                         </div>

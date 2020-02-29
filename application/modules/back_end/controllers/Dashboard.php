@@ -89,7 +89,7 @@ class Dashboard extends MX_Controller
 
 				$data[$key]['event'] = $html_badge;
 				$data[$key]['detail'] = $log->detail;
-				$data[$key]['username'] = $this->User_model->get_user_by_id($log->user_id)->username;
+				$data[$key]['name'] = $this->User_model->get_user_by_id($log->user_id)->name;
 				$data[$key]['ip'] = $log->ip;
 				$data[$key]['created_at'] = $log->created_at;
 			}

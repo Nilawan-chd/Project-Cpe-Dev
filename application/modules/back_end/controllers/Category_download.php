@@ -39,7 +39,7 @@ class Category_download extends MX_Controller
 
     public function index()
     {
-        $this->data['title'] = 'Page: Category_download - list';
+        $this->data['title'] = 'หน้า: ประเภทดาวน์โหลด';
         $this->data['content'] = 'category_download/category_download';
         $this->data['category_download'] = $this->Category_download_model->get_category_download_and_count_all();
 
@@ -48,7 +48,7 @@ class Category_download extends MX_Controller
 
     public function create()
     {
-        $this->data['title'] = 'Page: Category_download - Add';
+        $this->data['title'] = 'หน้า: ประเภทดาวน์โหลด - เพิ่ม';
         $this->data['content'] = 'category_download/add_category_download';
 
         $this->load->view('app', $this->data);
@@ -66,7 +66,7 @@ class Category_download extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม  Category_download',
+                'detail' => 'เพิ่ม  ประเภทดาวน์โหลด',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -81,7 +81,7 @@ class Category_download extends MX_Controller
 
     public function edit($category_download_id)
     {
-        $this->data['title'] = 'Page: Home - Galleries - Edit';
+        $this->data['title'] = 'หน้า: ประเภทดาวน์โหลด - แก้ไข';
         $this->data['content'] = 'category_download/edit_category_download';
         $this->data['category_download'] = $this->Category_download_model->get_category_download_by_id($category_download_id);
 
@@ -100,7 +100,7 @@ class Category_download extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข  Category_download',
+                'detail' => 'แก้ไข  ประเภทดาวน์โหลด',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -126,7 +126,7 @@ class Category_download extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ  Category_download',
+                'detail' => 'ลบ  ประเภทดาวน์โหลด',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);

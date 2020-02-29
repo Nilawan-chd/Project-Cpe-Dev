@@ -43,7 +43,7 @@ class Contacts extends MX_Controller
 
     public function edit($contact_id)
     {
-        $this->data['title'] = 'Manage Item: contact page';
+        $this->data['title'] = 'หน้า: ติดต่อ - แก้ไข';
         $this->data['content'] = 'contact/edit_contact';
         $this->data['contacts'] = $this->Contact_model->get_contact_by_id($contact_id);
 
@@ -68,7 +68,7 @@ class Contacts extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข Info Contact Page',
+                'detail' => 'แก้ไข ติดต่อ',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);

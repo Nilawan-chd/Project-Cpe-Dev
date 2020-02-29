@@ -39,7 +39,7 @@ class Faculty extends MX_Controller
 
     public function index()
     {
-        $this->data['title'] = 'Page: Faculty - list';
+        $this->data['title'] = 'เกี่ยวกับ: คณาจารย์';
         $this->data['content'] = 'faculty/faculty';
         $this->data['faculty'] = $this->Faculty_model->get_faculty_all();
 
@@ -49,7 +49,7 @@ class Faculty extends MX_Controller
 
     public function create()
     {
-        $this->data['title'] = 'Page: Faculty - Add';
+        $this->data['title'] = 'เกี่ยวกับ: เพิ่ม คณาจารย์';
         $this->data['content'] = 'faculty/add_faculty';
 
         $this->load->view('app', $this->data);
@@ -80,7 +80,7 @@ class Faculty extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม  Faculty',
+                'detail' => 'เพิ่ม  คณจารย์',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -95,7 +95,7 @@ class Faculty extends MX_Controller
 
     public function edit($faculty_id)
     {
-        $this->data['title'] = 'Page: Home - Galleries - Edit';
+        $this->data['title'] = 'เกี่ยวกับ: แก้ไข คณาจารย์';
         $this->data['content'] = 'faculty/edit_faculty';
         $this->data['faculty'] = $this->Faculty_model->get_faculty_by_id($faculty_id);
 
@@ -129,7 +129,7 @@ class Faculty extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข  Faculty',
+                'detail' => 'แก้ไข  คณาจารย์',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -155,7 +155,7 @@ class Faculty extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ  Faculty',
+                'detail' => 'ลบ  คณาจารย์',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);

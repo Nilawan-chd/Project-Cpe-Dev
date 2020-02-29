@@ -10,9 +10,9 @@
     <section class="section">
         <div class="section-header">
             <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="#">Setting</a></div>
-                <div class="breadcrumb-item">Users</div>
+                <div class="breadcrumb-item active"><a href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
+                <div class="breadcrumb-item"><a href="#">ตั้งค่า</a></div>
+                <div class="breadcrumb-item">ผู้ใช้</div>
             </div>
         </div>
 
@@ -21,11 +21,11 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>List of User</h4>
+                            <h4>รายการ ผู้ใช้</h4>
                             <div class="card-header-action">
                                 <a href="<?php echo base_url('backoffice/setting/users/create'); ?>"
                                    class="btn btn-primary">
-                                    <i class="fas fa-plus"></i> Add
+                                    <i class="fas fa-plus"></i> เพิ่ม
                                 </a>
                             </div>
                         </div>
@@ -43,10 +43,10 @@
                                     <thead>
                                     <tr>
                                         <th class="text-center">#</th>
-                                        <th>Username</th>
-										<th>Role</th>
-                                        <th>Created at</th>
-                                        <th>Action</th>
+                                        <th>ชื่อ</th>
+										<th>ประเภท</th>
+                                        <th>สร้างเมื่อ</th>
+                                        <th>การกระทำ</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -56,17 +56,17 @@
                                         foreach ($users as $user) { ?>
                                             <tr>
                                                 <td class="text-center"><?php echo $counter++; ?></td>
-                                                <td><?php echo $user->username; ?></td>
+                                                <td><?php echo $user->name; ?></td>
                                                 <td><?php echo $user->created_at; ?></td>
 												<td><?php echo $user->role_title; ?></td>
                                                 <td>
                                                     <div class="dropdown d-inline">
                                                         <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <i class="fas fa-cog"></i> Manage
+                                                            <i class="fas fa-cog"></i> จัดการ
                                                         </button>
                                                         <div class="dropdown-menu">
-                                                            <a class="dropdown-item has-icon" href="<?php echo base_url('backoffice/setting/users/edit/' . $user->id); ?>"><i class="far fa-edit"></i> Edit</a>
-                                                            <a class="dropdown-item has-icon" onclick="deleteUser('<?php echo base_url('backoffice/setting/users/destroy/' . $user->id); ?>')"><i class="far fa-trash-alt"></i> Delete</a>
+                                                            <a class="dropdown-item has-icon" href="<?php echo base_url('backoffice/setting/users/edit/' . $user->id); ?>"><i class="far fa-edit"></i> แก้ไข</a>
+                                                            <a class="dropdown-item has-icon" onclick="deleteUser('<?php echo base_url('backoffice/setting/users/destroy/' . $user->id); ?>')"><i class="far fa-trash-alt"></i> ลบ</a>
                                                         </div>
                                                     </div>
                                                 </td>

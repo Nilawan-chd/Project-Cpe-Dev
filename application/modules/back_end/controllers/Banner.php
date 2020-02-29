@@ -39,7 +39,7 @@ class Banner extends MX_Controller
 
     public function index()
     {
-        $this->data['title'] = 'Page: Banner - list';
+        $this->data['title'] = 'หน้าแรก: แบนเนอร์';
         $this->data['content'] = 'banner/banner';
         $this->data['banners'] = $this->Banner_model->get_banner_all();
 
@@ -48,7 +48,7 @@ class Banner extends MX_Controller
 
     public function banner_create()
     {
-        $this->data['title'] = 'Page: Banner - Add';
+        $this->data['title'] = 'หน้าแรก: แบนเนอร์ - เพิ่ม';
         $this->data['content'] = 'banner/add_banner';
 
         $this->load->view('app', $this->data);
@@ -72,7 +72,7 @@ class Banner extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม Image Banner',
+                'detail' => 'เพิ่ม แบนเนอร์',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -87,7 +87,7 @@ class Banner extends MX_Controller
 
     public function banner_edit($banner_id)
     {
-		$this->data['title'] = 'Page: Home - Galleries - Edit';
+		$this->data['title'] = 'หน้าแรก: แบนเนอร์ - แก้ไข';
         $this->data['content'] = 'banner/edit_banner';
         $this->data['banners'] = $this->Banner_model->get_banner_by_id($banner_id);
 
@@ -116,7 +116,7 @@ class Banner extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข Image Banner',
+                'detail' => 'แก้ไข แบนเนอร์',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -142,7 +142,7 @@ class Banner extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ Image Banner',
+                'detail' => 'ลบ แบนเนอร์',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -154,49 +154,9 @@ class Banner extends MX_Controller
             ->set_output(json_encode($response));
     }
 
-    public function edit_content($contact_page_id)
-    {
-        $this->data['title'] = 'Page: Home - Content';
-        $this->data['content'] = 'home_page/edit_home_page';
-        $this->data['contact_page'] = $this->Home_page_model->get_home_pages_by_id($contact_page_id);
 
-        $this->load->view('app', $this->data);
-    }
 
-    public function update_content($contact_page_id)
-    {
-        $contact_page = $this->Home_page_model->get_home_pages_by_id($contact_page_id);
 
-        $img_og_twitter = $contact_page->img_og_twitter;
-
-        if (isset($_FILES['img_og_twitter']) && $_FILES['img_og_twitter']['name'] != '') {
-            $img_og_twitter = $this->do_upload_img_meta_home('img_og_twitter');
-        }
-
-        $update_home_page = $this->Home_page_model->update_home_pages_by_id($contact_page_id, [
-            'meta_tag_title' => $this->input->post('meta_tag_title'),
-            'meta_tag_description' => $this->input->post('meta_tag_description'),
-            'meta_tag_keywords' => $this->input->post('meta_tag_keywords'),
-            'img_og_twitter' => $img_og_twitter,
-            'updated_at' => date('Y-m-d H:i:s')
-        ]);
-
-        if ($update_home_page) {
-
-			logger_store([
-				'user_id' => $this->data['user']->id,
-				'detail' => 'แก้ไข Content Home Page',
-				'event' => 'update',
-				'ip' => $this->input->ip_address(),
-			]);
-
-            $this->session->set_flashdata('success', 'Update Done');
-        } else {
-            $this->session->set_flashdata('error', 'Something wrong');
-        }
-
-        redirect('backoffice/page/home/content/' . $contact_page_id);
-    }
 
 	/***********************************
 	 * Sorting (Using Ajax)
@@ -254,7 +214,7 @@ class Banner extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'จัดเรียง Image Gallery Home Page',
+                'detail' => 'จัดเรียง แบนเนอร์',
                 'event' => 'sort_item',
                 'ip' => $this->input->ip_address(),
             ]);

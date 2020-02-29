@@ -19,11 +19,11 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>ห้องปฏิบัติการ</h4>
+                            <h4>รายการ ห้องปฏิบัติการ</h4>
                             <div class="card-header-action">
                                 <a href="<?php echo base_url('backoffice/page/lab/lab/create'); ?>"
                                    class="btn btn-primary">
-                                    <i class="fas fa-plus"></i> Add
+                                    <i class="fas fa-plus"></i> เพิ่ม
                                 </a>
                             </div>
                         </div>
@@ -58,11 +58,11 @@
                                                     <td>
                                                         <div class="dropdown d-inline">
                                                             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <i class="fas fa-cog"></i> Manage
+                                                                <i class="fas fa-cog"></i> จัดการ
                                                             </button>
                                                             <div class="dropdown-menu">
-                                                                <a class="dropdown-item has-icon" href="<?php echo base_url('backoffice/page/lab/lab/edit/' . $lab->id); ?>"><i class="far fa-edit"></i> Edit</a>
-                                                                <a class="dropdown-item has-icon" onclick="deleteCategoryProduct('<?php echo base_url('backoffice/page/lab/lab/destroy/' . $lab->id); ?>')"><i class="far fa-trash-alt"></i> Delete</a>
+                                                                <a class="dropdown-item has-icon" href="<?php echo base_url('backoffice/page/lab/lab/edit/' . $lab->id); ?>"><i class="far fa-edit"></i> แก้ไข</a>
+                                                                <a class="dropdown-item has-icon" onclick="deleteCategoryProduct('<?php echo base_url('backoffice/page/lab/lab/destroy/' . $lab->id); ?>')"><i class="far fa-trash-alt"></i> ลบ</a>
                                                             </div>
                                                         </div>
                                                     </td>

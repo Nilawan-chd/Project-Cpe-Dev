@@ -36,10 +36,10 @@
 
                                 <div class="text-right">
                                     <button onclick="return confirm('Are you sure?');" type="submit"
-                                            class="btn btn-primary">Save changes
+                                            class="btn btn-primary">บันทึก
                                     </button>
                                     <a href="<?php echo base_url('backoffice/page/download/category'); ?> "
-                                       class="btn btn-secondary">Close</a>
+                                       class="btn btn-secondary">ปิด</a>
                                 </div>
                             </form>
                         </div>

@@ -41,7 +41,7 @@ class Download extends MX_Controller
     public function show($category_id)
     {
         $category_download = $this->Category_download_model->get_category_download_by_id($category_id);
-        $this->data['title'] = 'Page: Download - list';
+        $this->data['title'] = 'หน้า: ดาวน์โหลด';
         $this->data['content'] = 'download/download';
         $this->data['download'] = $this->Download_model->get_download_by_category_download_id($category_id);
         $this->data['category_download'] = $this->Category_download_model->get_category_download_all();
@@ -54,7 +54,7 @@ class Download extends MX_Controller
 
     public function create($category_id)
     {
-        $this->data['title'] = 'Page: Download - Add';
+        $this->data['title'] = 'หน้า: ดาวน์โหลด - เพิ่ม';
         $this->data['content'] = 'download/add_download';
         $this->data['category_download'] = $this->Category_download_model->get_category_download_by_id($category_id);
 
@@ -77,7 +77,7 @@ class Download extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'เพิ่ม ข่าว',
+                'detail' => 'เพิ่ม รายการดาวน์โหลด',
                 'event' => 'add',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -96,7 +96,7 @@ class Download extends MX_Controller
 
         $category_download_id = $download->category_downloads_id;
 
-        $this->data['title'] = 'Page: Home - Galleries - Edit';
+        $this->data['title'] = 'หน้า: ดาวน์โหลด - แก้ไข';
         $this->data['content'] = 'download/edit_download';
         $this->data['download'] = $download;
         $this->data['category_download'] = $this->Category_download_model->get_category_download_by_id($category_download_id);
@@ -126,7 +126,7 @@ class Download extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข  Download',
+                'detail' => 'แก้ไข  รายการดาวน์โหลด',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
@@ -152,7 +152,7 @@ class Download extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'ลบ  Download',
+                'detail' => 'ลบ  รายการดาวน์โหลด',
                 'event' => 'delete',
                 'ip' => $this->input->ip_address(),
             ]);

@@ -38,7 +38,7 @@ class Authentication extends MX_Controller
 
 					logger_store([
 						'user_id' => $user->id,
-						'detail' => 'เข้าสู่ระบบ Aluinch Backoffice',
+						'detail' => 'เข้าสู่ระบบ ระบบจัดการเว็บไซต์',
 						'event' => 'login',
 						'ip' => $this->input->ip_address(),
 					]);
@@ -57,7 +57,7 @@ class Authentication extends MX_Controller
     {
 		logger_store([
 			'user_id' => $this->session->userdata('user_id'),
-			'detail' => 'ออกจากระบบ Aluinch Backoffice',
+			'detail' => 'ออกจากระบบ ระบบจัดการเว็บไซต์',
 			'event' => 'logout',
 			'ip' => $this->input->ip_address(),
 		]);

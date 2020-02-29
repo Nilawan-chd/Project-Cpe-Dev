@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> &mdash; Backoffice <?php echo "($title)"; ?></title>
+    <title> ระบบจัดการ &mdash; เว็บไซต์  <?php echo "($title)"; ?></title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -61,7 +61,7 @@
             </form>
             <ul class="navbar-nav navbar-right">
                 <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                        <div class="d-sm-none d-lg-inline-block">สวัสดี, <?php echo $user->username; ?></div>
+                        <div class="d-sm-none d-lg-inline-block">สวัสดี, <?php echo $user->name; ?></div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
 						<a href="<?php echo base_url('backoffice/setting/profile/edit/' . $user->id); ?>" class="dropdown-item has-icon">
@@ -78,7 +78,7 @@
         <div class="main-sidebar sidebar-style-2">
             <aside id="sidebar-wrapper">
                 <div class="sidebar-brand">
-                    <a href="<?php echo base_url('backoffice/dashboard'); ?>"></a>
+                    <a href="<?php echo base_url('backoffice/dashboard'); ?>">ระบบจัดการเว็บไซต์</a>
                 </div>
                 <div class="sidebar-brand sidebar-brand-sm">
                     <a href="<?php echo base_url('backoffice/dashboard'); ?>">ALI</a>
@@ -119,7 +119,7 @@
 
                     </li>
                     <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "course") { echo 'active'; } ?>">
-                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-microchip"></i><span>หลักสูตร</span></a>
+                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-stream"></i><span>หลักสูตร</span></a>
                         <ul class="dropdown-menu">
                             <li class="<?php if ($this->uri->segment(3) == "course") { echo 'active'; } ?>">
                                 <a class="nav-link" href="<?php echo base_url('backoffice/page/course/category'); ?>">&#9679; หลักสูตร</a>
@@ -143,7 +143,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "download") { echo 'active'; } ?>">
-                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-microchip"></i><span>ดาวน์โหลด</span></a>
+                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-download"></i><span>ดาวน์โหลด</span></a>
                         <ul class="dropdown-menu">
                             <li class="<?php if ($this->uri->segment(3) == "download") { echo 'active'; } ?>">
                                 <a class="nav-link" href="<?php echo base_url('backoffice/page/download/category'); ?>">&#9679; ดาวน์โหลด</a>
@@ -160,15 +160,15 @@
 
 					</li>
 					<?php if ($user->role_id == 1) { ?>
-                    <li class="menu-header">Settings</li>
+                    <li class="menu-header">ตั้งค่า</li>
 					<li class="<?php if ($this->uri->segment(2) == "setting" && $this->uri->segment(3) == "users") { echo 'active'; } ?>">
-						<a class="nav-link" href="<?php echo base_url('backoffice/setting/users') ?>"><i class="fas fa-user"></i> <span>Users</span></a>
+						<a class="nav-link" href="<?php echo base_url('backoffice/setting/users') ?>"><i class="fas fa-user"></i> <span>ผู้ใช้</span></a>
 					</li>
 					<?php } ?>
                 </ul>
                 <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
                     <a href="<?php echo base_url('home'); ?>" class="btn btn-primary btn-lg btn-block btn-icon-split">
-                        <i class="fas fa-rocket"></i> Back to Website
+                        <i class="fas fa-rocket"></i> หน้าเว็บไซต์หลัก
                     </a>
                 </div>
             </aside>

@@ -30,9 +30,9 @@
                                 <div style="padding-top: 20px;"><h6><i class="fa fa-tag"></i> ข้อมูล</h6></div>
                                 <hr>
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">หัวข้อ</label>
+                                    <label class="col-sm-3 col-form-label">* หัวข้อ</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control"  name="title" value="<?php echo $project->title; ?>">
+                                        <input type="text" class="form-control"  name="title" value="<?php echo $project->title; ?>" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -43,7 +43,7 @@
                                 </div>
 
                                 <div class="text-right">
-                                    <button onclick="return confirm('Are you sure?');" type="submit" class="btn btn-primary">Save changes</button>
+                                    <button onclick="return confirm('Are you sure?');" type="submit" class="btn btn-primary">บันทึก</button>
                                 </div>
                             </form>
                         </div>

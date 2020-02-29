@@ -40,7 +40,7 @@ class Profile extends MX_Controller
 
 	public function edit($id)
 	{
-		$this->data['title'] = 'Profile - Edit';
+		$this->data['title'] = 'ข้อมูลส่วนตัว - แก้ไข';
 		$this->data['content'] = 'profile/edit_profile';
 		$this->data['profile'] = $this->User_model->get_user_by_id($id);
 
@@ -51,6 +51,7 @@ class Profile extends MX_Controller
 	{
 
 		$update_profile = $this->User_model->update_user_by_id($id, [
+            'name' => $this->input->post('name'),
 			'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
 			'updated_at' => date('Y-m-d H:i:s')
 		]);
@@ -58,7 +59,7 @@ class Profile extends MX_Controller
 
             logger_store([
                 'user_id' => $this->data['user']->id,
-                'detail' => 'แก้ไข Profile',
+                'detail' => 'แก้ไข ข้อมูลส่วนตัว',
                 'event' => 'update',
                 'ip' => $this->input->ip_address(),
             ]);
