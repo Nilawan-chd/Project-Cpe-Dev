@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2020 at 01:16 PM
+-- Generation Time: Feb 29, 2020 at 09:32 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -72,10 +72,10 @@ INSERT INTO `banners` (`id`, `sort`, `title`, `img_title_alt`, `img_url`, `creat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category_course`
+-- Table structure for table `category_courses`
 --
 
-CREATE TABLE `category_course` (
+CREATE TABLE `category_courses` (
   `id` int(11) NOT NULL,
   `title` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
   `name_th` text COLLATE utf8_unicode_ci NOT NULL,
@@ -92,11 +92,32 @@ CREATE TABLE `category_course` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `category_course`
+-- Dumping data for table `category_courses`
 --
 
-INSERT INTO `category_course` (`id`, `title`, `name_th`, `name_en`, `name_th_full`, `name_th_short`, `name_en_full`, `name_en_short`, `img`, `objective`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `category_courses` (`id`, `title`, `name_th`, `name_en`, `name_th_full`, `name_th_short`, `name_en_full`, `name_en_short`, `img`, `objective`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'หลักสูตรปริญญาตรี', 'หลักสูตรวิศวกรรมคอมพิวเตอร์ สาขาวิชาวิศวกรรมคอมพิวเตอร์ ', 'Bachelor of Engineering Program in Computer Engineering', 'วิศวกรรมศาสตรบัณฑิต (วิศวกรรมคอมพิวเตอร์) ', 'วศ.บ. (วิศวกรรมคอมพิวเตอร์) ', 'Bachelor of Engineering (Computer Engineering) ', 'B.Eng. (Computer Engineering)', '6bcfeb9f9954433b09493e5a3d5ad9b0.jpg', '<ul style=\"border: 0px; font-family: sans-serif, Arial; font-size: 16px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; list-style-position: outside; list-style-image: initial; line-height: 1.7; color: rgb(64, 64, 64);\"><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อผลิตวิศวกรปฏิบัติการ ที่มีความสามารถปฏิบัติงานด้านวิศวกรรมคอมพิวเตอร์ได้อย่างมีประสิทธิภาพ</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อผลิตวิศวกรที่มีความสามารถปฏิบัติงานในระบบคอมพิวเตอร์ และเทคโนโลยีสารสนเทศโดยมีพื้นฐานในด้านการพัฒนาระบบเครือข่ายและการออกแบบ ทั้งสามารถเสนอข้อมูลเกี่ยวกับการดำเนินการออกแบบ ติดตั้งและทดสอบได้</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อฝึกฝนให้มีความคิดริเริ่ม มีกิจนิสัยในการค้นคว้าและปรับปรุงตนเองให้ก้าวหน้าอยู่เสมอ สามารถแก้ปัญหาด้วยหลักการและเหตุผล ปฏิบัติงานด้วยหลักวิชาการที่มีการวางแผนและควบคุมอย่างรอบคอบ ซึ่งก่อให้เกิดผลสัมฤทธิ์ในการทำงาน</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อเสริมสร้างคุณธรรม ระเบียบวินัย ความซื่อสัตย์สุจริต ความขยันหมั่นเพียร ความสำนึกในจรรยาบรรณแห่งอาชีพ ความรับผิดชอบต่อหน้าที่และสังคม</li></ul>', '2020-02-26 18:09:45', '2020-02-26 18:25:27', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `category_downloads`
+--
+
+CREATE TABLE `category_downloads` (
+  `id` int(11) NOT NULL,
+  `title` text COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `category_downloads`
+--
+
+INSERT INTO `category_downloads` (`id`, `title`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'แบบฟอร์มปริญญานิพนธ์ คณะวิศวกรรมศาสตร์ (เริ่มใช้ ปีการศึกษา 2555)', '2020-02-28 16:44:18', '2020-02-28 17:05:26', NULL);
 
 -- --------------------------------------------------------
 
@@ -123,6 +144,34 @@ INSERT INTO `category_news` (`id`, `title`, `created_at`, `updated_at`, `deleted
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contacts`
+--
+
+CREATE TABLE `contacts` (
+  `id` int(11) NOT NULL,
+  `title` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `address` text COLLATE utf8_unicode_ci NOT NULL,
+  `department` text COLLATE utf8_unicode_ci NOT NULL,
+  `university` text COLLATE utf8_unicode_ci NOT NULL,
+  `web` text CHARACTER SET utf8 NOT NULL,
+  `tel` text CHARACTER SET utf8 NOT NULL,
+  `email` text COLLATE utf8_unicode_ci NOT NULL,
+  `facebook` text COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `contacts`
+--
+
+INSERT INTO `contacts` (`id`, `title`, `address`, `department`, `university`, `web`, `tel`, `email`, `facebook`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'ติดต่อสาขา', '1381 ถ.ประชาราษฎร์ สาย1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800', 'สาขาวิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์', 'มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร', 'http://www.cpe.eng.rmutp.ac.th/', '02-836-3000 ต่อ 4183 หรือ 4184', 'cpe [at] rmutp.ac.th', ' https://www.facebook.com/cpe.rmutp/', '2020-01-27 15:39:57', '2020-02-29 18:21:48', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `course`
 --
 
@@ -141,7 +190,30 @@ CREATE TABLE `course` (
 --
 
 INSERT INTO `course` (`id`, `title`, `category_course_id`, `file_pdf`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(2, 'หลักสูตร2550', 1, '6469104b35841ac627bf037c4efcb868.pdf', '2020-02-28 11:10:50', '2020-02-28 11:24:20', NULL);
+(2, 'หลักสูตร2550', 1, 'cpe-2550.pdf', '2020-02-28 11:10:50', '2020-02-28 19:07:59', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `downloads`
+--
+
+CREATE TABLE `downloads` (
+  `id` int(11) NOT NULL,
+  `title` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `file` text COLLATE utf8_unicode_ci NOT NULL,
+  `category_downloads_id` int(11) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `downloads`
+--
+
+INSERT INTO `downloads` (`id`, `title`, `file`, `category_downloads_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(6, 'หลักสูตร2550', 'cpe-2550.pdf', 1, '2020-02-29 15:41:48', '2020-02-29 16:02:25', NULL);
 
 -- --------------------------------------------------------
 
@@ -153,6 +225,7 @@ CREATE TABLE `faculty` (
   `id` int(11) NOT NULL,
   `name_en` varchar(40) CHARACTER SET utf8 NOT NULL,
   `name_th` varchar(40) CHARACTER SET utf8 NOT NULL,
+  `status` int(11) NOT NULL,
   `img` text COLLATE utf8_unicode_ci NOT NULL,
   `education` text CHARACTER SET utf8 NOT NULL,
   `course` text CHARACTER SET utf8 NOT NULL,
@@ -169,8 +242,8 @@ CREATE TABLE `faculty` (
 -- Dumping data for table `faculty`
 --
 
-INSERT INTO `faculty` (`id`, `name_en`, `name_th`, `img`, `education`, `course`, `expert`, `web`, `tel`, `email`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Wanapun Waiyawut', 'อาจารย์ วณพันธ์ วัยวุฒิ', 'd1a5c9a344f1138b0ad5d017af0cbda1.gif', '<header class=\"entry-header\" style=\"margin-bottom: 20px; color: rgb(64, 64, 64); font-family: sans-serif, Arial; font-size: 16px;\"><h1 class=\"entry-title\" style=\"border: 0px; font-family: db_chidlom_xregular, sans-serif, Arial; font-size: 4rem; font-style: inherit; font-weight: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; clear: both; line-height: 4rem; color: rgb(34, 34, 34);\"><ul style=\"border: 0px; font-family: sans-serif, Arial; font-size: 16px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; list-style-position: outside; list-style-image: initial; line-height: 1.7; color: rgb(64, 64, 64);\"><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline;\">วศ.ม.วิศวกรรมไฟฟ้า(คอมพิวเตอร์) [กำลังศึกษาต่อ]<br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline;\">วศ.บ.วิศวกรรมไฟฟ้า<br>สถาบันเทคโนโลยีพระจอมเกล้าธนบุรี</li></ul></h1></header>', 'System Programming, Operating System, Algorithm Theory, OOP', 'Mobile Application, Hardware and Software,Robotic, AI', 'http://blog.rmutp.ac.th/wanapun.w', '02-836-3000 ต่อ 4183 หรือ 4184', 'wanapun.w [at] rmutp.ac.th', '2020-01-27 15:39:57', '2020-02-26 17:59:44', NULL);
+INSERT INTO `faculty` (`id`, `name_en`, `name_th`, `status`, `img`, `education`, `course`, `expert`, `web`, `tel`, `email`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'Wanapun Waiyawut', 'อาจารย์ วณพันธ์ วัยวุฒิ', 2, '03.gif', '<header class=\"entry-header\" style=\"margin-bottom: 20px; color: rgb(64, 64, 64); font-family: sans-serif, Arial; font-size: 16px;\"><h1 class=\"entry-title\" style=\"border: 0px; font-family: db_chidlom_xregular, sans-serif, Arial; font-size: 4rem; font-style: inherit; font-weight: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; clear: both; line-height: 4rem; color: rgb(34, 34, 34);\"><ul style=\"border: 0px; font-family: sans-serif, Arial; font-size: 16px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; list-style-position: outside; list-style-image: initial; line-height: 1.7; color: rgb(64, 64, 64);\"><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline;\">วศ.ม.วิศวกรรมไฟฟ้า(คอมพิวเตอร์) [กำลังศึกษาต่อ]<br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline;\">วศ.บ.วิศวกรรมไฟฟ้า<br>สถาบันเทคโนโลยีพระจอมเกล้าธนบุรี</li></ul></h1></header>', 'System Programming, Operating System, Algorithm Theory, OOP', 'Mobile Application, Hardware and Software,Robotic, AI', 'http://blog.rmutp.ac.th/wanapun.w', '02-836-3000 ต่อ 4183 หรือ 4184', 'wanapun.w [at] rmutp.ac.th', '2020-01-27 15:39:57', '2020-02-29 19:57:34', NULL);
 
 -- --------------------------------------------------------
 
@@ -336,7 +409,53 @@ INSERT INTO `logs` (`id`, `event_id`, `detail`, `user_id`, `ip`, `created_at`, `
 (164, 4, 'แก้ไข  Course', 1, '::1', '2020-02-28 11:24:20', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (165, 4, 'แก้ไข Info Contact Page', 1, '::1', '2020-02-28 11:40:11', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (166, 4, 'แก้ไข Info Contact Page', 1, '::1', '2020-02-28 11:42:23', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(167, 4, 'แก้ไข Info Contact Page', 1, '::1', '2020-02-28 11:42:42', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+(167, 4, 'แก้ไข Info Contact Page', 1, '::1', '2020-02-28 11:42:42', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(168, 1, 'เข้าสู่ระบบ Aluinch Backoffice', 1, '::1', '2020-02-28 15:56:47', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(169, 3, 'เพิ่ม  Category_download', 1, '::1', '2020-02-28 16:44:18', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(170, 4, 'แก้ไข  Category_download', 1, '::1', '2020-02-28 16:47:59', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(171, 4, 'แก้ไข  Category_download', 1, '::1', '2020-02-28 17:05:26', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(172, 4, 'แก้ไข  Course', 1, '::1', '2020-02-28 17:37:53', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(173, 4, 'แก้ไข  Course', 1, '::1', '2020-02-28 17:38:50', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(174, 3, 'เพิ่ม ข่าว', 1, '::1', '2020-02-28 17:55:14', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(175, 5, 'ลบ  Course', 1, '::1', '2020-02-28 17:55:30', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(176, 4, 'แก้ไข  Course', 1, '::1', '2020-02-28 18:49:25', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(177, 4, 'แก้ไข  Course', 1, '::1', '2020-02-28 18:50:31', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(178, 4, 'แก้ไข  Course', 1, '::1', '2020-02-28 19:07:25', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(179, 4, 'แก้ไข  Course', 1, '::1', '2020-02-28 19:07:59', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(180, 3, 'เพิ่ม  Faculty', 1, '::1', '2020-02-28 19:12:40', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(181, 5, 'ลบ  Faculty', 1, '::1', '2020-02-28 19:12:52', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(182, 3, 'เพิ่ม ข่าว', 1, '::1', '2020-02-28 19:28:41', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(183, 1, 'เข้าสู่ระบบ Aluinch Backoffice', 1, '::1', '2020-02-29 13:39:19', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(184, 3, 'เพิ่ม ข่าว', 1, '::1', '2020-02-29 14:12:20', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(185, 3, 'เพิ่ม ข่าว', 1, '::1', '2020-02-29 14:30:36', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(186, 3, 'เพิ่ม ข่าว', 1, '::1', '2020-02-29 14:35:17', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(187, 3, 'เพิ่ม ข่าว', 1, '::1', '2020-02-29 14:41:57', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(188, 5, 'ลบ  Download', 1, '::1', '2020-02-29 14:42:03', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(189, 5, 'ลบ  Download', 1, '::1', '2020-02-29 14:42:08', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(190, 5, 'ลบ  Download', 1, '::1', '2020-02-29 14:42:13', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(191, 5, 'ลบ  Download', 1, '::1', '2020-02-29 14:42:17', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(192, 5, 'ลบ  Download', 1, '::1', '2020-02-29 14:42:22', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(193, 3, 'เพิ่ม ข่าว', 1, '::1', '2020-02-29 15:41:48', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(194, 4, 'แก้ไข  Download', 1, '::1', '2020-02-29 15:54:50', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(195, 4, 'แก้ไข  Download', 1, '::1', '2020-02-29 15:55:45', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(196, 4, 'แก้ไข  Download', 1, '::1', '2020-02-29 15:56:39', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(197, 4, 'แก้ไข  Download', 1, '::1', '2020-02-29 15:57:49', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(198, 4, 'แก้ไข  Faculty', 1, '::1', '2020-02-29 16:01:27', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(199, 4, 'แก้ไข  Faculty', 1, '::1', '2020-02-29 16:01:51', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(200, 4, 'แก้ไข  Download', 1, '::1', '2020-02-29 16:02:25', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(201, 2, 'ออกจากระบบ Aluinch Backoffice', 1, '::1', '2020-02-29 16:14:15', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(202, 2, 'ออกจากระบบ Aluinch Backoffice', 1, '::1', '2020-02-29 16:20:48', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(203, 1, 'เข้าสู่ระบบ Aluinch Backoffice', 1, '::1', '2020-02-29 16:51:18', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(204, 2, 'ออกจากระบบ Aluinch Backoffice', 1, '::1', '2020-02-29 16:51:25', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(205, 1, 'เข้าสู่ระบบ Aluinch Backoffice', 1, '::1', '2020-02-29 16:56:40', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(206, 4, 'แก้ไข Info Contact Page', 1, '::1', '2020-02-29 17:52:15', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(207, 4, 'แก้ไข Info Contact Page', 1, '::1', '2020-02-29 17:53:51', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(208, 4, 'แก้ไข Info Contact Page', 1, '::1', '2020-02-29 18:13:49', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(209, 4, 'แก้ไข Info Contact Page', 1, '::1', '2020-02-29 18:17:22', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(210, 4, 'แก้ไข Info Contact Page', 1, '::1', '2020-02-29 18:21:48', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(211, 4, 'แก้ไข  Faculty', 1, '::1', '2020-02-29 19:29:06', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(212, 4, 'แก้ไข  Faculty', 1, '::1', '2020-02-29 19:57:24', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(213, 4, 'แก้ไข  Faculty', 1, '::1', '2020-02-29 19:57:34', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -464,6 +583,28 @@ INSERT INTO `roles` (`id`, `title`, `created_at`, `updated_at`, `deleted_at`) VA
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `status`
+--
+
+CREATE TABLE `status` (
+  `id` int(11) NOT NULL,
+  `title` varchar(40) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `status`
+--
+
+INSERT INTO `status` (`id`, `title`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'หัวหน้าสาขา', '2019-10-08 09:38:23', NULL, NULL),
+(2, 'คณาจารย์', '2019-10-08 09:38:23', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `sub_pages`
 --
 
@@ -535,9 +676,15 @@ ALTER TABLE `banners`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `category_course`
+-- Indexes for table `category_courses`
 --
-ALTER TABLE `category_course`
+ALTER TABLE `category_courses`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `category_downloads`
+--
+ALTER TABLE `category_downloads`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -547,9 +694,21 @@ ALTER TABLE `category_news`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contacts`
+--
+ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `course`
 --
 ALTER TABLE `course`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `downloads`
+--
+ALTER TABLE `downloads`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -601,6 +760,12 @@ ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `status`
+--
+ALTER TABLE `status`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `sub_pages`
 --
 ALTER TABLE `sub_pages`
@@ -629,10 +794,16 @@ ALTER TABLE `banners`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `category_course`
+-- AUTO_INCREMENT for table `category_courses`
 --
-ALTER TABLE `category_course`
+ALTER TABLE `category_courses`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `category_downloads`
+--
+ALTER TABLE `category_downloads`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `category_news`
@@ -641,16 +812,28 @@ ALTER TABLE `category_news`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `course`
 --
 ALTER TABLE `course`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `downloads`
+--
+ALTER TABLE `downloads`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `faculty`
 --
 ALTER TABLE `faculty`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `labs`
@@ -662,7 +845,7 @@ ALTER TABLE `labs`
 -- AUTO_INCREMENT for table `logs`
 --
 ALTER TABLE `logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=168;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=214;
 
 --
 -- AUTO_INCREMENT for table `log_events`
@@ -692,6 +875,12 @@ ALTER TABLE `project`
 -- AUTO_INCREMENT for table `roles`
 --
 ALTER TABLE `roles`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `status`
+--
+ALTER TABLE `status`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --

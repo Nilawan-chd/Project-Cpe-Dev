@@ -56,7 +56,7 @@
                                         <div class="custom-file input-file-w-30">
                                             <input type="file" class="custom-file-input" name="file_pdf" onchange="PreviewFile(this, 'previewFileCatalog');" value="<?php echo  $course->file_pdf; ?>">
                                             <label class="custom-file-label" id="previewFileCatalog">Choose file (.pdf)</label>
-                                            <div style="margin-top: 12px; display: block;"><span>old file: </span><a style="display: inline-block;" href="<?php echo base_url('storage/uploads/files/course/' . $course->file_pdf); ?>"><?php echo $course->title; ?>.pdf</a></div>
+                                            <div style="margin-top: 12px; display: block;"><span>old file: </span><a style="display: inline-block;" href="<?php echo base_url('storage/uploads/files/course/' . $course->file_pdf); ?>"><?php echo $course->file_pdf; ?></a></div>
 
                                         </div>
                                     </div>

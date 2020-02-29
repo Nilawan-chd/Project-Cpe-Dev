@@ -271,7 +271,6 @@ class Banner extends MX_Controller
 	{
 		$config['upload_path'] = './storage/uploads/images/banner';
 		$config['allowed_types'] = 'gif|jpg|png';
-		$config['encrypt_name'] = TRUE;
 
 		$this->load->library('upload', $config);
 

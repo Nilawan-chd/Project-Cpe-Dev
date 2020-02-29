@@ -9,8 +9,8 @@
         <div class="section-header">
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
-                <div class="breadcrumb-item"><a href="#">หน้า: หลักสูตร</a></div>
-                <div class="breadcrumb-item">หลักสูตร</div>
+                <div class="breadcrumb-item"><a href="#">หน้า: ดาวน์โหลด</a></div>
+                <div class="breadcrumb-item">ดาวน์โหลด</div>
             </div>
         </div>
 
@@ -19,9 +19,9 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>หลักสูตร</h4>
+                            <h4>ดาวน์โหลด</h4>
                             <div class="card-header-action">
-                                <a href="<?php echo base_url('backoffice/page/course/category/create'); ?>"
+                                <a href="<?php echo base_url('backoffice/page/download/category/create'); ?>"
                                    class="btn btn-primary">
                                     <i class="fas fa-plus"></i> เพิ่ม
                                 </a>
@@ -49,18 +49,18 @@
                                     </thead>
                                     <tbody>
                                     <?php
-										if (count($category_course) > 0) {
+										if (count($category_download) > 0) {
                                             $counter = 1;
-                                            foreach ($category_course as $category_courses) { ?>
+                                            foreach ($category_download as $category_downloads) { ?>
                                                 <tr>
                                                     <td class="text-center"><?php echo $counter++; ?></td>
-                                                    <td><?php echo $category_courses->title; ?></td>
-                                                    <td><?php echo $category_courses->created_at; ?></td>
+                                                    <td><?php echo $category_downloads->title; ?></td>
+                                                    <td><?php echo $category_downloads->created_at; ?></td>
                                                     <td>
                                                         <a class="btn btn-warning"
-                                                           href="<?php echo base_url('backoffice/page/course/course/show/' . $category_courses->id); ?>">
+                                                           href="<?php echo base_url('backoffice/page/download/download/show/' . $category_downloads->id); ?>">
                                                             <i class="far fa-view"></i> Items
-                                                            (<?php echo $category_courses->counter; ?>)</a>
+                                                            (<?php echo $category_downloads->counter; ?>)</a>
                                                     </td>
                                                     <td>
                                                         <div class="dropdown d-inline">
@@ -68,8 +68,8 @@
                                                                 <i class="fas fa-cog"></i> Manage
                                                             </button>
                                                             <div class="dropdown-menu">
-                                                                <a class="dropdown-item has-icon" href="<?php echo base_url('backoffice/page/course/category/edit/' . $category_courses->id); ?>"><i class="far fa-edit"></i> Edit</a>
-                                                                <a class="dropdown-item has-icon" onclick="deleteCategoryProduct('<?php echo base_url('backoffice/page/course/category/destroy/' . $category_courses->id); ?>')"><i class="far fa-trash-alt"></i> Delete</a>
+                                                                <a class="dropdown-item has-icon" href="<?php echo base_url('backoffice/page/download/category/edit/' . $category_downloads->id); ?>"><i class="far fa-edit"></i> Edit</a>
+                                                                <a class="dropdown-item has-icon" onclick="deleteCategoryProduct('<?php echo base_url('backoffice/page/download/category/destroy/' . $category_downloads->id); ?>')"><i class="far fa-trash-alt"></i> Delete</a>
                                                             </div>
                                                         </div>
                                                     </td>

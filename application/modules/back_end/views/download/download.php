@@ -11,19 +11,22 @@
         <div class="section-header">
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a
-                            href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
-                <div class="breadcrumb-item"><a href="#">หน้า: เกี่ยวกับ</a></div>
-                <div class="breadcrumb-item">คณาจารย์</div>
+                            href="<?php echo base_url('backoffice/dashboard'); ?>">Dashboard</a></div>
+                <div class="breadcrumb-item"><a href="#">หน้า: หลักสูตร</a></div>
+                <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/page/home/download'); ?>"><?php echo $category_download_title; ?></a></div>
+
+                <div class="breadcrumb-item">หลักสูตร: (ประเภท - <?php echo $category_download_title; ?>)</div>
             </div>
         </div>
+
         <div class="section-body">
             <div class="row">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>รายการ ข่าวสาร</h4>
+                            <h4>รายการ หลักสูตร(ประเภท - <?php echo $category_download_title; ?>)</h4>
                             <div class="card-header-action">
-                                <a href="<?php echo base_url('backoffice/page/about/faculty/create'); ?>"
+                                <a href="<?php echo base_url('backoffice/page/download/download/create/'.$category_download_id); ?>"
                                    class="btn btn-primary">
                                     <i class="fas fa-plus"></i> เพิ่ม
                                 </a>
@@ -41,9 +44,7 @@
                                     <thead>
                                     <tr>
                                         <th class="text-center">#</th>
-                                        <th>รูป</th>
-                                        <th>ชื่อ</th>
-                                        <th>ตำแหน่ง</th>
+                                        <th>หัวข้อ</th>
                                         <th>สร้างเมื่อ</th>
                                         <th>การกระทำ</th>
                                     </tr>
@@ -51,35 +52,25 @@
                                     <tbody>
                                     <?php
                                     $counter = 1;
-                                    foreach ($faculty as $faculties) { ?>
+                                    foreach ($download as $downloads) { ?>
                                         <tr>
                                             <td class="text-center"><?php echo $counter++; ?></td>
-                                            <td>
-                                                <img id="previewImgCover"
-                                                     src="<?php echo base_url('storage/uploads/images/faculty/' . $faculties->img); ?>"
-                                                     style="background-color: #fff;" width="50%">
-                                            </td>
-                                            <td><?php echo $faculties->name_th; ?></td>
-                                            <?php if ($faculties->status == 1) { ?>
-                                            <td><?php echo 'หัวหน้าสาขา'; ?></td>
-                                            <?php } else {?>
-                                            <td><?php echo 'คณาจารย์'; ?></td>
-                                            <?php }?>
-                                            <td><?php echo $faculties->created_at; ?></td>
+                                            <td><?php echo $downloads->title; ?></td>
+                                            <td><?php echo $downloads->created_at; ?></td>
                                             <td>
                                                 <div class="dropdown d-inline">
                                                     <button class="btn btn-info dropdown-toggle" type="button"
                                                             id="dropdownMenuButton2" data-toggle="dropdown"
                                                             aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fas fa-cog"></i> จัดการ
+                                                        <i class="fas fa-cog"></i> Manage
                                                     </button>
                                                     <div class="dropdown-menu">
                                                         <a class="dropdown-item has-icon"
-                                                           href="<?php echo base_url('backoffice/page/about/faculty/edit/' . $faculties->id); ?>"><i
-                                                                    class="far fa-edit"></i> แก้ไข</a>
+                                                           href="<?php echo base_url('backoffice/page/download/download/edit/' . $downloads->id); ?>"><i
+                                                                    class="far fa-edit"></i> Edit</a>
                                                         <a class="dropdown-item has-icon"
-                                                           onclick="deleteProduct('<?php echo base_url('backoffice/page/about/faculty/destroy/' . $faculties->id); ?>')"><i
-                                                                    class="far fa-trash-alt"></i> ลบ </a>
+                                                           onclick="deleteProduct('<?php echo base_url('backoffice/page/download/download/destroy/' . $downloads->id); ?>')"><i
+                                                                    class="far fa-trash-alt"></i> Delete</a>
                                                     </div>
                                                 </div>
                                             </td>
@@ -88,10 +79,7 @@
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
-
-
                     </div>
                 </div>
             </div>
