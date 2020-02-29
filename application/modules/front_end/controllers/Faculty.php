@@ -14,6 +14,14 @@ class Faculty extends MX_Controller
         | -------------------------------------------------------------------------
         */
 
+        /*
+        | -------------------------------------------------------------------------
+        | model
+        | -------------------------------------------------------------------------
+        */
+        $this->load->model('Faculty_model');
+
+
 
     }
 
@@ -22,8 +30,8 @@ class Faculty extends MX_Controller
 
 
         // Content
-        $data['content'] = 'faculty';
-
+        $data['content'] = 'Faculty';
+        $data['faculty'] = $this->Faculty_model->get_faculty_all();
 
 
         /*

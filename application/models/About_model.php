@@ -5,11 +5,10 @@ class About_model extends CI_Model
 
     public function get_about_all()
     {
-        $query = $this->db->order_by('sort', 'asc')->get('abouts');
+        $query = $this->db->get('abouts');
 
         return $query->num_rows() > 0 ? $query->result() : [];
     }
-
     public function get_about_by_id($id)
     {
         $query = $this->db->where('id', $id)->get('abouts');

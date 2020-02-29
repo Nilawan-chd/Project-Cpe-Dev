@@ -14,6 +14,14 @@ class Project extends MX_Controller
         | -------------------------------------------------------------------------
         */
 
+        /*
+       | -------------------------------------------------------------------------
+       | model
+       | -------------------------------------------------------------------------
+       */
+        $this->load->model('Project_model');
+
+
 
     }
 
@@ -23,7 +31,7 @@ class Project extends MX_Controller
 
         // Content
         $data['content'] = 'project';
-
+        $data['project'] = $this->Project_model->get_project_by_id(1);
 
 
         /*

@@ -14,6 +14,14 @@ class About extends MX_Controller
         | -------------------------------------------------------------------------
         */
 
+        /*
+        | -------------------------------------------------------------------------
+        | model
+        | -------------------------------------------------------------------------
+        */
+        $this->load->model('About_model');
+
+
 
     }
 
@@ -23,7 +31,7 @@ class About extends MX_Controller
 
         // Content
         $data['content'] = 'about';
-
+        $data['about'] = $this->About_model->get_about_by_id(1);
 
 
         /*

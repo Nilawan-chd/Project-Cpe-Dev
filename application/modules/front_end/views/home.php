@@ -1,3 +1,4 @@
+
 <div class="sydney-hero-area">
 
     <div id="slideshow" class="header-slider" data-speed="4000" data-mobileslider="fullscreen">

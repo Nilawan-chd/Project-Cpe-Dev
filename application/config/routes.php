@@ -73,7 +73,6 @@ $route['download'] = 'front_end/Download';
 
 
 
-
 $route['product/(:any)/(:any)/(:any)'] = "front_end/Product/show/$1/$2/$3";
 $route['technology'] = 'front_end/Technology';
 $route['technology/(:any)/(:any)/(:any)'] = "front_end/Technology/show/$1/$2/$3";

@@ -3821,6 +3821,7 @@
         }</style>
 </head>
 
+
 <body class="page-template-default page page-id-8130 siteorigin-panels siteorigin-panels-before-js mega-menu-primary mega-menu-topnav">
 
 <div class="preloader">
@@ -3841,9 +3842,10 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-xs-12">
                         <a href="http://eng.rmutp.ac.th/"
-                           title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร"><img class="site-logo"
-                                                                                            src="http://eng.rmutp.ac.th/web2558/wp-content/uploads/2018/08/eng-logo.png"
-                                                                                            alt="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร"/></a>
+                           title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร">
+                            <img class="site-logo"
+                                 src="http://eng.rmutp.ac.th/web2558/wp-content/uploads/2018/08/eng-logo.png"
+                                 alt="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร"/></a>
                     </div>
                     <div class="col-lg-8 col-md-8 col-xs-12">
                         <div class="btn-menu"></div>
@@ -3868,8 +3870,7 @@
                                     data-second-click="close" data-document-click="collapse"
                                     data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true">
                                     <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-8272'
-                                        id='mega-menu-item-8272'><a class="mega-menu-link" href="#" aria-haspopup="true"
-                                                                    aria-expanded="false" tabindex="0">หน้าแรก<span
+                                        id='mega-menu-item-8272'><a href="<?php echo base_url('home') ?>" >หน้าแรก<span
                                                     class="mega-indicator"></span></a>
 
                                     </li>
@@ -3887,14 +3888,14 @@
                                                         <div class="col-12 col-lg-6">
 
                                                             <ul>
-                                                                <li>ประวัติความเป็นมา</li>
-
+                                                                <li><a href="<?php echo base_url('about') ?>">ประวัติความเป็นมา<span class="mega-indicator"></span></a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-12 col-lg-6">
 
                                                             <ul>
-                                                                <li>คณาจารย์</li>
+                                                                <li><a href="<?php echo base_url('faculty') ?>">คณาจารย์</a></li>
 
                                                             </ul>
                                                         </div>
@@ -3903,24 +3904,21 @@
                                             </li>
                                         </ul>
                                     </li>
+                                    </li>
                                     <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-8298'
-                                        id='mega-menu-item-8298'><a class="mega-menu-link" href="#" aria-haspopup="true"
-                                                                    aria-expanded="false" tabindex="0">หลักสูตร<span
-                                                    class="mega-indicator"></span></a>
+                                        id='mega-menu-item-8298'><a  href="<?php echo base_url('course') ?>" >หลักสูตร<span class="mega-indicator"></span></a>
 
                                     </li>
                                     <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-7447'
-                                        id='mega-menu-item-7447'><a class="mega-menu-link" href="#" aria-haspopup="true"
-                                                                    aria-expanded="false" tabindex="0">ดาวน์โหลด<span
-                                                    class="mega-indicator"></span></a>
+                                        id='mega-menu-item-7447'><a href="<?php echo base_url('download') ?>" >ดาวน์โหลด<span class="mega-indicator"></span></a>
+                                    </li>
                                     <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-7447'
-                                        id='mega-menu-item-7447'><a class="mega-menu-link" href="#" aria-haspopup="true"
-                                                                    aria-expanded="false" tabindex="0">งานวิจัยและโครงงาน<span
-                                                    class="mega-indicator"></span></a>
+                                        id='mega-menu-item-7447'><a href="<?php echo base_url('project') ?>">งานวิจัยและโครงงาน<span class="mega-indicator"></span></a>
+                                    </li>
                                     <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9534'
                                         id='mega-menu-item-9534'><a class="mega-menu-link"
-                                                                    href="http://eng.rmutp.ac.th/%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b9%88%e0%b8%ad%e0%b9%80%e0%b8%a3%e0%b8%b2/"
-                                                                    tabindex="0">ติดต่อ</a></li>
+                                                                    href="<?php echo base_url('contact') ?>">ติดต่อ</a>
+                                    </li>
                                     <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-left mega-hide-text mega-menu-item-8305'
                                         id='mega-menu-item-8305'><a class="dashicons-search mega-menu-link" href="#"
                                                                     aria-haspopup="true" aria-expanded="false"
