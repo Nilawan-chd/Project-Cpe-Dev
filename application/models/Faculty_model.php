@@ -17,6 +17,7 @@ class Faculty_model extends CI_Model
         return $query->num_rows() > 0 ? $query->row() : [];
     }
 
+
     public function insert_faculty($data)
     {
         $this->db->insert('faculty', $data);

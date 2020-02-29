@@ -88,11 +88,11 @@
                     <li class="<?php if ($this->uri->segment(2) == "dashboard") { echo 'active'; } ?>">
                         <a class="nav-link" href="<?php echo base_url('backoffice/dashboard'); ?>"><i class="fas fa-fire"></i> <span>แดชบอร์ด</span></a>
                     </li>
-                    <li class="menu-header">ตั้งค่า ทั่วไป</li>
 
                     <li class="menu-header">เมนู</li>
                     <li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "home") { echo 'active'; } ?>">
                         <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>หน้าแรก</span></a>
+
                         <ul class="dropdown-menu">
                             <li class="<?php if ($this->uri->segment(3) == "home" && $this->uri->segment(4) == "banner") { echo 'active'; } ?>">
                                 <a class="nav-link" href="<?php echo base_url('backoffice/page/home/banner'); ?>">&#9679; แบนเนอร์</a>
@@ -151,17 +151,13 @@
                         </ul>
                     </li>
 					<li class="nav-item dropdown <?php if ($this->uri->segment(2) == "page" && $this->uri->segment(3) == "contact") { echo 'active'; } ?>">
-						<a href="#" class="nav-link has-dropdown"><i class="fas fa-file-alt"></i><span>Contact</span></a>
+						<a href="#" class="nav-link has-dropdown"><i class="fas fa-file-alt"></i><span>ติดต่อ</span></a>
 						<ul class="dropdown-menu">
-							<li class="<?php if ($this->uri->segment(3) == "contact" && $this->uri->segment(4) == "content") { echo 'active'; } ?>">
-								<a class="nav-link" href="<?php echo base_url('backoffice/page/contact/content/1'); ?>">&#9679; Content</a>
+							<li class="<?php if ($this->uri->segment(3) == "contact" && $this->uri->segment(4) == "info") { echo 'active'; } ?>">
+								<a class="nav-link" href="<?php echo base_url('backoffice/page/contact/info/edit/1'); ?>">&#9679; ติดต่อ</a>
 							</li>
 						</ul>
-                        <ul class="dropdown-menu">
-                            <li class="<?php if ($this->uri->segment(3) == "contact" && $this->uri->segment(4) == "info") { echo 'active'; } ?>">
-                                <a class="nav-link" href="<?php echo base_url('backoffice/page/contact/info/1') ?>">&#9679; Info</a>
-                            </li>
-                        </ul>
+
 					</li>
 					<?php if ($user->role_id == 1) { ?>
                     <li class="menu-header">Settings</li>

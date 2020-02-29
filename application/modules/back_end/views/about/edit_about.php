@@ -4,7 +4,8 @@
         <div class="section-header">
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item"><a href="<?php echo base_url('backoffice/dashboard'); ?>">แดชบอร์ด</a></div>
-                <div class="breadcrumb-item"><a href="#">หน้าเกี่ยวกับ: ประวัติความเป็นมา</a></div>
+                <div class="breadcrumb-item"><a href="#">หน้า: เกี่ยวกับ</a></div>
+                <div class="breadcrumb-item"><a href="#">เกี่ยวกับ: ประวัติความเป็นมา</a></div>
                 <div class="breadcrumb-item active">แก้ไข ประวัติความเป็นมา</div>
             </div>
         </div>

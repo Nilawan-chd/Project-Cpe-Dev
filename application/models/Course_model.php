@@ -21,11 +21,11 @@ class Course_model extends CI_Model
     {
         $this->db->select('
             course.*,
-            category_course.title as category_course_name
+            category_courses.title as category_courses_name
             
         ');
         $this->db->from('course');
-        $this->db->join('category_course', 'category_course.id = course.category_course_id');
+        $this->db->join('category_courses', 'category_courses.id = course.category_course_id');
         $this->db->where('course.category_course_id', $category_id);
 
         $query = $this->db->get();

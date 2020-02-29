@@ -48,6 +48,16 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">* ตำแหน่ง</label>
+                                    <div class="col-sm-4">
+                                        <select class="form-control" name="status" required>
+                                            <option value="2" <?php if ($faculty->status == 2) { echo 'selected'; } else { echo ''; } ?>>คณาจารย์</option>
+                                            <option value="1" <?php if ($faculty->status == 1) { echo 'selected'; } else { echo ''; } ?>>หัวหน้าสาขา</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">Preview</label>
                                     <div class="col-sm-9">
                                         <img id="previewImgCover" src="<?php echo base_url('storage/uploads/images/faculty/'. $faculty->img );?>" style="background-color: #fff;" width="20%"

@@ -48,6 +48,15 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">* ตำแหน่ง</label>
+                                    <div class="col-sm-4">
+                                        <select class="form-control" name="status" required>
+                                            <option value="2">คณาจารย์</option>
+                                            <option value="1">หัวหน้าแผนก</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">Preview</label>
                                     <div class="col-sm-9">
                                         <img id="previewImgCover" src="" style="background-color: #fff;" width="20%"

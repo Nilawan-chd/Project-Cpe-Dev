@@ -178,11 +178,14 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
         $route['backoffice/page/about/faculty/destroy/(:any)'] = "back_end/Faculty/destroy/$1";
 
 
-        /*
-        | -------------------------------------------------------------------------
-        | Course
-        | -------------------------------------------------------------------------
-        */
+
+
+
+/*
+| -------------------------------------------------------------------------
+| Course
+| -------------------------------------------------------------------------
+*/
 
 
         // Category
@@ -256,19 +259,21 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
 		| -------------------------------------------------------------------------
 		*/
 
-    	// Content
-        $route['backoffice/page/contact/content/(:any)'] = 'back_end/Contact_page/edit_content/$1';
-		$route['backoffice/page/contact/content/update/(:any)'] = 'back_end/Contact_page/update_content/$1';
+    	// Contact
+        $route['backoffice/page/contact/info/edit/(:any)'] = 'back_end/Contacts/edit/$1';
+		$route['backoffice/page/contact/info/update/(:any)'] = 'back_end/Contacts/update/$1';
 
-        // Info
-        $route['backoffice/page/contact/info/(:any)'] = 'back_end/Contact_page/edit_info/$1';
-		$route['backoffice/page/contact/info/update/(:any)'] = 'back_end/Contact_page/update_info/$1';
+
 
     /*
     | -------------------------------------------------------------------------
     | SETTING
     | -------------------------------------------------------------------------
     */
+
+
+
+
 
     $route['backoffice/setting'] = 'back_end/setting';
 

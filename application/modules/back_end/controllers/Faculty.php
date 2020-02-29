@@ -43,6 +43,7 @@ class Faculty extends MX_Controller
         $this->data['content'] = 'faculty/faculty';
         $this->data['faculty'] = $this->Faculty_model->get_faculty_all();
 
+
         $this->load->view('app', $this->data);
     }
 
@@ -65,6 +66,7 @@ class Faculty extends MX_Controller
         $add_faculty = $this->Faculty_model->insert_faculty([
             'name_th' => $this->input->post('name_th'),
             'name_en' => $this->input->post('name_en'),
+            'status' => $this->input->post('status'),
             'img' => $img,
             'web' => $this->input->post('web'),
             'tel' => $this->input->post('tel'),
@@ -91,26 +93,27 @@ class Faculty extends MX_Controller
         redirect('backoffice/page/about/faculty');
     }
 
-    public function edit($facultyid)
+    public function edit($faculty_id)
     {
         $this->data['title'] = 'Page: Home - Galleries - Edit';
         $this->data['content'] = 'faculty/edit_faculty';
-        $this->data['faculty'] = $this->Faculty_model->get_faculty_by_id($facultyid);
+        $this->data['faculty'] = $this->Faculty_model->get_faculty_by_id($faculty_id);
 
         $this->load->view('app', $this->data);
     }
 
-    public function update($facultyid)
+    public function update($faculty_id)
     {
-        $faculty = $this->Faculty_model->get_faculty_by_id($facultyid);
+        $faculty = $this->Faculty_model->get_faculty_by_id($faculty_id);
         $img = $faculty->img;
 
         if (isset($_FILES['img']) && $_FILES['img']['name'] != '') {
             $img = $this->do_upload_img_faculty('img');
         }
-        $update_faculty = $this->Faculty_model->update_faculty_by_id($facultyid, [
+        $update_faculty = $this->Faculty_model->update_faculty_by_id($faculty_id, [
             'name_th' => $this->input->post('name_th'),
             'name_en' => $this->input->post('name_en'),
+            'status' => $this->input->post('status'),
             'img' => $img,
             'web' => $this->input->post('web'),
             'tel' => $this->input->post('tel'),
@@ -139,12 +142,12 @@ class Faculty extends MX_Controller
         redirect('backoffice/page/about/faculty');
     }
 
-    public function destroy($facultyid)
+    public function destroy($faculty_id)
     {
         $status = 500;
         $response['success'] = 0;
 
-        $product = $this->Faculty_model->delete_faculty_by_id($facultyid);
+        $product = $this->Faculty_model->delete_faculty_by_id($faculty_id);
 
         if ($product != false) {
             $status = 200;
@@ -167,7 +170,6 @@ class Faculty extends MX_Controller
     {
         $config['upload_path'] = './storage/uploads/images/faculty';
         $config['allowed_types'] = 'gif|jpg|png';
-        $config['encrypt_name'] = TRUE;
 
         $this->load->library('upload', $config);
 
