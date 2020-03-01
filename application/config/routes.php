@@ -175,6 +175,9 @@ $route['contact/send']['post'] = 'front_end/Contact/send';
         $route['backoffice/page/about/faculty/edit/(:any)'] = "back_end/Faculty/edit/$1";
         $route['backoffice/page/about/faculty/update/(:any)'] = "back_end/Faculty/update/$1";
         $route['backoffice/page/about/faculty/destroy/(:any)'] = "back_end/Faculty/destroy/$1";
+        $route['backoffice/page/about/faculty/ajax/get/faculty/sort/show'] = 'back_end/Faculty/ajax_get_faculty_and_sort_show';
+        $route['backoffice/page/about/faculty/ajax/get/faculty/sort/update'] = 'back_end/Faculty/ajax_get_faculty_and_sort_update';
+
 
 
 

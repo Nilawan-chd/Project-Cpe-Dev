@@ -94,13 +94,13 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">การศึกษา</label>
                                     <div class="col-sm-9">
-                                        <textarea type="text" class="form-control"   name="education"></textarea>
+                                        <textarea type="text" class="summernote"   name="education"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">วิชาที่สอน</label>
                                     <div class="col-sm-9">
-                                        <textarea type="text" class="form-control" name="course"></textarea>
+                                        <textarea  type="text" class="form-control" name="course"></textarea>
                                     </div>
 
                                 </div>

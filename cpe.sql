@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 01, 2020 at 12:37 AM
+-- Generation Time: Mar 01, 2020 at 05:37 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -150,6 +150,7 @@ INSERT INTO `category_news` (`id`, `title`, `created_at`, `updated_at`, `deleted
 CREATE TABLE `contacts` (
   `id` int(11) NOT NULL,
   `title` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `img` text COLLATE utf8_unicode_ci NOT NULL,
   `address` text COLLATE utf8_unicode_ci NOT NULL,
   `department` text COLLATE utf8_unicode_ci NOT NULL,
   `university` text COLLATE utf8_unicode_ci NOT NULL,
@@ -166,8 +167,8 @@ CREATE TABLE `contacts` (
 -- Dumping data for table `contacts`
 --
 
-INSERT INTO `contacts` (`id`, `title`, `address`, `department`, `university`, `web`, `tel`, `email`, `facebook`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'ติดต่อสาขา', '1381 ถ.ประชาราษฎร์ สาย1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800', 'สาขาวิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์', 'มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร', 'http://www.cpe.eng.rmutp.ac.th/', '02-836-3000 ต่อ 4183 หรือ 4184', 'cpe [at] rmutp.ac.th', ' https://www.facebook.com/cpe.rmutp/', '2020-01-27 15:39:57', '2020-02-29 18:21:48', NULL);
+INSERT INTO `contacts` (`id`, `title`, `img`, `address`, `department`, `university`, `web`, `tel`, `email`, `facebook`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'ติดต่อสาขา', '811b903a80c47d1e8d38fd06f33c2bea.png', '1381 ถ.ประชาราษฎร์ สาย1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800', 'สาขาวิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์', 'มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร', 'http://www.cpe.eng.rmutp.ac.th/', '02-836-3000 ต่อ 4183 หรือ 4184', 'cpe [at] rmutp.ac.th', ' https://www.facebook.com/cpe.rmutp/', '2020-01-27 15:39:57', '2020-03-01 12:17:38', NULL);
 
 -- --------------------------------------------------------
 
@@ -223,6 +224,7 @@ INSERT INTO `downloads` (`id`, `title`, `file`, `category_downloads_id`, `create
 
 CREATE TABLE `faculty` (
   `id` int(11) NOT NULL,
+  `sort` int(11) NOT NULL,
   `name_en` varchar(40) CHARACTER SET utf8 NOT NULL,
   `name_th` varchar(40) CHARACTER SET utf8 NOT NULL,
   `status` int(11) NOT NULL,
@@ -242,8 +244,9 @@ CREATE TABLE `faculty` (
 -- Dumping data for table `faculty`
 --
 
-INSERT INTO `faculty` (`id`, `name_en`, `name_th`, `status`, `img`, `education`, `course`, `expert`, `web`, `tel`, `email`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Wanapun Waiyawut', 'อาจารย์ วณพันธ์ วัยวุฒิ', 2, '03.gif', '<header class=\"entry-header\" style=\"margin-bottom: 20px; color: rgb(64, 64, 64); font-family: sans-serif, Arial; font-size: 16px;\"><h1 class=\"entry-title\" style=\"border: 0px; font-family: db_chidlom_xregular, sans-serif, Arial; font-size: 4rem; font-style: inherit; font-weight: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; clear: both; line-height: 4rem; color: rgb(34, 34, 34);\"><ul style=\"border: 0px; font-family: sans-serif, Arial; font-size: 16px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; list-style-position: outside; list-style-image: initial; line-height: 1.7; color: rgb(64, 64, 64);\"><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline;\">วศ.ม.วิศวกรรมไฟฟ้า(คอมพิวเตอร์) [กำลังศึกษาต่อ]<br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline;\">วศ.บ.วิศวกรรมไฟฟ้า<br>สถาบันเทคโนโลยีพระจอมเกล้าธนบุรี</li></ul></h1></header>', 'System Programming, Operating System, Algorithm Theory, OOP', 'Mobile Application, Hardware and Software,Robotic, AI', 'http://blog.rmutp.ac.th/wanapun.w', '02-836-3000 ต่อ 4183 หรือ 4184', 'wanapun.w [at] rmutp.ac.th', '2020-01-27 15:39:57', '2020-02-29 19:57:34', NULL);
+INSERT INTO `faculty` (`id`, `sort`, `name_en`, `name_th`, `status`, `img`, `education`, `course`, `expert`, `web`, `tel`, `email`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 1, 'Wanapun Waiyawut', 'อาจารย์ วณพันธ์ วัยวุฒิ', 1, '03.gif', '<header class=\"entry-header\" style=\"margin-bottom: 20px; color: rgb(64, 64, 64); font-family: sans-serif, Arial; font-size: 16px;\"><h1 class=\"entry-title\" style=\"border: 0px; font-family: db_chidlom_xregular, sans-serif, Arial; font-size: 4rem; font-style: inherit; font-weight: inherit; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; clear: both; line-height: 4rem; color: rgb(34, 34, 34);\"><ul style=\"border: 0px; font-family: sans-serif, Arial; font-size: 16px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; list-style-position: outside; list-style-image: initial; line-height: 1.7; color: rgb(64, 64, 64);\"><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline;\">วศ.ม.วิศวกรรมไฟฟ้า(คอมพิวเตอร์) [กำลังศึกษาต่อ]<br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline;\">วศ.บ.วิศวกรรมไฟฟ้า<br>สถาบันเทคโนโลยีพระจอมเกล้าธนบุรี</li></ul></h1></header>', 'System Programming, Operating System, Algorithm Theory, OOP', 'Mobile Application, Hardware and Software,Robotic, AI', 'http://blog.rmutp.ac.th/wanapun.w', '02-836-3000 ต่อ 4183 หรือ 4184', 'wanapun.w [at] rmutp.ac.th', '2020-01-27 15:39:57', '2020-03-01 12:54:54', NULL),
+(5, 2, 'Nilamit Nilas', 'อาจารย์ นิลมิต นิลาศ', 2, '8872f994d83b65209840e326b8b63058.gif', '<ul style=\"border: 0px; font-family: sans-serif, Arial; font-size: 16px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; list-style-position: outside; list-style-image: initial; line-height: 1.7; color: rgb(64, 64, 64);\"><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline;\">วศ.ม.วิศวกรรมคอมพิวเตอร์<br>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline;\">วศ.บ.วิศวกรรมอิเล็กทรอนิกส์<br>​สถาบันเทคโนโลยีราชมงคล</li></ul>', 'Microprocessor,Microprocessor Interfacing System Design, Computer Programming', 'Microcontroller and Interface', '', '02-836-3000 ต่อ 4183 หรือ 4184', 'nilamit.n [at] rmutp.ac.th', '2020-03-01 13:50:02', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -283,6 +286,30 @@ CREATE TABLE `logs` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `deleted_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `logs`
+--
+
+INSERT INTO `logs` (`id`, `event_id`, `detail`, `user_id`, `ip`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(214, 1, 'เข้าสู่ระบบ ระบบจัดการเว็บไซต์', 1, '::1', '2020-03-01 11:30:07', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(215, 4, 'แก้ไข ติดต่อ', 1, '::1', '2020-03-01 12:07:24', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(216, 4, 'แก้ไข ติดต่อ', 1, '::1', '2020-03-01 12:08:55', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(217, 4, 'แก้ไข ติดต่อ', 1, '::1', '2020-03-01 12:10:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(218, 3, 'เพิ่ม แบนเนอร์', 1, '::1', '2020-03-01 12:12:26', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(219, 4, 'แก้ไข แบนเนอร์', 1, '::1', '2020-03-01 12:12:44', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(220, 5, 'ลบ แบนเนอร์', 1, '::1', '2020-03-01 12:12:49', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(221, 4, 'แก้ไข ติดต่อ', 1, '::1', '2020-03-01 12:17:38', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(222, 4, 'แก้ไข  คณาจารย์', 1, '::1', '2020-03-01 12:54:54', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(223, 3, 'เพิ่ม  คณจารย์', 1, '::1', '2020-03-01 13:16:47', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(224, 5, 'ลบ  คณาจารย์', 1, '::1', '2020-03-01 13:44:19', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(225, 3, 'เพิ่ม  คณจารย์', 1, '::1', '2020-03-01 13:50:02', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(226, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:22:41', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(227, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:23:57', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(228, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:24:11', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(229, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:24:26', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(230, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:35:53', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(231, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:36:41', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -616,7 +643,7 @@ ALTER TABLE `abouts`
 -- AUTO_INCREMENT for table `banners`
 --
 ALTER TABLE `banners`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `category_courses`
@@ -658,7 +685,7 @@ ALTER TABLE `downloads`
 -- AUTO_INCREMENT for table `faculty`
 --
 ALTER TABLE `faculty`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `labs`
@@ -670,7 +697,7 @@ ALTER TABLE `labs`
 -- AUTO_INCREMENT for table `logs`
 --
 ALTER TABLE `logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=214;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=232;
 
 --
 -- AUTO_INCREMENT for table `log_events`

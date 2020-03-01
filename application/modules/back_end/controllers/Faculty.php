@@ -166,6 +166,75 @@ class Faculty extends MX_Controller
             ->set_content_type('application/json')
             ->set_output(json_encode($response));
     }
+
+    public function ajax_get_faculty_and_sort_show()
+    {
+        $status = 500;
+        $response['success'] = 0;
+
+        $faculty = $this->Faculty_model->get_faculty_all();
+
+        // Set Response
+        if ($faculty != false) {
+            $status = 200;
+            $response['success'] = 1;
+
+            $counter = 1;
+            $html = '<ul id="sortable">';
+            foreach ($faculty as $faculties) {
+                $html .= '<li id="' . $faculties->id . '" data-sort="' . $faculties->sort . '">
+                <span style="padding: 0px 100px;">' . $counter . ' . </span>
+                <img  height="80px" src="' . base_url('storage/uploads/images/faculty/' . $faculties->img) . '"
+                </li>';
+                $counter++;
+            }
+            $html .= '</ul>';
+
+            $response['data'] = $html;
+        }
+
+        // Send Response
+        return $this->output
+            ->set_status_header($status)
+            ->set_content_type('application/json')
+            ->set_output(json_encode($response));
+    }
+
+    public function ajax_get_faculty_and_sort_update()
+    {
+        $status = 500;
+        $response['success'] = 0;
+
+        // Set Response
+        if ($this->input->post()) {
+            $bundle_id = $this->input->post('id');
+            $bundle_sort = $this->input->post('sort');
+            $counter = 1;
+            foreach (array_combine($bundle_id, $bundle_sort) as $id => $sort) {
+                $this->Faculty_model->update_faculty_by_id($id, [
+                    'sort' => $counter
+                ]);
+                $counter++;
+            }
+
+            $status = 200;
+            $response['success'] = 1;
+
+            logger_store([
+                'user_id' => $this->data['user']->id,
+                'detail' => 'จัดเรียง คณาจารย์',
+                'event' => 'sort_item',
+                'ip' => $this->input->ip_address(),
+            ]);
+        }
+
+        // Send Response
+        return $this->output
+            ->set_status_header($status)
+            ->set_content_type('application/json')
+            ->set_output(json_encode($response));
+    }
+
     private function do_upload_img_faculty($filename)
     {
         $config['upload_path'] = './storage/uploads/images/faculty';

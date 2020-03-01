@@ -69,7 +69,7 @@
                                     <div class="col-sm-9">
                                         <div class="custom-file input-file-w-30">
                                             <input type="file" class="custom-file-input" name="img"
-                                                   onchange="PreviewImage(this, 'previewImgCover');" value="<?php echo $faculty->img; ?>" required  accept="image/gif, image/jpeg, image/png">
+                                                   onchange="PreviewImage(this, 'previewImgCover');" value="<?php echo $faculty->img; ?>"   accept="image/gif, image/jpeg, image/png">
                                             <label class="custom-file-label">เลือกไฟล์ (.gif | .jpg | .png)</label>
                                         </div>
                                     </div>

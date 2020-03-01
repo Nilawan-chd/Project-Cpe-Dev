@@ -5,7 +5,7 @@ class Faculty_model extends CI_Model
 
     public function get_faculty_all()
     {
-        $query = $this->db->get('faculty');
+        $query = $this->db->order_by('sort', 'asc')->get('faculty');
 
         return $query->num_rows() > 0 ? $query->result() : [];
     }
@@ -17,7 +17,12 @@ class Faculty_model extends CI_Model
         return $query->num_rows() > 0 ? $query->row() : [];
     }
 
+    public function get_faculty_by_status_id($id)
+    {
+        $query = $this->db->where('status', $id)->get('faculty');
 
+        return $query->num_rows() > 0 ? $query->row() : [];
+    }
     public function insert_faculty($data)
     {
         $this->db->insert('faculty', $data);
