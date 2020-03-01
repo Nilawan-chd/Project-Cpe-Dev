@@ -13,8 +13,8 @@ class Download extends MX_Controller
         | SET UTILITIES
         | -------------------------------------------------------------------------
         */
-
-
+        // Model
+        $this->load->model('Category_download_model');
     }
 
     public function index()
@@ -23,6 +23,7 @@ class Download extends MX_Controller
 
         // Content
         $data['content'] = 'download';
+        $data['category_download'] = $this->Category_download_model->get_category_download_all();
 
 
 

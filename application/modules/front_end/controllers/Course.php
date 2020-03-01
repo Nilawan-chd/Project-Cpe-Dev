@@ -13,8 +13,8 @@ class Course extends MX_Controller
         | SET UTILITIES
         | -------------------------------------------------------------------------
         */
-
-
+        // Model
+        $this->load->model('Category_course_model');
     }
 
     public function index()
@@ -23,6 +23,7 @@ class Course extends MX_Controller
 
         // Content
         $data['content'] = 'course';
+        $data['category_course'] = $this->Category_course_model->get_category_course_all();
 
 
 

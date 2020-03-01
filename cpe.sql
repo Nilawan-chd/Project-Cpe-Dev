@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 01, 2020 at 05:37 PM
+-- Generation Time: Mar 02, 2020 at 12:18 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -96,7 +96,8 @@ CREATE TABLE `category_courses` (
 --
 
 INSERT INTO `category_courses` (`id`, `title`, `name_th`, `name_en`, `name_th_full`, `name_th_short`, `name_en_full`, `name_en_short`, `img`, `objective`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'หลักสูตรปริญญาตรี', 'หลักสูตรวิศวกรรมคอมพิวเตอร์ สาขาวิชาวิศวกรรมคอมพิวเตอร์ ', 'Bachelor of Engineering Program in Computer Engineering', 'วิศวกรรมศาสตรบัณฑิต (วิศวกรรมคอมพิวเตอร์) ', 'วศ.บ. (วิศวกรรมคอมพิวเตอร์) ', 'Bachelor of Engineering (Computer Engineering) ', 'B.Eng. (Computer Engineering)', '6bcfeb9f9954433b09493e5a3d5ad9b0.jpg', '<ul style=\"border: 0px; font-family: sans-serif, Arial; font-size: 16px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; list-style-position: outside; list-style-image: initial; line-height: 1.7; color: rgb(64, 64, 64);\"><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อผลิตวิศวกรปฏิบัติการ ที่มีความสามารถปฏิบัติงานด้านวิศวกรรมคอมพิวเตอร์ได้อย่างมีประสิทธิภาพ</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อผลิตวิศวกรที่มีความสามารถปฏิบัติงานในระบบคอมพิวเตอร์ และเทคโนโลยีสารสนเทศโดยมีพื้นฐานในด้านการพัฒนาระบบเครือข่ายและการออกแบบ ทั้งสามารถเสนอข้อมูลเกี่ยวกับการดำเนินการออกแบบ ติดตั้งและทดสอบได้</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อฝึกฝนให้มีความคิดริเริ่ม มีกิจนิสัยในการค้นคว้าและปรับปรุงตนเองให้ก้าวหน้าอยู่เสมอ สามารถแก้ปัญหาด้วยหลักการและเหตุผล ปฏิบัติงานด้วยหลักวิชาการที่มีการวางแผนและควบคุมอย่างรอบคอบ ซึ่งก่อให้เกิดผลสัมฤทธิ์ในการทำงาน</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อเสริมสร้างคุณธรรม ระเบียบวินัย ความซื่อสัตย์สุจริต ความขยันหมั่นเพียร ความสำนึกในจรรยาบรรณแห่งอาชีพ ความรับผิดชอบต่อหน้าที่และสังคม</li></ul>', '2020-02-26 18:09:45', '2020-02-26 18:25:27', NULL);
+(1, 'หลักสูตรปริญญาตรี', 'หลักสูตรวิศวกรรมคอมพิวเตอร์ สาขาวิชาวิศวกรรมคอมพิวเตอร์ ', 'Bachelor of Engineering Program in Computer Engineering', 'วิศวกรรมศาสตรบัณฑิต (วิศวกรรมคอมพิวเตอร์) ', 'วศ.บ. (วิศวกรรมคอมพิวเตอร์) ', 'Bachelor of Engineering (Computer Engineering) ', 'B.Eng. (Computer Engineering)', '6bcfeb9f9954433b09493e5a3d5ad9b0.jpg', '<ul style=\"border: 0px; font-family: sans-serif, Arial; font-size: 16px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; outline: 0px; padding: 0px; vertical-align: baseline; list-style-position: outside; list-style-image: initial; line-height: 1.7; color: rgb(64, 64, 64);\"><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อผลิตวิศวกรปฏิบัติการ ที่มีความสามารถปฏิบัติงานด้านวิศวกรรมคอมพิวเตอร์ได้อย่างมีประสิทธิภาพ</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อผลิตวิศวกรที่มีความสามารถปฏิบัติงานในระบบคอมพิวเตอร์ และเทคโนโลยีสารสนเทศโดยมีพื้นฐานในด้านการพัฒนาระบบเครือข่ายและการออกแบบ ทั้งสามารถเสนอข้อมูลเกี่ยวกับการดำเนินการออกแบบ ติดตั้งและทดสอบได้</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อฝึกฝนให้มีความคิดริเริ่ม มีกิจนิสัยในการค้นคว้าและปรับปรุงตนเองให้ก้าวหน้าอยู่เสมอ สามารถแก้ปัญหาด้วยหลักการและเหตุผล ปฏิบัติงานด้วยหลักวิชาการที่มีการวางแผนและควบคุมอย่างรอบคอบ ซึ่งก่อให้เกิดผลสัมฤทธิ์ในการทำงาน</li><li style=\"border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px 0px 0px 36px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(61, 61, 61);\">เพื่อเสริมสร้างคุณธรรม ระเบียบวินัย ความซื่อสัตย์สุจริต ความขยันหมั่นเพียร ความสำนึกในจรรยาบรรณแห่งอาชีพ ความรับผิดชอบต่อหน้าที่และสังคม</li></ul>', '2020-02-26 18:09:45', '2020-02-26 18:25:27', NULL),
+(4, 'a', 'a', 'a', 'a', 'a', 'a', 'a', '1268bc48fd8a55884eca10cc7dd67eb3.png', '', '2020-03-01 17:31:50', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -168,7 +169,7 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `title`, `img`, `address`, `department`, `university`, `web`, `tel`, `email`, `facebook`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'ติดต่อสาขา', '811b903a80c47d1e8d38fd06f33c2bea.png', '1381 ถ.ประชาราษฎร์ สาย1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800', 'สาขาวิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์', 'มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร', 'http://www.cpe.eng.rmutp.ac.th/', '02-836-3000 ต่อ 4183 หรือ 4184', 'cpe [at] rmutp.ac.th', ' https://www.facebook.com/cpe.rmutp/', '2020-01-27 15:39:57', '2020-03-01 12:17:38', NULL);
+(1, 'ติดต่อสาขา', 'cbdca7e78b56461a8a9d9e0482d92767.png', '1381 ถ.ประชาราษฎร์ สาย1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800', 'สาขาวิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์', 'มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร', 'http://www.cpe.eng.rmutp.ac.th/', '02-836-3000 ต่อ 4183 หรือ 4184', 'cpe [at] rmutp.ac.th', ' https://www.facebook.com/cpe.rmutp/', '2020-01-27 15:39:57', '2020-03-01 22:47:18', NULL);
 
 -- --------------------------------------------------------
 
@@ -309,7 +310,11 @@ INSERT INTO `logs` (`id`, `event_id`, `detail`, `user_id`, `ip`, `created_at`, `
 (228, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:24:11', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (229, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:24:26', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (230, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:35:53', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(231, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:36:41', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+(231, 6, 'จัดเรียง คณาจารย์', 1, '::1', '2020-03-01 14:36:41', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(232, 3, 'เพิ่ม หลักสูตร', 1, '::1', '2020-03-01 17:27:47', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(233, 5, 'ลบ  หลักสูตร', 1, '::1', '2020-03-01 17:28:02', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(234, 3, 'เพิ่ม  ประเภทหลักสูตร', 1, '::1', '2020-03-01 17:31:50', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(235, 4, 'แก้ไข ติดต่อ', 1, '::1', '2020-03-01 22:47:18', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -348,6 +353,7 @@ CREATE TABLE `news` (
   `id` int(11) NOT NULL,
   `title` text NOT NULL,
   `description` text NOT NULL,
+  `img` text NOT NULL,
   `detail` text NOT NULL,
   `category_news_id` int(11) NOT NULL,
   `user_id` varchar(40) NOT NULL,
@@ -360,8 +366,8 @@ CREATE TABLE `news` (
 -- Dumping data for table `news`
 --
 
-INSERT INTO `news` (`id`, `title`, `description`, `detail`, `category_news_id`, `user_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Huawei ICT Competition ณ ม.เทคโนโลยีราชมงคลพระนคร', 'ภาพบรรยากาศการเดินสายประชาสัมพันธ์ Huawei ICT Competition Thailand 2019-2020 ณ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร (RMUTP)', '', 1, '1', '2020-02-03 01:36:44', '2020-02-16 17:03:15', NULL);
+INSERT INTO `news` (`id`, `title`, `description`, `img`, `detail`, `category_news_id`, `user_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'Huawei ICT Competition ณ ม.เทคโนโลยีราชมงคลพระนคร', 'ภาพบรรยากาศการเดินสายประชาสัมพันธ์ Huawei ICT Competition Thailand 2019-2020 ณ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร (RMUTP)', '', '', 1, '1', '2020-02-03 01:36:44', '2020-02-16 17:03:15', NULL);
 
 -- --------------------------------------------------------
 
@@ -455,37 +461,6 @@ CREATE TABLE `status` (
 INSERT INTO `status` (`id`, `title`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'หัวหน้าสาขา', '2019-10-08 09:38:23', NULL, NULL),
 (2, 'คณาจารย์', '2019-10-08 09:38:23', NULL, NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `sub_pages`
---
-
-CREATE TABLE `sub_pages` (
-  `id` int(11) NOT NULL,
-  `title` varchar(40) CHARACTER SET utf8 NOT NULL,
-  `page_id` int(11) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT NULL,
-  `deleted_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `sub_pages`
---
-
-INSERT INTO `sub_pages` (`id`, `title`, `page_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'ประวัติความเป็นมา', 2, '2020-01-24 21:11:55', NULL, NULL),
-(2, 'คณาจารย์', 2, '2020-01-24 21:11:55', NULL, NULL),
-(3, 'ห้องปฏิบัติการโปรแกรมคอมพิวเตอร์', 4, '2020-01-24 21:15:30', NULL, NULL),
-(4, 'ห้องปฏิบัติการดิจิตอลและเครื่องวัดทางคอม', 4, '2020-01-24 21:15:30', NULL, NULL),
-(5, 'ห้องปฏิบัติการไมโครโพรเซสเซอร์และการจำลอ', 4, '2020-01-24 21:15:30', NULL, NULL),
-(6, 'ห้องเครือข่ายคอมพิวเตอร์และการสื่อสารข้อ', 4, '2020-01-24 21:15:30', NULL, NULL),
-(7, 'ห้องปฏิบัติการโปรแกรมโมบายประยุกต์', 4, '2020-01-24 21:15:30', NULL, NULL),
-(8, 'ห้องปฏิบัติการระบบฐานข้อมูล', 4, '2020-01-24 21:15:30', NULL, NULL),
-(9, 'ห้องปฏิบัติการตัวแปลภาษาและวิศวกรรมซอฟต์', 4, '2020-01-24 21:15:30', NULL, NULL),
-(10, 'ห้องงานควบคุมหุ่นยนต์ขนาดเล็กและการโปรแก', 4, '2020-01-24 21:15:30', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -618,12 +593,6 @@ ALTER TABLE `status`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `sub_pages`
---
-ALTER TABLE `sub_pages`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -649,7 +618,7 @@ ALTER TABLE `banners`
 -- AUTO_INCREMENT for table `category_courses`
 --
 ALTER TABLE `category_courses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `category_downloads`
@@ -673,7 +642,7 @@ ALTER TABLE `contacts`
 -- AUTO_INCREMENT for table `course`
 --
 ALTER TABLE `course`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `downloads`
@@ -697,7 +666,7 @@ ALTER TABLE `labs`
 -- AUTO_INCREMENT for table `logs`
 --
 ALTER TABLE `logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=232;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=236;
 
 --
 -- AUTO_INCREMENT for table `log_events`
@@ -734,12 +703,6 @@ ALTER TABLE `roles`
 --
 ALTER TABLE `status`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `sub_pages`
---
-ALTER TABLE `sub_pages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `users`

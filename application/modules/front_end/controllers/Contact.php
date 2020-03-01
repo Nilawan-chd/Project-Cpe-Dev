@@ -13,7 +13,7 @@ class Contact extends MX_Controller
         | SET UTILITIES
         | -------------------------------------------------------------------------
         */
-
+        $this->load->model('Contact_model');
 
     }
 
@@ -23,7 +23,7 @@ class Contact extends MX_Controller
 
         // Content
         $data['content'] = 'contact';
-
+        $data['contact'] = $this->Contact_model->get_contact_by_id(1);
 
 
         /*

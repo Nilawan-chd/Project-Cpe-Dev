@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Room extends MX_Controller
+class Lab extends MX_Controller
 {
 
     public function __construct()
@@ -13,8 +13,8 @@ class Room extends MX_Controller
         | SET UTILITIES
         | -------------------------------------------------------------------------
         */
-
-
+        // Model
+        $this->load->model('Lab_model');
     }
 
     public function index()
@@ -22,7 +22,8 @@ class Room extends MX_Controller
 
 
         // Content
-        $data['content'] = 'room';
+        $data['content'] = 'lab';
+        $data['lab'] = $this->Lab_model->get_labs_all();
 
 
 
