@@ -54,7 +54,7 @@
                                     <label class="col-sm-3 col-form-label">* File PDF</label>
                                     <div class="col-sm-9">
                                         <div class="custom-file input-file-w-30">
-                                            <input type="file" class="custom-file-input" name="file_pdf" onchange="PreviewFile(this, 'previewFileCatalog');" value="<?php echo  $course->file_pdf; ?>">
+                                            <input type="file" class="custom-file-input" name="file_pdf" onchange="PreviewFile(this, 'previewFileCatalog'); return validateFileExtension(this);" value="<?php echo  $course->file_pdf; ?>">
                                             <label class="custom-file-label" id="previewFileCatalog">เลือกไฟล์(.pdf)</label>
                                             <div style="margin-top: 12px; display: block;"><span>ไฟล์เดิม: </span><a style="display: inline-block;" href="<?php echo base_url('storage/uploads/files/course/' . $course->file_pdf); ?>"><?php echo $course->file_pdf; ?></a></div>
 
@@ -79,6 +79,15 @@
 <script>
     function PreviewFile(input, previewFile) {
         $("#" + previewFile).html(input.files[0].name)
+    }
+    function validateFileExtension(fld) {
+        if(!/(\.doc|\.docx|\.pdf|\.xls|\.xlsx|\.rtf|\.txt|\.rar|\.zip)$/i.test(fld.value)) {
+            alert("Invalid file type.");
+            fld.form.reset();
+            fld.focus();
+            return false;
+        }
+        return true;
     }
 </script>
 

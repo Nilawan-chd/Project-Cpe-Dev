@@ -52,7 +52,16 @@ class Contacts extends MX_Controller
 
     public function update($contact_id)
     {
+        $contact = $this->Contact_model->get_contact_by_id($contact_id);
+
+        $img = $contact->img;
+
+        if (isset($_FILES['img']) && $_FILES['img']['name'] != '') {
+            $img = $this->do_upload_img_contact('img');
+        }
+
         $update_contact_page = $this->Contact_model->update_contact_by_id($contact_id, [
+            'img' => $img,
             'title' => $this->input->post('title'),
             'department' => $this->input->post('department'),
             'university' => $this->input->post('university'),
@@ -81,4 +90,21 @@ class Contacts extends MX_Controller
         redirect('backoffice/page/contact/info/edit/'.$contact_id);
     }
 
+    private function do_upload_img_contact($filename)
+    {
+        $config['upload_path'] = './storage/uploads/images/contacts';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['encrypt_name'] = TRUE;
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload($filename)) {
+            $error = array('error' => $this->upload->display_errors());
+
+            return false;
+        } else {
+            $data = array('upload_data' => $this->upload->data());
+
+            return $data['upload_data']['file_name'];
+        }
+    }
 }

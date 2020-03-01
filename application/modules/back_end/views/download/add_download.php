@@ -55,7 +55,7 @@
                                     <label class="col-sm-3 col-form-label">* File PDF</label>
                                     <div class="col-sm-9">
                                         <div class="custom-file input-file-w-30">
-                                            <input input type="file" name="fileUpload" class="custom-file-input"  onchange="PreviewFile(this, 'previewFileCatalog'); return validateFileExtension(this)" >
+                                            <input input type="file" name="fileUpload" class="custom-file-input"  onchange="PreviewFile(this, 'previewFileCatalog'); return validateFileExtension(this);" >
                                             <label class="custom-file-label" id="previewFileCatalog">เลือกไฟล์(.pdf|.doc|.docx)
                                         </div>
                                     </div>

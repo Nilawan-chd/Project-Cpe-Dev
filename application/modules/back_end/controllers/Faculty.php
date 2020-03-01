@@ -170,7 +170,7 @@ class Faculty extends MX_Controller
     {
         $config['upload_path'] = './storage/uploads/images/faculty';
         $config['allowed_types'] = 'gif|jpg|png';
-
+        $config['encrypt_name'] = TRUE;
         $this->load->library('upload', $config);
 
         if (!$this->upload->do_upload($filename)) {
