@@ -62,7 +62,7 @@
 										$counter = 1;
 										foreach ($logs as $log) { ?>
 											<tr>
-												<td><?php echo $counter; ?></td>
+												<td><?php echo $counter++; ?></td>
 												<td><?php echo $log['name']; ?></td>
 												<td><?php echo $log['event']; ?></td>
 												<td><?php echo $log['detail']; ?></td>
