@@ -635,7 +635,7 @@
             -webkit-border-radius: 0.25em;
             -moz-border-radius: 0.25em;
             border-radius: 0.25em;
-            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+            text-shadow: 0 5px 0 rgba(0, 0, 0, 0.05);
         }
 
         .so-widget-sow-button-flat-6f7ec98be90d .ow-button-base a:visited,
@@ -735,7 +735,7 @@
         } </style>
     <style type="text/css" id="wp-custom-css">
         #topnav {
-            background-color: #ab0b2d;
+            background-color: #422C62;
         }
 
         .event-item a {
@@ -3830,22 +3830,116 @@
         <div class="pre-bounce2"></div>
     </div>
 </div>
-
 <div id="page" class="hfeed site">
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
 
     <header id="masthead" class="site-header" role="banner">
+        <nav id="topnav" class="topnav" role="navigation">
+            <div class="container">
+                <div id="mega-menu-wrap-topnav" class="mega-menu-wrap">
+                    <div class="mega-menu-toggle">
+                        <div class="mega-toggle-blocks-left"></div>
+                        <div class="mega-toggle-blocks-center"></div>
+                        <div class="mega-toggle-blocks-right">
+                            <div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-1'
+                                 id='mega-toggle-block-1' tabindex='0'><span class='mega-toggle-label' role='button'
+                                                                             aria-expanded='false'><span
+                                            class='mega-toggle-label-closed'>MENU</span><span
+                                            class='mega-toggle-label-open'>MENU</span></span></div>
+                        </div>
+                    </div>
+                    <ul id="mega-menu-topnav" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
+                        data-event="click" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled"
+                        data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="close"
+                        data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="0"
+                        data-unbind="true">
+                        <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-left mega-hide-text mega-menu-item-8305'
+                            id='mega-menu-item-8305'><a class="dashicons-search mega-menu-link" href="#"
+                                                        aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                        aria-label="search"><span class="mega-indicator"></span></a>
+                            <ul class="mega-sub-menu">
+                                <li class='mega-menu-item mega-menu-item-type-widget widget_siteorigin-panels-builder mega-menu-columns-6-of-6 mega-menu-item-siteorigin-panels-builder-3'
+                                    id='mega-menu-item-siteorigin-panels-builder-3'>
+                                    <div id="pl-w5b73a67a53fcb" class="panel-layout">
+                                        <div id="pg-w5b73a67a53fcb-0" class="panel-grid panel-has-style">
+                                            <div style="padding: 0px 0; " data-overlay="true"
+                                                 data-overlay-color="#000000"
+                                                 class="panel-row-style panel-row-style-for-w5b73a67a53fcb-0">
+                                                <div id="pgc-w5b73a67a53fcb-0-0" class="panel-grid-cell">
+                                                    <div id="panel-w5b73a67a53fcb-0-0-0"
+                                                         class="so-panel widget widget_search panel-first-child panel-last-child"
+                                                         data-index="0">
+                                                        <div style="text-align: left;" data-title-color="#443f3f"
+                                                             data-headings-color="#443f3f"
+                                                             class="panel-widget-style panel-widget-style-for-w5b73a67a53fcb-0-0-0">
+                                                            <form action="http://eng.rmutp.ac.th/search_gcse">
+                                                                <input id="" name="q" type="search" placeholder="Search"
+                                                                       value="">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="pgc-w5b73a67a53fcb-0-1" class="panel-grid-cell">
+                                                    <div id="panel-w5b73a67a53fcb-0-1-0"
+                                                         class="so-panel widget widget_sow-editor panel-first-child panel-last-child"
+                                                         data-index="1">
+                                                        <div style="text-align: left;" data-title-color="#443f3f"
+                                                             data-headings-color="#443f3f"
+                                                             class="panel-widget-style panel-widget-style-for-w5b73a67a53fcb-0-1-0">
+                                                            <div class="so-widget-sow-editor so-widget-sow-editor-base">
+                                                                <div class="siteorigin-widget-tinymce textwidget">
+                                                                    <h4>Quick Links</h4>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="https://rmutp.ac.th/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2">รับสมัครนักศึกษา</a>
+                                                                        </li>
+                                                                        <li><a href="http://reg.rmutp.ac.th/">ระบบบริการการศึกษา</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="https://rmutp.ac.th/%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5">หลักสูตรระดับปริญญาตรี</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="https://rmutp.ac.th/%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B9%82%E0%B8%97-%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B9%80%E0%B8%AD%E0%B8%81">หลักสูตรระดับปริญญาโท
+                                                                                และปริญญาเอก</a></li>
+                                                                        <li><a href="https://lms.rmutp.ac.th/">e-Learning
+                                                                                RMUTP</a></li>
+                                                                        <li>
+                                                                            <a href="https://www.rmutp.ac.th/web2558/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%A8/">ระบบสารสนเทศ</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9534'
+                            id='mega-menu-item-9534'><a class="mega-menu-link"
+                                                        href="<?php echo base_url('contact') ?>"
+                                                        tabindex="0">ติดต่อ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav><!-- #site-navigation -->
+        <?php
+        $this->load->model('Contact_model');
+        $contact = $this->Contact_model->get_contact_by_id(1);
 
+        ?>
         <div class="header-wrap">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-xs-12">
                         <a href="http://eng.rmutp.ac.th/"
-                           title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร">
-                            <img class="site-logo"
-                                 src="http://eng.rmutp.ac.th/web2558/wp-content/uploads/2018/08/eng-logo.png"
-                                 alt="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร"/></a>
+                           title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร"><img class="site-logo" style="max-height: 50px"
+                                                                                            src="<?php echo base_url('/storage/uploads/images/contacts/'.$contact->img)?>"
+                                                                                            alt="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร"/></a>
                     </div>
                     <div class="col-lg-8 col-md-8 col-xs-12">
                         <div class="btn-menu"></div>
@@ -3869,34 +3963,32 @@
                                     data-effect-speed-mobile="0" data-mobile-force-width="false"
                                     data-second-click="close" data-document-click="collapse"
                                     data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true">
-                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-8272'
-                                        id='mega-menu-item-8272'><a href="<?php echo base_url('home') ?>" >หน้าแรก<span
-                                                    class="mega-indicator"></span></a>
-
-                                    </li>
-                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-8276'
-                                        id='mega-menu-item-8276'><a class="mega-menu-link" href="#" aria-haspopup="true"
+                                    <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-8202'
+                                        id='mega-menu-item-8202'><a class="mega-menu-link"
+                                                                    href="<?php echo base_url('home') ?>"
+                                                                    tabindex="0">หน้าแรก</a></li>
+                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-7447'
+                                        id='mega-menu-item-7447'><a class="mega-menu-link" href="#" aria-haspopup="true"
                                                                     aria-expanded="false" tabindex="0">เกี่ยวกับ<span
                                                     class="mega-indicator"></span></a>
                                         <ul class="mega-sub-menu">
-                                            <li class='mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-columns-1-of-1 mega-menu-item-custom_html-7'
-                                                id='mega-menu-item-custom_html-7'>
+                                            <li class='mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-columns-1-of-1 mega-menu-item-custom_html-6'
+                                                id='mega-menu-item-custom_html-6'>
                                                 <div class="textwidget custom-html-widget">
                                                     <div class="row">
-
-
                                                         <div class="col-12 col-lg-6">
-
                                                             <ul>
-                                                                <li><a href="<?php echo base_url('about') ?>">ประวัติความเป็นมา<span class="mega-indicator"></span></a>
+                                                                <li>
+                                                                    <a href="<?php echo base_url('about') ?>">ประวัติความเป็นมา</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-12 col-lg-6">
 
                                                             <ul>
-                                                                <li><a href="<?php echo base_url('faculty') ?>">คณาจารย์</a></li>
-
+                                                                <li>
+                                                                    <a href="<?php echo base_url('faculty') ?>">คณาจารย์</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -3904,69 +3996,23 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    </li>
-                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-8298'
-                                        id='mega-menu-item-8298'><a  href="<?php echo base_url('course') ?>" >หลักสูตร<span class="mega-indicator"></span></a>
+                                    <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-8202'
+                                        id='mega-menu-item-8202'><a class="mega-menu-link"
+                                                                    href="<?php echo base_url('course') ?>"
+                                                                    tabindex="0">หลักสูตร</a></li>
+                                    <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-8202'
+                                        id='mega-menu-item-8202'><a class="mega-menu-link"
+                                                                    href="<?php echo base_url('lab') ?>"
+                                                                    tabindex="0">ห้องปฏิบัติการ</a></li>
+                                    <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-8202'
+                                        id='mega-menu-item-8202'><a class="mega-menu-link"
+                                                                    href="<?php echo base_url('project') ?>"
+                                                                    tabindex="0">งานวิจัยและโครงงาน</a></li>
+                                    <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-8202'
+                                        id='mega-menu-item-8202'><a class="mega-menu-link"
+                                                                    href="<?php echo base_url('download') ?>"
+                                                                    tabindex="0">ดาวน์โหลด</a></li>
 
-                                    </li>
-                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-7447'
-                                        id='mega-menu-item-7447'><a href="<?php echo base_url('download') ?>" >ดาวน์โหลด<span class="mega-indicator"></span></a>
-                                    </li>
-                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-7447'
-                                        id='mega-menu-item-7447'><a href="<?php echo base_url('project') ?>">งานวิจัยและโครงงาน<span class="mega-indicator"></span></a>
-                                    </li>
-                                    <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-9534'
-                                        id='mega-menu-item-9534'><a class="mega-menu-link"
-                                                                    href="<?php echo base_url('contact') ?>">ติดต่อ</a>
-                                    </li>
-                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-has-icon mega-icon-left mega-hide-text mega-menu-item-8305'
-                                        id='mega-menu-item-8305'><a class="dashicons-search mega-menu-link" href="#"
-                                                                    aria-haspopup="true" aria-expanded="false"
-                                                                    tabindex="0"
-                                                                    aria-label="search"><span
-                                                    class="mega-indicator"></span></a>
-                                        <ul class="mega-sub-menu">
-                                            <li class='mega-menu-item mega-menu-item-type-widget widget_siteorigin-panels-builder mega-menu-columns-6-of-6 mega-menu-item-siteorigin-panels-builder-3'
-                                                id='mega-menu-item-siteorigin-panels-builder-3'>
-                                                <div id="pl-w5b73a67a53fcb" class="panel-layout">
-                                                    <div id="pg-w5b73a67a53fcb-0" class="panel-grid panel-has-style">
-                                                        <div style="padding: 0px 0; " data-overlay="true"
-                                                             data-overlay-color="#000000"
-                                                             class="panel-row-style panel-row-style-for-w5b73a67a53fcb-0">
-                                                            <div id="pgc-w5b73a67a53fcb-0-0" class="panel-grid-cell">
-                                                                <div id="panel-w5b73a67a53fcb-0-0-0"
-                                                                     class="so-panel widget widget_search panel-first-child panel-last-child"
-                                                                     data-index="0">
-                                                                    <div style="text-align: left;"
-                                                                         data-title-color="#443f3f"
-                                                                         data-headings-color="#443f3f"
-                                                                         class="panel-widget-style panel-widget-style-for-w5b73a67a53fcb-0-0-0">
-                                                                        <form action="http://eng.rmutp.ac.th/search_gcse">
-                                                                            <input id="" name="q" type="search"
-                                                                                   placeholder="Search"
-                                                                                   value="">
-                                                                        </form>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div id="pgc-w5b73a67a53fcb-0-1" class="panel-grid-cell">
-                                                                <div id="panel-w5b73a67a53fcb-0-1-0"
-                                                                     class="so-panel widget widget_sow-editor panel-first-child panel-last-child"
-                                                                     data-index="1">
-                                                                    <div style="text-align: left;"
-                                                                         data-title-color="#443f3f"
-                                                                         data-headings-color="#443f3f"
-                                                                         class="panel-widget-style panel-widget-style-for-w5b73a67a53fcb-0-1-0">
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
                                 </ul>
                             </div>
                         </nav><!-- #site-navigation -->
@@ -3975,4 +4021,10 @@
             </div>
         </div>
     </header><!-- #masthead -->
+    <div class="sydney-hero-area">
+        <div class="header-image">
+            <div class="overlay"></div>			<img class="header-inner" src="" width="1920" alt="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร" title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร">
+        </div>
+
+    </div>
 

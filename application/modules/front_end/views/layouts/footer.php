@@ -10,70 +10,20 @@
 </div>
 </div><!-- #content -->
 
+<?php
+$this->load->model('Contact_model');
+$contact = $this->Contact_model->get_contact_by_id(1);
 
-<div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
+?>
+<div id="sidebar-footer" class="footer-widgets widget-area" style="background: #4e3275" role="complementary">
     <div class="container">
         <div class="sidebar-column col-md-4">
             <aside id="sow-editor-2" class="widget widget_sow-editor">
                 <div class="so-widget-sow-editor so-widget-sow-editor-base">
                     <div class="siteorigin-widget-tinymce textwidget">
-                        <p>คณะวิศวกรรมศาสตร์<br/>
-                            มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร<br/>
-                            1381 ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ กทม. 10800<br/>
-                            โทรศัพท์ 02-836-3000</p>
-                    </div>
-                </div>
-            </aside>
-        </div>
-
-        <div class="sidebar-column col-md-4">
-            <aside id="text-11" class="widget widget_text">
-                <div class="textwidget"><h3 class="widget-title">RMUTP Links</h3>
-                    <ul id="menu-footer-link" class="menu">
-                        <li id="menu-item-2608"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2608"><a
-                                    href="http://eng.rmutp.ac.th/%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%B2%E0%B8%99/">รับสมัครบุคลากร</a>
-                        </li>
-                        <li id="menu-item-2609"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2609"><a
-                                    href="http://phone.rmutp.ac.th/">ค้นหาหมายเลขโทรศัพท์</a></li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="http://eng.rmutp.ac.th/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%87/">ประกาศจัดซื้อจัดจ้าง</a>
-                        </li>
-                        <li>
-                            <a href="http://eng.rmutp.ac.th/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%AD%E0%B8%94%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94/">ขายทอดตลาด</a>
-                        </li>
-                        <li><a href="http://eng.rmutp.ac.th/km/">งานการจัดการความรู้ (<b>KM</b>)</a></li>
-                        <li><a href="http://k2mse.eng.rmutp.ac.th/">งานบริการวิชาการ</a></li>
-                    </ul>
-                </div>
-            </aside>
-        </div>
-
-        <div class="sidebar-column col-md-4">
-            <aside id="sow-social-media-buttons-2" class="widget widget_sow-social-media-buttons">
-                <div class="so-widget-sow-social-media-buttons so-widget-sow-social-media-buttons-flat-5302a12fe70b">
-
-                    <div class="social-media-button-container">
-
-                        <a class="ow-button-hover sow-social-media-button-facebook-0 sow-social-media-button"
-                           title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร on Facebook"
-                           aria-label="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร on Facebook" target="_blank"
-                           rel="noopener noreferrer"
-                           href="https://www.facebook.com/Engineering-Rmutp-%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B8%AF-%E0%B8%A1%E0%B8%97%E0%B8%A3%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3-244414689253783/">
-			<span>
-								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf39e;"></span>							</span>
-                        </a>
-
-                        <a class="ow-button-hover sow-social-media-button-youtube-0 sow-social-media-button"
-                           title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร on Youtube"
-                           aria-label="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร on Youtube" target="_blank"
-                           rel="noopener noreferrer" href="https://www.youtube.com/">
-			<span>
-								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf167;"></span>							</span>
-                        </a>
+                        <p><?php echo $contact->department;?><br/>
+                            <?php echo $contact->address;?><br/>
+                            <?php echo $contact->tel;?></p>
                     </div>
                 </div>
             </aside>
@@ -84,9 +34,9 @@
 </div>
 <a class="go-top"><i class="fa fa-angle-up"></i></a>
 
-<footer id="colophon" class="site-footer" role="contentinfo">
+<footer id="colophon"  style="background: #422C62" class="site-footer" role="contentinfo">
     <div class="site-info container">
-        &copy; 2018 <a href="//rmutp.ac.th">Rajamangala University of Technology Phra Nakhon.</a> All Rights Reserved.
+        <span>Copyright © 2020 <?php echo $contact->department;?><?php echo $contact->university;?> All Rights Reserved.</span>
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
 

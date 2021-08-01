@@ -1,82 +1,25 @@
-<div class="sydney-hero-area">
-    <div class="header-image">
-        <div class="overlay"></div>
-        <img class="header-inner" src="" width="1920" alt="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร"
-             title="คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร">
-    </div>
-
-</div>
-
-
 <div id="content" class="page-wrap">
     <div class="container content-wrapper">
         <div class="row">
-
             <div id="primary" class="content-area">
                 <main id="main" class="post-wrap" role="main">
-
-
-                    <article id="post-201" class="post-201 page type-page status-publish hentry">
+                    <article id="post-121" class="post-121 page type-page status-publish hentry">
                         <header class="entry-header">
-                            <h1 class="title-post entry-title">ติดต่อ</h1></header><!-- .entry-header -->
+                            <h1 class="entry-title">ติดต่อสาขา</h1>
+                        </header><!-- .entry-header -->
 
                         <div class="entry-content">
-                            <div id="pl-201" class="panel-layout">
-                                <div id="pg-201-0" class="panel-grid panel-has-style">
-                                    <div style="padding: 100px 0; " data-overlay="true" data-overlay-color="#000000"
-                                         class="panel-row-style panel-row-style-for-201-0">
-                                        <div id="pgc-201-0-0" class="panel-grid-cell">
-                                            <div id="panel-201-0-0-0"
-                                                 class="so-panel widget widget_sow-editor panel-first-child"
-                                                 data-index="0">
-                                                <div style="text-align: left;" data-title-color="#443f3f"
-                                                     data-headings-color="#443f3f"
-                                                     class="panel-widget-style panel-widget-style-for-201-0-0-0">
-                                                    <div class="so-widget-sow-editor so-widget-sow-editor-base">
-                                                        <div class="siteorigin-widget-tinymce textwidget">
-                                                            <h2>แผนที่คณะวิศวกรรมศาสตร์</h2>
-                                                            <p>1381 ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ กทม. 10800<br/>
-                                                                โทรศัพท์ 02-836-3000<br/>
-                                                                อีเมล eng@rmutp.ac.th</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="panel-201-0-0-1"
-                                                 class="so-panel widget widget_sow-editor panel-last-child"
-                                                 data-index="1">
-                                                <div style="text-align: left;" data-title-color="#443f3f"
-                                                     data-headings-color="#443f3f"
-                                                     class="panel-widget-style panel-widget-style-for-201-0-0-1">
-                                                    <div class="so-widget-sow-editor so-widget-sow-editor-base">
-                                                        <div class="siteorigin-widget-tinymce textwidget">
-                                                            <div class="su-gmap su-u-responsive-media-yes">
-                                                                <iframe width="600" height="400"
-                                                                        src="//maps.google.com/maps?q=%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B9%80%E0%B8%AB%E0%B8%99%E0%B8%B7%E0%B8%AD%20%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A1%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3%201381%20%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A9%E0%B8%8E%E0%B8%A3%E0%B9%8C%201%20%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C%E0%B8%AA%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%8B%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%97%E0%B8%A1.%2010800&amp;output=embed"
-                                                                        title=""></iframe>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <p><strong>หน่วยงาน</strong> : <?php echo $contact->department;?>&nbsp; <?php echo $contact->university;?><br>
+                                <strong>ที่อยู่</strong> : <?php echo $contact->address;?><br>
+                            <p><strong>เว็บไซต์</strong> : <a href="<?php echo $contact->web;?>" ><?php echo $contact->web;?></a><br>
+                                <strong>โทรศัพท์</strong> : <?php echo $contact->tel;?><br>
+                                <strong>อีเมล์ </strong>: <?php echo $contact->email;?><br>
+                                <strong>เฟสบุ๊ค</strong> :&nbsp;<a href="<?php echo $contact->facebook;?>"><?php echo $contact->facebook;?></a></p>
+                            <p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937.1814652677408!2d100.51191296161969!3d13.817232331449446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b9999d5a95b%3A0x5fdf0835d3547024!2z4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4Lin4Li04Lio4Lin4LiB4Lij4Lij4Lih4LiE4Lit4Lih4Lie4Li04Lin4LmA4LiV4Lit4Lij4LmMIOC4hOC4k-C4sOC4p-C4tOC4qOC4p-C4geC4o-C4o-C4oeC4qOC4suC4quC4leC4o-C5jCDguKHguKvguLLguKfguLTguJfguKLguLLguKXguLHguKLguYDguJfguITguYLguJnguYLguKXguKLguLXguKPguLLguIrguKHguIfguITguKXguJ7guKPguLDguJnguITguKM!5e0!3m2!1sth!2sth!4v1509990721165" width="600" height="450" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
                         </div><!-- .entry-content -->
-
-                        <footer class="entry-footer">
-                        </footer><!-- .entry-footer -->
-                    </article><!-- #post-## -->
-
-
-                </main><!-- #main -->
-            </div><!-- #primary -->
-
+                    </article>
+                </main>
+            </div>
         </div>
     </div>
-</div><!-- #content -->
-
-
-
-
+</div>

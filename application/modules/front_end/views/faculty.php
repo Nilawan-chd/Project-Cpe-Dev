@@ -1,8 +1,8 @@
 <div id="content" class="page-wrap">
     <div class="container content-wrapper">
         <div class="row">
-            <div class="content-area">
-                <main class="post-wrap" role="main">
+            <div id="primary" class="content-area">
+                <main id="main" class="post-wrap" role="main">
                     <article class="container">
                         <header class="entry-header">
                             <h1 class="title-post entry-title">คณาจารย์</h1>
@@ -42,16 +42,16 @@
                                                             <h6>
                                                                 <strong><?php echo $faculties->name_th; ?></strong>
                                                             </h6>
-                                                                <?php echo $faculties->name_en; ?><br>
-                                                                การศึกษา<p></p>
-                                                                <ul>
-                                                                    <?php echo $faculties->education; ?>
-                                                                </ul>
-                                                                <p>วิชาที่สอน : <?php echo $faculties->course; ?><br>
-                                                                    ความเชี่ยวชาญ :&nbsp;<?php echo $faculties->expert; ?><br>
-                                                                    เว็บไซต์ :&nbsp;<a href="<?php echo $faculties->web; ?>" target="_blank" rel="noopener noreferrer"><?php echo $faculties->web; ?></a><br>
-                                                                    โทรศัพท์ :&nbsp;<?php echo $faculties->tel; ?><br>
-                                                                    Email&nbsp;:&nbsp;<?php echo $faculties->email; ?></p></td>
+                                                            <?php echo $faculties->name_en; ?><br>
+                                                            การศึกษา<p></p>
+                                                            <ul>
+                                                                <?php echo $faculties->education; ?>
+                                                            </ul>
+                                                            <p>วิชาที่สอน : <?php echo $faculties->course; ?><br>
+                                                                ความเชี่ยวชาญ :&nbsp;<?php echo $faculties->expert; ?><br>
+                                                                เว็บไซต์ :&nbsp;<a href="<?php echo $faculties->web; ?>" target="_blank" rel="noopener noreferrer"><?php echo $faculties->web; ?></a><br>
+                                                                โทรศัพท์ :&nbsp;<?php echo $faculties->tel; ?><br>
+                                                                Email&nbsp;:&nbsp;<?php echo $faculties->email; ?></p></td>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -66,12 +66,9 @@
                             </div>
                         </div>
             </div><!-- .entry-content -->
-            <footer class="entry-footer">
-            </footer><!-- .entry-footer -->
-            </article><!-- #post-## -->
-            </main><!-- #main -->
-        </div><!-- #primary -->
-
+                </main>
+            </div>
+        </div>
     </div>
 </div>
-</div><!-- #content -->
+
